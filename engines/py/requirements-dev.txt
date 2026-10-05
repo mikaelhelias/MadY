@@ -1,0 +1,8 @@
+# Test-only Python dependencies — NOT bundled into the shipped/frozen engine.
+# Install alongside requirements.txt to run the independent cross-check
+# (engines/py/crosscheck.py, wired into vitest via engine.crosscheck.test.ts):
+#   py -3 -m pip install -r requirements.txt -r requirements-dev.txt
+#
+# mpmath gives an arbitrary-precision, scipy-independent implementation of the
+# distribution tails (incomplete beta/gamma) used to cross-verify p-values.
+mpmath==1.3.0

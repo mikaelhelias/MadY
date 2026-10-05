@@ -1,0 +1,14 @@
+{
+ "w": 300,
+ "h": 255,
+ "marks": [
+  {
+   "n": 1,
+   "x": 11,
+   "y": 53,
+   "w": 282,
+   "h": 34,
+   "label": "Style — solid, two-tone, pattern, gradient, metallic, or graduated by value"
+  }
+ ]
+}

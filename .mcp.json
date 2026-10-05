@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "mady": {
+      "command": "node",
+      "args": [
+        "packages/mcp-server/dist/mady-mcp.mjs"
+      ],
+      "env": {
+        "MADY_ENGINE_EXE": "engines/py/dist/mady-engine/mady-engine.exe"
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+ "w": 1180,
+ "h": 946,
+ "marks": [
+  {
+   "n": 1,
+   "x": 69.3,
+   "y": 49,
+   "w": 180,
+   "h": 27,
+   "label": "Delimiter — set it until the columns split where you expect"
+  },
+  {
+   "n": 2,
+   "x": 320.9,
+   "y": 49,
+   "w": 116,
+   "h": 27,
+   "label": "Decimal mark — a comma here, or every number arrives as text"
+  },
+  {
+   "n": 3,
+   "x": 21,
+   "y": 157.8,
+   "w": 1138,
+   "h": 667,
+   "label": "The preview is the datasheet: rename, reorder and exclude before anything is created"
+  },
+  {
+   "n": 4,
+   "x": 1048,
+   "y": 893.4,
+   "w": 111,
+   "h": 33,
+   "label": "The button counts your rows — press it to create the sheet"
+  }
+ ]
+}

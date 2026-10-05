@@ -1,0 +1,1453 @@
+{
+ "_": "Recorded from the real Python engine by scripts/record-guide-engine.mjs — do not edit by hand.",
+ "engine": "mady-dev-engine",
+ "contractVersion": 1,
+ "libraries": {
+  "python": "3.14.3",
+  "numpy": "2.4.2",
+  "scipy": "1.17.1",
+  "statsmodels": "0.14.6"
+ },
+ "answers": [
+  {
+   "method": "curvefit",
+   "request": "{\"model\":\"4pl\",\"x\":[0.1,0.1,0.1,0.3,0.3,0.3,1,1,1,3,3,3,10,10,10,30,30,30,100,100,100],\"y\":[4,6,2,9,12,6,21,25,17,48,54,42,72,78,66,88,92,84,95,98,92],\"conf\":0.95,\"weighting\":\"none\"}",
+   "results": {
+    "method": "curvefit",
+    "title": "Dose-response (4PL, variable slope)",
+    "terms": [
+     {
+      "term": "Bottom",
+      "estimate": 1.093422,
+      "se": 2.914428,
+      "ciLow": -6.262189,
+      "ciHigh": 6.450605,
+      "dependency": 0.768764,
+      "skewness": -0.429379
+     },
+     {
+      "term": "Top",
+      "estimate": 97.742949,
+      "se": 3.189569,
+      "ciLow": 91.740542,
+      "ciHigh": 106.152557,
+      "dependency": 0.793089,
+      "skewness": 0.453367
+     },
+     {
+      "term": "logEC50",
+      "estimate": 0.536383,
+      "se": 0.0495504,
+      "ciLow": 0.43213,
+      "ciHigh": 0.64638,
+      "dependency": 0.694347,
+      "skewness": 0.0444128
+     },
+     {
+      "term": "Hill slope",
+      "estimate": 1.01021,
+      "se": 0.122526,
+      "ciLow": 0.765995,
+      "ciHigh": 1.294047,
+      "dependency": 0.781948,
+      "skewness": 0.210718
+     },
+     {
+      "term": "EC50",
+      "estimate": 3.438613
+     },
+     {
+      "term": "R²",
+      "estimate": 0.989351
+     },
+     {
+      "term": "Adjusted R²",
+      "estimate": 0.987472
+     },
+     {
+      "term": "Sy.x (RMSE)",
+      "estimate": 4.032894
+     },
+     {
+      "term": "Sum of squares",
+      "estimate": 276.491936,
+      "df": 17
+     },
+     {
+      "term": "Runs test (lack of fit)",
+      "estimate": 14,
+      "statistic": 1.242069,
+      "p": 0.214211,
+      "ciLow": 11.285714
+     },
+     {
+      "term": "Lack of fit (replicates)",
+      "estimate": 0.453554,
+      "statistic": 0.453554,
+      "p": 0.718896,
+      "df": 3,
+      "ciLow": 14
+     },
+     {
+      "term": "Residual normality (Shapiro-Wilk)",
+      "statistic": 0.990119,
+      "p": 0.997929
+     }
+    ],
+    "glance": {
+     "bottom": 1.093422,
+     "top": 97.742949,
+     "logec50": 0.536383,
+     "hill_slope": 1.01021,
+     "r_sq": 0.989351,
+     "n": 21,
+     "syx": 4.032894,
+     "sse": 276.491936,
+     "df": 17,
+     "adj_r_sq": 0.987472,
+     "EC50": 3.438613,
+     "max_dependency": 0.793089,
+     "max_skewness": 0.453367,
+     "resid_normality_p": 0.997929
+    },
+    "summary": "Bottom = 1.093, Top = 97.74, logEC50 = 0.5364, Hill slope = 1.01; R² = 0.9894.",
+    "curve": {
+     "x": [
+      0.1,
+      0.109138,
+      0.11911,
+      0.129994,
+      0.141873,
+      0.154837,
+      0.168985,
+      0.184426,
+      0.201279,
+      0.219671,
+      0.239743,
+      0.26165,
+      0.285559,
+      0.311653,
+      0.34013,
+      0.371211,
+      0.40513,
+      0.44215,
+      0.482552,
+      0.526646,
+      0.574769,
+      0.62729,
+      0.68461,
+      0.747167,
+      0.815441,
+      0.889953,
+      0.971274,
+      1.060026,
+      1.156888,
+      1.2626,
+      1.377972,
+      1.503887,
+      1.641307,
+      1.791284,
+      1.954966,
+      2.133605,
+      2.328566,
+      2.541343,
+      2.773563,
+      3.027002,
+      3.303599,
+      3.605471,
+      3.934927,
+      4.294488,
+      4.686904,
+      5.115178,
+      5.582586,
+      6.092705,
+      6.649436,
+      7.25704,
+      7.920164,
+      8.643883,
+      9.433732,
+      10.295756,
+      11.236548,
+      12.263307,
+      13.383888,
+      14.606863,
+      15.94159,
+      17.398281,
+      18.988078,
+      20.723146,
+      22.616759,
+      24.683405,
+      26.938893,
+      29.400481,
+      32.087,
+      35.019005,
+      38.218926,
+      41.711246,
+      45.522683,
+      49.682396,
+      54.22221,
+      59.176857,
+      64.584244,
+      70.48574,
+      76.926496,
+      83.955786,
+      91.62739,
+      100
+     ],
+     "y": [
+      3.730455,
+      3.966749,
+      4.223512,
+      4.502384,
+      4.805117,
+      5.133569,
+      5.48971,
+      5.875625,
+      6.293507,
+      6.745658,
+      7.234483,
+      7.762485,
+      8.332254,
+      8.946452,
+      9.607801,
+      10.319059,
+      11.082999,
+      11.902376,
+      12.779898,
+      13.718184,
+      14.719721,
+      15.786817,
+      16.921548,
+      18.125699,
+      19.400707,
+      20.747598,
+      22.166927,
+      23.658714,
+      25.222389,
+      26.856737,
+      28.55986,
+      30.329135,
+      32.1612,
+      34.051944,
+      35.996515,
+      37.989353,
+      40.024236,
+      42.094339,
+      44.192324,
+      46.310432,
+      48.440599,
+      50.574574,
+      52.704045,
+      54.820773,
+      56.916714,
+      58.98414,
+      61.015753,
+      63.004777,
+      64.94504,
+      66.831041,
+      68.657991,
+      70.42184,
+      72.119289,
+      73.747777,
+      75.305464,
+      76.791191,
+      78.20444,
+      79.545278,
+      80.814302,
+      82.012574,
+      83.141563,
+      84.203081,
+      85.199225,
+      86.13232,
+      87.004867,
+      87.819492,
+      88.57891,
+      89.285879,
+      89.94317,
+      90.553541,
+      91.119707,
+      91.644328,
+      92.129985,
+      92.579172,
+      92.994287,
+      93.377624,
+      93.731367,
+      94.057588,
+      94.358251,
+      94.635205
+     ],
+     "ciLow": [
+      -0.429778,
+      -0.084234,
+      0.283414,
+      0.673954,
+      1.088092,
+      1.526436,
+      1.989482,
+      2.477615,
+      2.991117,
+      3.530206,
+      4.095097,
+      4.686111,
+      5.303808,
+      5.949157,
+      6.623705,
+      7.329725,
+      8.070303,
+      8.849338,
+      9.67146,
+      10.541871,
+      11.466129,
+      12.449924,
+      13.498845,
+      14.618167,
+      15.812652,
+      17.086368,
+      18.442521,
+      19.883296,
+      21.409707,
+      23.02146,
+      24.716836,
+      26.492593,
+      28.343914,
+      30.264404,
+      32.246158,
+      34.279923,
+      36.355362,
+      38.46143,
+      40.586851,
+      42.720644,
+      44.852636,
+      46.973873,
+      49.076851,
+      51.155551,
+      53.205275,
+      55.222373,
+      57.203924,
+      59.147437,
+      61.050613,
+      62.911176,
+      64.72678,
+      66.494956,
+      68.21311,
+      69.878533,
+      71.488432,
+      73.039959,
+      74.530248,
+      75.956447,
+      77.315761,
+      78.605495,
+      79.823127,
+      80.966399,
+      82.033451,
+      83.022988,
+      83.934462,
+      84.768249,
+      85.525771,
+      86.209522,
+      86.822992,
+      87.370477,
+      87.856835,
+      88.287218,
+      88.66684,
+      89.000779,
+      89.29385,
+      89.550528,
+      89.774907,
+      89.970692,
+      90.141215,
+      90.289453
+     ],
+     "ciHigh": [
+      7.890689,
+      8.017733,
+      8.16361,
+      8.330815,
+      8.522142,
+      8.740702,
+      8.989939,
+      9.273636,
+      9.595897,
+      9.96111,
+      10.373869,
+      10.83886,
+      11.3607,
+      11.943748,
+      12.591897,
+      13.308393,
+      14.095695,
+      14.955415,
+      15.888336,
+      16.894497,
+      17.973313,
+      19.123711,
+      20.344251,
+      21.63323,
+      22.988762,
+      24.408829,
+      25.891333,
+      27.434132,
+      29.03507,
+      30.692014,
+      32.402884,
+      34.165678,
+      35.978487,
+      37.839483,
+      39.746871,
+      41.698783,
+      43.693109,
+      45.727248,
+      47.797796,
+      49.900221,
+      52.028563,
+      54.175275,
+      56.331239,
+      58.485995,
+      60.628153,
+      62.745908,
+      64.827582,
+      66.862116,
+      68.839467,
+      70.750906,
+      72.589202,
+      74.348725,
+      76.025468,
+      77.617021,
+      79.122495,
+      80.542423,
+      81.878632,
+      83.13411,
+      84.312843,
+      85.419652,
+      86.459998,
+      87.439763,
+      88.364999,
+      89.241652,
+      90.075271,
+      90.870736,
+      91.63205,
+      92.362235,
+      93.063348,
+      93.736604,
+      94.38258,
+      95.001437,
+      95.593129,
+      96.157565,
+      96.694725,
+      97.20472,
+      97.687827,
+      98.144485,
+      98.575287,
+      98.980957
+     ],
+     "piLow": [
+      -5.74081,
+      -5.457039,
+      -5.153145,
+      -4.8279,
+      -4.480011,
+      -4.108116,
+      -3.710775,
+      -3.28646,
+      -2.833547,
+      -2.350301,
+      -1.834865,
+      -1.285244,
+      -0.699292,
+      -0.074696,
+      0.59103,
+      1.300554,
+      2.056723,
+      2.862555,
+      3.721217,
+      4.635987,
+      5.61021,
+      6.647223,
+      7.750276,
+      8.922432,
+      10.166452,
+      11.484665,
+      12.878842,
+      14.350056,
+      15.898555,
+      17.523641,
+      19.223578,
+      20.995519,
+      22.835483,
+      24.738363,
+      26.697993,
+      28.707263,
+      30.758279,
+      32.842563,
+      34.951287,
+      37.075504,
+      39.20638,
+      41.335398,
+      43.454512,
+      45.556261,
+      47.633821,
+      49.681011,
+      51.692268,
+      53.662593,
+      55.587482,
+      57.462868,
+      59.285064,
+      61.050728,
+      62.756834,
+      64.400672,
+      65.979851,
+      67.492316,
+      68.936376,
+      70.310722,
+      71.614459,
+      72.847122,
+      74.008691,
+      75.099596,
+      76.120709,
+      77.073331,
+      77.959165,
+      78.780277,
+      79.539055,
+      80.238156,
+      80.880453,
+      81.468981,
+      82.006878,
+      82.497333,
+      82.943544,
+      83.348667,
+      83.715787,
+      84.047887,
+      84.347822,
+      84.618306,
+      84.861898,
+      85.080997
+     ],
+     "piHigh": [
+      13.201721,
+      13.390538,
+      13.600169,
+      13.832669,
+      14.090245,
+      14.375253,
+      14.690196,
+      15.03771,
+      15.42056,
+      15.841616,
+      16.303831,
+      16.810215,
+      17.363799,
+      17.9676,
+      18.624572,
+      19.337565,
+      20.109275,
+      20.942198,
+      21.83858,
+      22.80038,
+      23.829232,
+      24.926412,
+      26.092819,
+      27.328965,
+      28.634962,
+      30.010532,
+      31.455013,
+      32.967372,
+      34.546222,
+      36.189833,
+      37.896142,
+      39.662751,
+      41.486918,
+      43.365524,
+      45.295036,
+      47.271444,
+      49.290193,
+      51.346115,
+      53.433361,
+      55.545361,
+      57.674819,
+      59.81375,
+      61.953579,
+      64.085285,
+      66.199607,
+      68.28727,
+      70.339238,
+      72.34696,
+      74.302598,
+      76.199214,
+      78.030917,
+      79.792953,
+      81.481744,
+      83.094882,
+      84.631077,
+      86.090065,
+      87.472504,
+      88.779835,
+      90.014145,
+      91.178026,
+      92.274434,
+      93.306566,
+      94.277741,
+      95.191309,
+      96.050568,
+      96.858708,
+      97.618766,
+      98.333602,
+      99.005887,
+      99.6381,
+      100.232537,
+      100.791323,
+      101.316425,
+      101.809677,
+      102.272787,
+      102.707361,
+      103.114911,
+      103.496871,
+      103.854604,
+      104.189413
+     ]
+    },
+    "extra": {
+     "residuals": {
+      "x": [
+       -1,
+       -1,
+       -1,
+       -0.522879,
+       -0.522879,
+       -0.522879,
+       0,
+       0,
+       0,
+       0.477121,
+       0.477121,
+       0.477121,
+       1,
+       1,
+       1,
+       1.477121,
+       1.477121,
+       1.477121,
+       2,
+       2,
+       2
+      ],
+      "fitted": [
+       3.730455,
+       3.730455,
+       3.730455,
+       8.673145,
+       8.673145,
+       8.673145,
+       22.656154,
+       22.656154,
+       22.656154,
+       46.092689,
+       46.092689,
+       46.092689,
+       73.212738,
+       73.212738,
+       73.212738,
+       87.999613,
+       87.999613,
+       87.999613,
+       94.635205,
+       94.635205,
+       94.635205
+      ],
+      "resid": [
+       0.269545,
+       2.269545,
+       -1.730455,
+       0.326855,
+       3.326855,
+       -2.673145,
+       -1.656154,
+       2.343846,
+       -5.656154,
+       1.907311,
+       7.907311,
+       -4.092689,
+       -1.212738,
+       4.787262,
+       -7.212738,
+       0.000387145,
+       4.000387,
+       -3.999613,
+       0.364795,
+       3.364795,
+       -2.635205
+      ]
+     },
+     "paramCorrelation": {
+      "params": [
+       "Bottom",
+       "Top",
+       "logEC50",
+       "Hill slope"
+      ],
+      "matrix": [
+       [
+        1,
+        -0.45734,
+        0.378491,
+        0.74452
+       ],
+       [
+        -0.45734,
+        1,
+        0.487057,
+        -0.764777
+       ],
+       [
+        0.378491,
+        0.487057,
+        1,
+        -0.074696
+       ],
+       [
+        0.74452,
+        -0.764777,
+        -0.074696,
+        1
+       ]
+      ]
+     }
+    },
+    "assumptions": [
+     "The model was fit by nonlinear least squares, with dose log10-transformed and non-positive doses excluded.",
+     "95% confidence intervals are profile-likelihood intervals (asymmetric) where the profile converged, and are standard-error-based (symmetric) otherwise."
+    ],
+    "cite": "Four-parameter logistic (Hill) dose-response; EC50 from the log fit."
+   }
+  },
+  {
+   "method": "cluster",
+   "request": "{\"columns\":[[1,6,2,1.5,4,0.5,5.5,3],[2.2,4.8,2.1,3,4.2,1,3.2,5.9],[3.5,3.5,5.9,1.4,3.8,2,6.1,1.2],[4.8,2.2,2,5.5,4.1,3.5,1.1,4.4],[6,1,2.2,3.2,3.9,6,2.8,2]],\"labels\":[\"Ctrl\",\"Drug A\",\"Drug B\",\"Drug C\",\"Combo\"],\"variant\":\"hierarchical\",\"k\":3,\"standardize\":true,\"seed\":20240704,\"metric\":\"euclidean\",\"linkage\":\"ward\",\"scanK\":true,\"kMax\":5}",
+   "results": {
+    "method": "cluster",
+    "title": "Cluster analysis (hierarchical, ward linkage)",
+    "terms": [
+     {
+      "term": "Cluster 1",
+      "estimate": 3,
+      "statistic": 6.483146
+     },
+     {
+      "term": "Cluster 2",
+      "estimate": 2,
+      "statistic": 1.131986
+     },
+     {
+      "term": "Cluster 3",
+      "estimate": 3,
+      "statistic": 5.279738
+     }
+    ],
+    "glance": {
+     "clusters": 3,
+     "cases": 8,
+     "variables": 5,
+     "silhouette": 0.291698,
+     "withinSS": 12.89487,
+     "suggestedK": 3,
+     "elbowK": 3
+    },
+    "extra": {
+     "cluster": {
+      "variant": "hierarchical",
+      "k": 3,
+      "labels": [
+       1,
+       0,
+       0,
+       2,
+       2,
+       1,
+       0,
+       2
+      ],
+      "sizes": [
+       3,
+       2,
+       3
+      ],
+      "silhouette": 0.291698,
+      "withinSS": [
+       6.483146,
+       1.131986,
+       5.279738
+      ],
+      "centroids": [
+       [
+        0.810681,
+        0.0446183,
+        0.994934,
+        -1.170705,
+        -0.812517
+       ],
+       [
+        -1.134953,
+        -1.137767,
+        -0.385596,
+        0.486828,
+        1.529874
+       ],
+       [
+        -0.0540454,
+        0.713893,
+        -0.737869,
+        0.846153,
+        -0.207399
+       ]
+      ],
+      "varLabels": [
+       "Ctrl",
+       "Drug A",
+       "Drug B",
+       "Drug C",
+       "Combo"
+      ],
+      "standardized": true,
+      "kScan": {
+       "ks": [
+        2,
+        3,
+        4,
+        5
+       ],
+       "withinSS": [
+        22.336867,
+        12.89487,
+        8.595653,
+        5.841509
+       ],
+       "silhouette": [
+        0.286002,
+        0.291698,
+        0.210122,
+        0.151106
+       ],
+       "bestKSilhouette": 3,
+       "elbowK": 3
+      }
+     }
+    },
+    "summary": "Hierarchical clustering into 3 clusters of size 3/2/3. Total within-cluster SS 12.9; mean silhouette 0.292 (−1…1, higher = better separated). Scanned k=2–5: silhouette suggests k=3 (elbow k=3).",
+    "assumptions": [
+     "Clustering is exploratory (no p-values): it groups cases by profile similarity.",
+     "Variables z-scored (standardized) before clustering.",
+     "Hierarchical clustering is deterministic; Ward / centroid / median linkage require the Euclidean metric (forced automatically).",
+     "k-selection scan: within-cluster SS (elbow) + mean silhouette across k=2–5; silhouette suggests k=3."
+    ],
+    "cite": "Agglomerative hierarchical clustering of 5 z-scored variable(s); silhouette after Rousseeuw (1987)."
+   }
+  },
+  {
+   "method": "anova",
+   "request": "{\"variant\":\"anova\",\"groups\":[[12,15,9],[28,32,24],[19,22,16],[35,39,31]],\"labels\":[\"Control\",\"Drug A\",\"Drug B\",\"Drug C\"],\"posthoc\":\"dunnett\",\"scheme\":\"vs-control\",\"control\":0,\"conf\":0.95}",
+   "results": {
+    "method": "anova1",
+    "title": "One-way ANOVA",
+    "terms": [
+     {
+      "term": "Control",
+      "estimate": 12,
+      "df": 2
+     },
+     {
+      "term": "Drug A",
+      "estimate": 28,
+      "df": 2
+     },
+     {
+      "term": "Drug B",
+      "estimate": 19,
+      "df": 2
+     },
+     {
+      "term": "Drug C",
+      "estimate": 35,
+      "df": 2
+     },
+     {
+      "term": "Between groups",
+      "statistic": 24.4,
+      "df": 3,
+      "p": 0.000222532
+     },
+     {
+      "term": "Drug A vs Control",
+      "estimate": 16,
+      "ciLow": 7.691099,
+      "ciHigh": 24.308901,
+      "p": 0.00141592
+     },
+     {
+      "term": "Drug B vs Control",
+      "estimate": 7,
+      "ciLow": -1.308901,
+      "ciHigh": 15.308901,
+      "p": 0.098273
+     },
+     {
+      "term": "Drug C vs Control",
+      "estimate": 23,
+      "ciLow": 14.691099,
+      "ciHigh": 31.308901,
+      "p": 0.000168265
+     },
+     {
+      "term": "Residual normality (Shapiro-Wilk)",
+      "statistic": 0.883692,
+      "p": 0.0977463
+     },
+     {
+      "term": "Equal variances (Bartlett)",
+      "statistic": 0.27027,
+      "p": 0.965519
+     },
+     {
+      "term": "Equal variances (Brown-Forsythe)",
+      "statistic": 0.106667,
+      "p": 0.953833
+     }
+    ],
+    "extra": {
+     "residuals": {
+      "fitted": [
+       12,
+       12,
+       12,
+       28,
+       28,
+       28,
+       19,
+       19,
+       19,
+       35,
+       35,
+       35
+      ],
+      "resid": [
+       0,
+       3,
+       -3,
+       0,
+       4,
+       -4,
+       0,
+       3,
+       -3,
+       0,
+       4,
+       -4
+      ]
+     }
+    },
+    "glance": {
+     "F": 24.4,
+     "df_between": 3,
+     "df_within": 8,
+     "p": 0.000222532,
+     "eta_sq": 0.901478
+    },
+    "summary": "F(3, 8) = 24.4, p = 0.0002225 — the group means differ significantly (η² = 0.901); post-hoc: Dunnett, each group vs Control.",
+    "assumptions": [
+     "Assumes independent observations, normal residuals + equal variances; Dunnett correction for multiple comparisons."
+    ],
+    "cite": "One-way ANOVA with Dunnett post-hoc; η² effect size."
+   }
+  },
+  {
+   "method": "anova",
+   "request": "{\"variant\":\"anova\",\"groups\":[[8,11,9,12,10,13,9,11],[16,19,20,17,21,18,15,22],[26,30,27,31,25,29,28,33]],\"labels\":[\"Vehicle\",\"Low dose\",\"High dose\"],\"posthoc\":\"tukey\",\"scheme\":\"all-pairs\",\"control\":0,\"conf\":0.95}",
+   "results": {
+    "method": "anova1",
+    "title": "One-way ANOVA",
+    "terms": [
+     {
+      "term": "Vehicle",
+      "estimate": 10.375,
+      "df": 7
+     },
+     {
+      "term": "Low dose",
+      "estimate": 18.5,
+      "df": 7
+     },
+     {
+      "term": "High dose",
+      "estimate": 28.625,
+      "df": 7
+     },
+     {
+      "term": "Between groups",
+      "statistic": 125.678971,
+      "df": 2,
+      "p": 2.06221e-12
+     },
+     {
+      "term": "Vehicle vs Low dose",
+      "estimate": -8.125,
+      "ciLow": -11.032254,
+      "ciHigh": -5.217746,
+      "p": 0.00000172819
+     },
+     {
+      "term": "Vehicle vs High dose",
+      "estimate": -18.25,
+      "ciLow": -21.157254,
+      "ciHigh": -15.342746,
+      "p": 1.13187e-12
+     },
+     {
+      "term": "Low dose vs High dose",
+      "estimate": -10.125,
+      "ciLow": -13.032254,
+      "ciHigh": -7.217746,
+      "p": 5.27627e-8
+     },
+     {
+      "term": "Residual normality (Shapiro-Wilk)",
+      "statistic": 0.975085,
+      "p": 0.791111
+     },
+     {
+      "term": "Equal variances (Bartlett)",
+      "statistic": 1.42373,
+      "p": 0.490728
+     },
+     {
+      "term": "Equal variances (Brown-Forsythe)",
+      "statistic": 0.943478,
+      "p": 0.405161
+     }
+    ],
+    "extra": {
+     "residuals": {
+      "fitted": [
+       10.375,
+       10.375,
+       10.375,
+       10.375,
+       10.375,
+       10.375,
+       10.375,
+       10.375,
+       18.5,
+       18.5,
+       18.5,
+       18.5,
+       18.5,
+       18.5,
+       18.5,
+       18.5,
+       28.625,
+       28.625,
+       28.625,
+       28.625,
+       28.625,
+       28.625,
+       28.625,
+       28.625
+      ],
+      "resid": [
+       -2.375,
+       0.625,
+       -1.375,
+       1.625,
+       -0.375,
+       2.625,
+       -1.375,
+       0.625,
+       -2.5,
+       0.5,
+       1.5,
+       -1.5,
+       2.5,
+       -0.5,
+       -3.5,
+       3.5,
+       -2.625,
+       1.375,
+       -1.625,
+       2.375,
+       -3.625,
+       0.375,
+       -0.625,
+       4.375
+      ]
+     }
+    },
+    "glance": {
+     "F": 125.678971,
+     "df_between": 2,
+     "df_within": 21,
+     "p": 2.06221e-12,
+     "eta_sq": 0.922896
+    },
+    "summary": "F(2, 21) = 125.7, p = 2.062e-12 — the group means differ significantly (η² = 0.923); post-hoc: Tukey HSD, all pairs.",
+    "assumptions": [
+     "Assumes independent observations, normal residuals + equal variances; Tukey HSD correction for multiple comparisons."
+    ],
+    "cite": "One-way ANOVA with Tukey HSD post-hoc; η² effect size."
+   }
+  },
+  {
+   "method": "pca",
+   "request": "{\"columns\":[[9.1,9.4,8.7,9,9.3,8.9,3.2,2.8,3.4,3,2.7,3.3,5.6,5.2,5.9,5.5,5.3,5.8],[8,7.6,8.3,7.9,8.2,7.7,2.1,1.7,2.4,2,1.8,2.3,4.5,4.1,4.8,4.4,4.2,4.7],[2.1,1.8,2.4,2,1.7,2.2,9,9.3,8.7,9.1,8.9,9.2,5.1,4.8,5.4,5,4.7,5.3],[3,3.4,2.7,3.2,2.9,3.1,6.1,5.8,6.4,6,5.7,6.3,10,9.7,10.3,9.9,10.1,9.6]],\"labels\":[\"Size\",\"Granularity\",\"Marker A\",\"Marker B\"],\"standardize\":true,\"groups\":[\"Neuron\",\"Neuron\",\"Neuron\",\"Neuron\",\"Neuron\",\"Neuron\",\"Glia\",\"Glia\",\"Glia\",\"Glia\",\"Glia\",\"Glia\",\"Stem\",\"Stem\",\"Stem\",\"Stem\",\"Stem\",\"Stem\"]}",
+   "results": {
+    "method": "pca",
+    "title": "Principal component analysis",
+    "terms": [
+     {
+      "term": "PC1",
+      "estimate": 3.250556,
+      "statistic": 81.263905,
+      "ciLow": 81.263905,
+      "retained": true
+     },
+     {
+      "term": "PC2",
+      "estimate": 0.733065,
+      "statistic": 18.32663,
+      "ciLow": 99.590535,
+      "retained": false
+     },
+     {
+      "term": "PC3",
+      "estimate": 0.0119824,
+      "statistic": 0.299559,
+      "ciLow": 99.890094,
+      "retained": false
+     },
+     {
+      "term": "PC4",
+      "estimate": 0.00439624,
+      "statistic": 0.109906,
+      "ciLow": 100,
+      "retained": false
+     }
+    ],
+    "extra": {
+     "pca": {
+      "varLabels": [
+       "Size",
+       "Granularity",
+       "Marker A",
+       "Marker B"
+      ],
+      "pcLabels": [
+       "PC1",
+       "PC2",
+       "PC3",
+       "PC4"
+      ],
+      "loadings": [
+       [
+        0.550031,
+        0.132888,
+        0.295123,
+        0.769876
+       ],
+       [
+        0.550391,
+        0.117114,
+        0.544362,
+        -0.622112
+       ],
+       [
+        -0.529928,
+        -0.330369,
+        0.768185,
+        0.141152
+       ],
+       [
+        -0.337211,
+        0.927082,
+        0.162677,
+        0.0185346
+       ]
+      ],
+      "scores": [
+       [
+        2.365307,
+        -0.384211,
+        0.0266999,
+        0.00180718
+       ],
+       [
+        2.34964,
+        -0.226303,
+        -0.0809201,
+        0.18007
+       ],
+       [
+        2.325815,
+        -0.520149,
+        0.106596,
+        -0.181237
+       ],
+       [
+        2.316467,
+        -0.319216,
+        -0.0213916,
+        -0.00710647
+       ],
+       [
+        2.535663,
+        -0.351631,
+        -0.0160947,
+        -0.00707323
+       ],
+       [
+        2.22671,
+        -0.387972,
+        -0.0301025,
+        0.0212026
+       ],
+       [
+        -1.800124,
+        -0.750492,
+        0.0255673,
+        0.0310152
+       ],
+       [
+        -1.993353,
+        -0.919143,
+        -0.0465899,
+        0.021742
+       ],
+       [
+        -1.67207,
+        -0.596954,
+        0.0528166,
+        0.00462815
+       ],
+       [
+        -1.871617,
+        -0.808631,
+        0.00102685,
+        -0.00051219
+       ],
+       [
+        -1.909778,
+        -0.906897,
+        -0.145886,
+        -0.0530408
+       ],
+       [
+        -1.793586,
+        -0.694528,
+        0.143703,
+        0.0224222
+       ],
+       [
+        -0.508074,
+        1.164961,
+        0.0307931,
+        -0.000134542
+       ],
+       [
+        -0.59386,
+        1.063292,
+        -0.197115,
+        -0.0380264
+       ],
+       [
+        -0.465858,
+        1.256736,
+        0.225386,
+        0.0323394
+       ],
+       [
+        -0.522147,
+        1.134369,
+        -0.0340711,
+        -0.0109592
+       ],
+       [
+        -0.578741,
+        1.211798,
+        -0.167394,
+        -0.0348303
+       ],
+       [
+        -0.410394,
+        1.034971,
+        0.126976,
+        0.0176928
+       ]
+      ],
+      "eigenvalues": [
+       3.250556,
+       0.733065,
+       0.0119824,
+       0.00439624
+      ],
+      "explained": [
+       0.812639,
+       0.183266,
+       0.00299559,
+       0.00109906
+      ],
+      "retained": 1,
+      "retainedFlags": [
+       true,
+       false,
+       false,
+       false
+      ],
+      "selection": "kaiser",
+      "groups": [
+       "Neuron",
+       "Neuron",
+       "Neuron",
+       "Neuron",
+       "Neuron",
+       "Neuron",
+       "Glia",
+       "Glia",
+       "Glia",
+       "Glia",
+       "Glia",
+       "Glia",
+       "Stem",
+       "Stem",
+       "Stem",
+       "Stem",
+       "Stem",
+       "Stem"
+      ]
+     }
+    },
+    "glance": {
+     "variables": 4,
+     "cases": 18,
+     "components": 4,
+     "pc1_pct": 81.263905,
+     "pc2_pct": 18.32663,
+     "kaiser": 1,
+     "retained": 1,
+     "selection": "kaiser"
+    },
+    "summary": "4 variables, 18 cases, standardized; PC1 explains 81.3% and PC2 18.3% of the variance. Kaiser (eigenvalue > 1) retains 1 component(s).",
+    "assumptions": [
+     "PCA is descriptive (no p-values): it re-expresses the data on orthogonal axes of decreasing variance.",
+     "Standardized (correlation) PCA when variables differ in scale; centred (covariance) PCA otherwise.",
+     "Component selection: Kaiser (eigenvalue > 1) retains 1 of 4 component(s).",
+     "Complete-case analysis (no missing values present)."
+    ],
+    "cite": "Principal component analysis via SVD of the correlation matrix; eigenvalues, % variance explained, loadings + scores."
+   }
+  },
+  {
+   "method": "ttest",
+   "request": "{\"variant\":\"wilcoxon\",\"a\":[0.43,0.8,0.36,0.37,0.49,0.66,0.74,0.81],\"b\":[0.11,0.19,0.04,0.09,0.18,0.11,0.22,0.2],\"conf\":0.95,\"tail\":\"two-sided\"}",
+   "results": {
+    "method": "ttest",
+    "title": "Wilcoxon signed-rank (nonparametric)",
+    "terms": [
+     {
+      "term": "Median difference",
+      "estimate": 0.42
+     },
+     {
+      "term": "Wilcoxon W",
+      "statistic": 0,
+      "p": 0.0078125
+     }
+    ],
+    "glance": {
+     "W": 0,
+     "p": 0.0078125,
+     "pairs": 8
+    },
+    "summary": "Wilcoxon signed-rank (nonparametric) (two-tailed): the difference is statistically significant (p = 0.007812).",
+    "assumptions": [
+     "Distribution-free paired test (no normality assumption)."
+    ],
+    "cite": "Two-tailed at α = 0.05; Wilcoxon signed-rank (nonparametric)."
+   }
+  },
+  {
+   "method": "power",
+   "request": "{\"test\":\"ttest-two\",\"solve\":\"n\",\"alpha\":0.05,\"tail\":\"two-sided\",\"ratio\":1,\"effect\":0.5,\"power\":0.8}",
+   "results": {
+    "method": "power",
+    "title": "Sample size & power — Unpaired t",
+    "terms": [
+     {
+      "term": "Design",
+      "estimate": "Unpaired t"
+     },
+     {
+      "term": "Effect size (d)",
+      "estimate": 0.5
+     },
+     {
+      "term": "α (two-sided)",
+      "estimate": 0.05
+     },
+     {
+      "term": "Power",
+      "estimate": 0.8
+     },
+     {
+      "term": "n per group",
+      "estimate": 64
+     },
+     {
+      "term": "Total N",
+      "estimate": 128
+     }
+    ],
+    "glance": {
+     "test": "ttest-two",
+     "solve": "n",
+     "effect": 0.5,
+     "alpha": 0.05,
+     "power": 0.8,
+     "n": 64,
+     "n_exact": 63.765611,
+     "per_group": true,
+     "total": 128,
+     "k": null,
+     "ratio": 1,
+     "es_symbol": "d"
+    },
+    "extra": {
+     "tradeoff": {
+      "power": [
+       0.7,
+       0.8,
+       0.9,
+       0.95,
+       0.99
+      ],
+      "n": [
+       51,
+       64,
+       86,
+       105,
+       148
+      ],
+      "total": [
+       102,
+       128,
+       172,
+       210,
+       296
+      ]
+     }
+    },
+    "summary": "Unpaired t power (two-sided, α = 0.05): n per group = 64 (128 total).",
+    "assumptions": [
+     "Effect size is Cohen's d (standardized mean difference).",
+     "t / proportions / ANOVA use the noncentral t / F distributions (statsmodels); correlation uses the Fisher-z normal approximation.",
+     "N is rounded UP to whole subjects; the tradeoff table gives the required N at other target powers."
+    ],
+    "cite": "Power analysis via statsmodels.stats.power (noncentral t/F) + Fisher-z for correlation; Cohen (1988) effect-size conventions."
+   }
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+  "extends": "./apps/desktop/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@mady/core": ["packages/core/src/index.ts"],
+      "@mady/contracts": ["packages/contracts/src/index.ts"],
+      "@mady/engine-client": ["packages/engine-client/src/index.ts"],
+      "@mady/graphics": ["packages/graphics/src/index.ts"]
+    }
+  },
+  "include": ["packages/*/src/**/*.test.ts", "packages/*/src/**/*.test.tsx", "apps/desktop/src/**/*.test.ts", "apps/desktop/src/**/*.test.tsx", "apps/desktop/src/**/*.d.ts", "e2e/**/*.ts", "e2e-electron/**/*.ts", "playwright.config.ts", "e2e-electron.config.ts"]
+}

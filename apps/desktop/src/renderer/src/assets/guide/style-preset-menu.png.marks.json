@@ -1,0 +1,38 @@
+{
+ "w": 290,
+ "h": 268,
+ "marks": [
+  {
+   "n": 1,
+   "x": 161.3,
+   "y": 145.7,
+   "w": 118,
+   "h": 22,
+   "label": "Rename: the name becomes a box — Enter keeps it, Esc leaves it"
+  },
+  {
+   "n": 2,
+   "x": 161.3,
+   "y": 167.7,
+   "w": 118,
+   "h": 22,
+   "label": "Duplicate: a copy right beside it, named “… copy”"
+  },
+  {
+   "n": 3,
+   "x": 161.3,
+   "y": 211.7,
+   "w": 118,
+   "h": 22,
+   "label": "Export…: this one preset as a file to hand to someone"
+  },
+  {
+   "n": 4,
+   "x": 161.3,
+   "y": 233.7,
+   "w": 118,
+   "h": 22,
+   "label": "Delete the preset"
+  }
+ ]
+}

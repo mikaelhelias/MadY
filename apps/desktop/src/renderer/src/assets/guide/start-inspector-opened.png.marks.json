@@ -1,0 +1,30 @@
+{
+ "w": 300,
+ "h": 623,
+ "marks": [
+  {
+   "n": 1,
+   "x": 0,
+   "y": 42,
+   "w": 300,
+   "h": 32,
+   "label": "The seven tabs — Chart · Frame · Axis · Data · Text · Annotate · Style"
+  },
+  {
+   "n": 2,
+   "x": 0,
+   "y": 74,
+   "w": 300,
+   "h": 31,
+   "label": "Filter — type a control's name and the panel narrows to it"
+  },
+  {
+   "n": 3,
+   "x": 11,
+   "y": 202,
+   "w": 282,
+   "h": 79,
+   "label": "One group of controls — “Plot as”. Click its heading to open or shut it"
+  }
+ ]
+}

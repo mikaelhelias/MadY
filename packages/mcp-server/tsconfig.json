@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    // Checked with the base Bundler resolution like every other package, not NodeNext:
+    // `@mady/core` / `@mady/contracts` emit d.ts with extensionless relative re-exports
+    // (Bundler-style), which NodeNext cannot resolve — skipLibCheck would then hide the
+    // failure and every re-exported name (Project, EngineMessage, …) would read as missing.
+    // The runnable binary never depends on this choice: build.mjs bundles from source
+    // (esbuild aliases @mady/* to ../*/src). Relative imports keep their `.js`
+    // extensions so the raw tsc dist stays Node-runnable too.
+    "types": ["node"],
+    // The generated option catalogue ships as JSON and is imported by optionCatalog.ts (esbuild
+    // inlines it into the single-file bundle). Both flags are needed: resolveJsonModule to type
+    // the import, and the "include" below to list the file for the project reference.
+    "resolveJsonModule": true
+  },
+  "references": [{ "path": "../core" }, { "path": "../contracts" }, { "path": "../graphics" }, { "path": "../engine-client" }],
+  "include": ["src", "src/optionCatalog.json"],
+  "exclude": ["**/*.test.ts"]
+}

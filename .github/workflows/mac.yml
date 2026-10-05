@@ -1,0 +1,71 @@
+name: Mac build
+
+# Builds the macOS app (Apple Silicon) on a GitHub Mac machine. Started by hand from the Actions
+# tab ("Run workflow"), never by a push: a Mac build takes about 15 minutes, and Mac minutes count
+# several times over against the account's allowance.
+#
+# The statistics engine is frozen by PyInstaller, which builds only for the system it runs on, so
+# the Mac engine has to be made here. The result — a .dmg and a .zip — is attached to the run.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mac:
+    name: build (macOS, Apple Silicon)
+    runs-on: macos-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      # The same Python as the Windows build. requirements.txt pins the engine's packages and
+      # PyInstaller; the dev file adds what the engine tests need.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Python packages for the statistics engine
+        run: python3 -m pip install -r engines/py/requirements.txt -r engines/py/requirements-dev.txt
+
+      - name: Install
+        run: npm ci
+
+      - name: Test
+        run: npm test
+
+      - name: Freeze the statistics engine
+        working-directory: apps/desktop
+        run: npm run freeze-engine
+
+      # The Windows engine is checked against its size and entry count after each freeze; this
+      # prints the same two numbers for the Mac one.
+      - name: Engine size
+        run: |
+          du -sh engines/py/dist/mady-engine
+          echo "entries in _internal: $(ls engines/py/dist/mady-engine/_internal | wc -l)"
+
+      # The manual generator opens the built program in Playwright's Chromium and takes a still
+      # from each guide video with Playwright's ffmpeg.
+      - name: Chromium and ffmpeg for the manual
+        run: npx playwright install chromium ffmpeg
+
+      # Build, manual, then package (.dmg + .zip).
+      - name: Package
+        working-directory: apps/desktop
+        run: npm run dist:mac
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MadY-mac-arm64
+          path: |
+            apps/desktop/release/*.dmg
+            apps/desktop/release/*.zip
+          if-no-files-found: error
+          retention-days: 14

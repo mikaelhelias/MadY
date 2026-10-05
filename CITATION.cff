@@ -1,0 +1,30 @@
+# Citation metadata (Citation File Format 1.2.0 — https://citation-file-format.github.io).
+#
+# Read by GitHub ("Cite this repository"), Zenodo and reference managers, so a citation can
+# be picked up without anyone retyping it.
+#
+# No DOI or URL is listed. The same line is shown in the app by `citation()` in
+# `apps/desktop/src/renderer/src/shell/AboutPane.tsx`; the two are kept identical.
+cff-version: 1.2.0
+title: MadY
+message: >-
+  If MadY was useful in work you publish, a citation is appreciated. It is a
+  request, not a condition of the licence — and it says nothing about your
+  figures, which are yours entirely.
+type: software
+authors:
+  - family-names: Elias
+    given-names: Mikael
+abstract: >-
+  A scientific graphing and statistics desktop application: a fully editable
+  vector document model with a validated statistics engine, built to run
+  entirely offline.
+license: GPL-3.0-or-later
+version: 0.6.0
+date-released: "2026-10-05"
+keywords:
+  - scientific graphing
+  - statistics
+  - data visualisation
+  - curve fitting
+  - publication figures

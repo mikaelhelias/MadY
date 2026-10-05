@@ -1,0 +1,30 @@
+{
+ "w": 340,
+ "h": 530,
+ "marks": [
+  {
+   "n": 1,
+   "x": 69.7,
+   "y": 49,
+   "w": 203,
+   "h": 27,
+   "label": "Format — PNG, SVG, PDF, TIFF, JPEG, EPS or HTML"
+  },
+  {
+   "n": 2,
+   "x": 21,
+   "y": 86,
+   "w": 298,
+   "h": 359.6,
+   "label": "The size the file will be"
+  },
+  {
+   "n": 3,
+   "x": 21,
+   "y": 340.6,
+   "w": 298,
+   "h": 105,
+   "label": "Background — including transparent"
+  }
+ ]
+}

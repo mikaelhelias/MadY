@@ -1,0 +1,46 @@
+{
+ "w": 1500,
+ "h": 950,
+ "marks": [
+  {
+   "n": 1,
+   "x": 437.3,
+   "y": 155,
+   "w": 174,
+   "h": 22,
+   "label": "Table format — what this sheet's shape is, and what it unlocks"
+  },
+  {
+   "n": 2,
+   "x": 632.3,
+   "y": 152,
+   "w": 86.2,
+   "h": 28,
+   "label": "Column — add one"
+  },
+  {
+   "n": 3,
+   "x": 346.9,
+   "y": 238.5,
+   "w": 252,
+   "h": 43,
+   "label": "A dataset (one Y group)"
+  },
+  {
+   "n": 4,
+   "x": 252.4,
+   "y": 238.5,
+   "w": 94.4,
+   "h": 70,
+   "label": "The X column"
+  },
+  {
+   "n": 5,
+   "x": 242.2,
+   "y": 314,
+   "w": 6.5,
+   "h": 16,
+   "label": "Row numbers — right-click for row commands"
+  }
+ ]
+}

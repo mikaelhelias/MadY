@@ -1,0 +1,62 @@
+{
+ "w": 1142,
+ "h": 66,
+ "marks": [
+  {
+   "n": 1,
+   "x": 146.2,
+   "y": 10,
+   "w": 300.1,
+   "h": 16,
+   "label": "View — gridlines, minor lines, wheel zoom, the ruler, and the legend on or off"
+  },
+  {
+   "n": 2,
+   "x": 461.3,
+   "y": 5,
+   "w": 207.9,
+   "h": 26,
+   "label": "Bar values and replicate points, on this chart's own terms"
+  },
+  {
+   "n": 3,
+   "x": 684.2,
+   "y": 10,
+   "w": 95.3,
+   "h": 16,
+   "label": "X log · Y log — a base-10 axis in one click"
+  },
+  {
+   "n": 4,
+   "x": 794.5,
+   "y": 6,
+   "w": 225.7,
+   "h": 24,
+   "label": "The lines around the plot: an L, a box, offset axes, or none"
+  },
+  {
+   "n": 5,
+   "x": 8,
+   "y": 37,
+   "w": 155.2,
+   "h": 24,
+   "label": "Text, shapes, arrows and images onto the graph"
+  },
+  {
+   "n": 6,
+   "x": 178.2,
+   "y": 37,
+   "w": 427,
+   "h": 24,
+   "label": "Pick which text you mean, then its font, size, bold, italic and symbols"
+  },
+  {
+   "n": 7,
+   "x": 969.6,
+   "y": 37,
+   "w": 83.5,
+   "h": 24,
+   "label": "Back to the data this graph is drawn from"
+  }
+ ]
+}

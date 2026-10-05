@@ -1,0 +1,22 @@
+{
+ "w": 720,
+ "h": 1200,
+ "marks": [
+  {
+   "n": 1,
+   "x": 21,
+   "y": 534,
+   "w": 668,
+   "h": 606.8,
+   "label": "Ranked by what really draws your sheet, with the best fit already selected"
+  },
+  {
+   "n": 2,
+   "x": 21,
+   "y": 967.4,
+   "w": 678,
+   "h": 153.6,
+   "label": "The new graph's settings — with Data already pointing at the sheet you opened this from"
+  }
+ ]
+}

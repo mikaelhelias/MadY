@@ -1,0 +1,22 @@
+{
+ "w": 221,
+ "h": 535,
+ "marks": [
+  {
+   "n": 1,
+   "x": 15,
+   "y": 121,
+   "w": 127.8,
+   "h": 17,
+   "label": "Functions of the values — logs, powers, z-scores, ranks and the rest"
+  },
+  {
+   "n": 2,
+   "x": 15,
+   "y": 430,
+   "w": 190,
+   "h": 34,
+   "label": "Pivot between one column per group and one row per observation"
+  }
+ ]
+}
