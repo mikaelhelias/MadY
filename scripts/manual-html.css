@@ -1,0 +1,109 @@
+/* The standalone manual's stylesheet — MadY's own palette (shell.css), not a second one.
+   Light by default, the app's dark tokens under prefers-color-scheme, and a print block so the
+   file prints as a document rather than as a web page. */
+:root {
+  --bg: #ffffff; --panel: #f6f7f8; --ink: #1d2127; --muted: #6a727c; --faint: #99a0a8;
+  --line: #e4e7ea; --line-2: #d4d8dc; --accent: #6c22a6; --accent-ink: #ffffff;
+  --info-bg: #e9f1fb; --info-ink: #155fb0; --callout: #d92b6a;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171c; --panel: #1a1e24; --ink: #e6e8eb; --muted: #98a0a9; --faint: #6b7178;
+    --line: #2a2f36; --line-2: #353b43; --accent: #bb8cf5; --accent-ink: #1b0a2b;
+    --info-bg: #1b2a3d; --info-ink: #79b8ff;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 15px/1.65 "Segoe UI", system-ui, -apple-system, sans-serif; }
+
+/* Cover */
+.cover { text-align: center; padding: 64px 20px 52px; border-bottom: 1px solid var(--line); }
+.cover .t { font-size: 46px; font-weight: 800; letter-spacing: .1em; color: var(--accent); }
+.cover .s { color: var(--muted); letter-spacing: .3em; text-transform: uppercase; font-size: 12px; margin-top: 10px; }
+.cover .v { color: var(--muted); margin-top: 26px; font-size: 14px; }
+
+/* Shell */
+.wrap { display: flex; gap: 34px; max-width: 1280px; margin: 0 auto; padding: 26px 22px 80px; }
+nav { position: sticky; top: 18px; align-self: flex-start; min-width: 262px; max-width: 282px;
+  max-height: 92vh; overflow: auto; background: var(--panel); border: 1px solid var(--line);
+  border-radius: 10px; padding: 13px 15px; font-size: 13px; }
+nav a { display: block; color: var(--ink); text-decoration: none; padding: 3px 0; }
+nav a.l2 { padding-left: 14px; font-size: 12px; color: var(--muted); }
+nav a:hover { color: var(--accent); }
+.tocgroup { margin: 13px 0 3px; font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--faint); }
+.tocgroup:first-child { margin-top: 0; }
+#q { width: 100%; padding: 7px 10px; border-radius: 8px; border: 1px solid var(--line-2);
+  background: var(--bg); color: var(--ink); font-size: 13px; margin-bottom: 10px; outline: none; }
+#q:focus { border-color: var(--accent); }
+#hits .n { color: var(--faint); font-size: 12px; margin-bottom: 4px; }
+#hits a { display: block; padding: 7px 0; border-bottom: 1px solid var(--line); }
+#hits a b { display: block; color: var(--ink); font-weight: 600; }
+#hits a small { color: var(--faint); font-size: 11px; }
+#hits a span { display: block; font-size: 12px; color: var(--muted); line-height: 1.45; margin-top: 2px; }
+mark { background: #f6c94d; color: #111; padding: 0 2px; border-radius: 2px; }
+mark.cp { background: #bff0e2; color: #103c31; }
+main { flex: 1; min-width: 0; max-width: 860px; }
+
+/* Content */
+h1 { color: var(--ink); font-size: 25px; margin: 52px 0 8px; padding-top: 20px;
+  border-top: 1px solid var(--line); }
+h1:first-of-type { border-top: 0; margin-top: 0; padding-top: 0; }
+h2 { color: var(--accent); font-size: 18px; margin: 30px 0 8px; }
+p { margin: 0 0 12px; }
+p.summary { color: var(--muted); margin: 0 0 16px; }
+p.goal { border-left: 3px solid var(--accent); background: var(--panel); padding: 10px 14px;
+  border-radius: 0 8px 8px 0; margin: 0 0 16px; }
+ol, ul { margin: 0 0 14px 22px; padding: 0; }
+li { margin: 0 0 9px; }
+code { font-family: Consolas, "SF Mono", monospace; font-size: .92em; background: var(--panel);
+  padding: 1px 5px; border-radius: 4px; }
+.note { border-left: 3px solid var(--info-ink); background: var(--info-bg); color: var(--info-ink);
+  padding: 10px 14px; border-radius: 0 8px 8px 0; margin: 12px 0; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 22px 0; }
+
+/* Tables */
+.tablewrap { overflow-x: auto; margin: 10px 0 18px; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+caption { text-align: left; color: var(--muted); font-size: 12px; padding-bottom: 4px; }
+th { text-align: left; color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--line-2); padding: 6px 10px 6px 0; }
+td { border-bottom: 1px solid var(--line); padding: 6px 10px 6px 0; vertical-align: top; }
+tr.grp th { padding-top: 14px; color: var(--accent); font-size: 12px; letter-spacing: .07em;
+  text-transform: uppercase; border-bottom: 0; }
+
+/* Figures — the frame owns the box so the measured call-outs land where they were measured. */
+figure { margin: 12px 0 18px; }
+.frame { position: relative; display: block; line-height: 0; }
+.frame img { display: block; width: 100%; height: 100%; border: 1px solid var(--line-2);
+  border-radius: 8px; }
+.marks { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.marks .halo { fill: none; stroke: #fff; stroke-width: 4.5; vector-effect: non-scaling-stroke; }
+.marks .box { fill: none; stroke: var(--callout); stroke-width: 2; vector-effect: non-scaling-stroke; }
+.pin { position: absolute; display: inline-flex; align-items: center; justify-content: center;
+  width: 17px; height: 17px; margin: -13px 0 0 -13px; border-radius: 999px;
+  background: var(--callout); color: #fff; border: 1.5px solid #fff;
+  font: 700 11px/1 system-ui, sans-serif; }
+figcaption { font-size: 12.5px; color: var(--muted); margin-top: 7px; line-height: 1.5; }
+.legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 2px 16px; margin-top: 7px; }
+.legend > span { font-size: 11.5px; line-height: 1.5; }
+
+.colophon { margin-top: 64px; font-size: 12.5px; color: var(--muted); }
+
+@media print {
+  body { background: #fff; color: #111; font-size: 10.5pt; }
+  .cover { page-break-after: always; }
+  .wrap { display: block; padding: 0; max-width: none; }
+  nav { display: none; }
+  main { max-width: none; }
+  h1 { page-break-before: always; }
+  h1:first-of-type { page-break-before: avoid; }
+  figure, table, li { page-break-inside: avoid; }
+  mark { background: none; color: inherit; }
+}
+
+/* A manual video: full column width, 16:9, with a line saying where its file is. */
+figure.video video { display: block; width: 100%; max-width: 960px; aspect-ratio: 16 / 9; background: #0b1220; border: 1px solid #d8dbe3; border-radius: 8px; }
+figure.video .where { display: block; margin-top: 4px; font-size: 0.85em; opacity: 0.8; }
+@media print { figure.video .where { display: none; } }

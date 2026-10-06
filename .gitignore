@@ -1,0 +1,57 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+out/
+build/
+release/
+*.tsbuildinfo
+.vite/
+.eb-cache/
+
+# python engine build artifacts
+__pycache__/
+*.pyc
+.venv/
+engines/py/build/
+engines/py/dist/
+
+# test / coverage
+coverage/
+playwright-report/
+test-results/
+
+# logs
+*.log
+npm-debug.log*
+
+# env / secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/*
+!.vscode/mcp.json
+!.vscode/extensions.json
+
+# The standalone manual is generated from the app's own documentation
+# (node scripts/gen-manual-html.mjs). Many megabytes of base64 screenshots that would be rewritten
+# byte-for-byte on every regeneration, so it is built on demand and shipped by the installer,
+# never committed.
+docs/manual/
+
+# Loose files at the top of the folder — built installers, data files and exports — are not
+# source. Root-anchored: they do not touch the same names deeper in the tree.
+/installers/
+/*.txt
+/*.mady
+/*.pzfx
+/*.pptx
+/*.csv
+/*.html

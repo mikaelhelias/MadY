@@ -1,0 +1,30 @@
+{
+ "w": 240,
+ "h": 223,
+ "marks": [
+  {
+   "n": 1,
+   "x": 16,
+   "y": 36,
+   "w": 208,
+   "h": 29,
+   "label": "New graph… — start from scratch; the datasheet is made with it"
+  },
+  {
+   "n": 2,
+   "x": 16,
+   "y": 65,
+   "w": 208,
+   "h": 29,
+   "label": "Chart gallery… — every type as a live example you can open and edit"
+  },
+  {
+   "n": 3,
+   "x": 16,
+   "y": 103,
+   "w": 208,
+   "h": 29,
+   "label": "New graph of this data — the quick route from the sheet you have open"
+  }
+ ]
+}

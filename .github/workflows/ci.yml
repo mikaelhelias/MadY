@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Lint, the three typechecks and the unit tests, with the statistics engine's Python packages
+# installed so the engine tests run rather than skip. The end-to-end tests, the frozen-engine
+# build and other operating systems are not run in CI.
+jobs:
+  build:
+    name: build & test (windows)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - name: Install
+        run: npm ci
+      - name: Python packages for the statistics engine
+        # The engine tests start `py -3`, so the packages go into that interpreter.
+        run: py -3 -m pip install -r engines/py/requirements.txt -r engines/py/requirements-dev.txt
+      - name: Browser for the drawing tests
+        # One unit test measures drawn text in a real browser (Playwright's Chromium).
+        run: npx playwright install chromium
+      - name: Typecheck (packages)
+        run: npm run typecheck
+      - name: Typecheck (desktop app)
+        run: npx tsc --noEmit -p apps/desktop
+      - name: Typecheck (tests)
+        run: npm run typecheck:tests
+      - name: Lint
+        run: npm run lint
+      - name: Test
+        run: npm test

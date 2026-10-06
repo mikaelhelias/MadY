@@ -1,0 +1,22 @@
+# MadY stats-engine runtime dependencies (pinned for reproducible freezes).
+# These are frozen into a standalone binary by PyInstaller (see mady-engine.spec)
+# so the shipped app carries its own CPython + these libraries — the end user
+# installs nothing but MadY.
+#
+# Versions pinned to the set validated in this repo. To rebuild the frozen engine:
+#   py -3 -m pip install -r requirements.txt
+#   py -3 -m PyInstaller mady-engine.spec --noconfirm
+numpy==2.4.2
+scipy==1.17.1
+statsmodels==0.14.6
+pandas==2.3.3
+patsy==1.0.2
+python-dateutil==2.9.0.post0
+pytz==2025.2
+six==1.17.0
+tzdata==2025.3
+packaging==26.0
+
+# Build-time only (not imported by engine.py at runtime):
+pyinstaller==6.19.0
+pyinstaller-hooks-contrib==2026.3

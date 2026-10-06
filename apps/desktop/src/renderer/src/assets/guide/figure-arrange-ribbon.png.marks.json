@@ -1,0 +1,62 @@
+{
+ "w": 958,
+ "h": 75,
+ "marks": [
+  {
+   "n": 1,
+   "x": 86.7,
+   "y": 7,
+   "w": 113.6,
+   "h": 26,
+   "label": "Layout ▾ · Columns · Gutter · Page — the figure's shape, its grid and its page"
+  },
+  {
+   "n": 2,
+   "x": 442.6,
+   "y": 8.5,
+   "w": 44.2,
+   "h": 23,
+   "label": "Grid · Snap to grid · Ruler · zoom — editing aids, never exported"
+  },
+  {
+   "n": 3,
+   "x": 9,
+   "y": 43.5,
+   "w": 66.7,
+   "h": 20,
+   "label": "Align all — axes and letters in one click; Align ▾ for each on its own, and equal sizes"
+  },
+  {
+   "n": 4,
+   "x": 236,
+   "y": 42.5,
+   "w": 75.9,
+   "h": 22,
+   "label": "Line up ▾ — edges, even spacing, same size or centre, for the panels you shift-clicked"
+  },
+  {
+   "n": 5,
+   "x": 316.9,
+   "y": 39,
+   "w": 253.9,
+   "h": 29,
+   "label": "Front · Back · lock · Group · Duplicate — for the picked panels"
+  },
+  {
+   "n": 6,
+   "x": 585.8,
+   "y": 42.5,
+   "w": 66.4,
+   "h": 22,
+   "label": "Insert ▾ — another graph, a picture, or a text / arrow / line / box / ellipse on the figure"
+  },
+  {
+   "n": 7,
+   "x": 657.2,
+   "y": 42.5,
+   "w": 62.5,
+   "h": 22,
+   "label": "Style ▾ — match every panel to one, a style preset, or your house style"
+  }
+ ]
+}

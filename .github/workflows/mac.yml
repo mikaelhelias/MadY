@@ -1,0 +1,91 @@
+name: Mac build
+
+# Builds the macOS app (Apple Silicon) on a GitHub Mac machine. Started by hand from the Actions
+# tab ("Run workflow"), never by a push: a Mac build takes about 15 minutes, and Mac minutes count
+# several times over against the account's allowance.
+#
+# The statistics engine is frozen by PyInstaller, which builds only for the system it runs on, so
+# the Mac engine has to be made here. The result — a .dmg and a .zip — is attached to the run.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mac:
+    name: build (macOS, Apple Silicon)
+    runs-on: macos-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      # The same Python as the Windows build. requirements.txt pins the engine's packages and
+      # PyInstaller; the dev file adds what the engine tests need.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Python packages for the statistics engine
+        run: python3 -m pip install -r engines/py/requirements.txt -r engines/py/requirements-dev.txt
+
+      - name: Install
+        run: npm ci
+
+      # Electron downloads its program on first use, not on install. The download carries Electron's
+      # and Chromium's licences, which the app copies into Contents/Resources (electron-builder.yml).
+      - name: Electron
+        run: npx install-electron && ls node_modules/electron/dist/LICENSE node_modules/electron/dist/LICENSES.chromium.html
+
+      # Chromium for the unit test that measures drawn text in a browser and for the manual
+      # generator; ffmpeg for the stills the manual takes from each guide video.
+      - name: Chromium and ffmpeg
+        run: npx playwright install chromium ffmpeg
+
+      - name: Test
+        run: npm test
+
+      - name: Freeze the statistics engine
+        working-directory: apps/desktop
+        run: npm run freeze-engine
+
+      # The Windows engine is checked against its size and entry count after each freeze; this
+      # prints the same two numbers for the Mac one.
+      - name: Engine size
+        run: |
+          du -sh engines/py/dist/mady-engine
+          echo "entries in _internal: $(ls engines/py/dist/mady-engine/_internal | wc -l)"
+
+      # The app is built from MadY's own packages (@mady/core and the rest), compiled here; the
+      # type check compiles them.
+      - name: Build the packages
+        run: npm run typecheck
+
+      # The app and the manual, packaged as a folder first: the licence notices are read from what
+      # the Mac build actually ships (its engine carries other libraries than the Windows one).
+      - name: Build the app (folder)
+        working-directory: apps/desktop
+        run: npx electron-vite build && npm run manual && npx electron-builder --config electron-builder.yml --mac dir
+
+      - name: Licence notices from the Mac build
+        run: node scripts/gen-third-party-notices.mjs apps/desktop/release/mac-arm64/MadY.app
+
+      # The .dmg and .zip, now carrying the Mac notices.
+      - name: Package
+        working-directory: apps/desktop
+        run: npx electron-builder --config electron-builder.yml --mac
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MadY-mac-arm64
+          path: |
+            apps/desktop/release/*.dmg
+            apps/desktop/release/*.zip
+            THIRD-PARTY-NOTICES.md
+          if-no-files-found: error
+          retention-days: 14

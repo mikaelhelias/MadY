@@ -1,0 +1,46 @@
+{
+ "w": 283,
+ "h": 133,
+ "marks": [
+  {
+   "n": 1,
+   "x": 233.4,
+   "y": 10,
+   "w": 47,
+   "h": 20,
+   "label": "Manage… shows these controls; Done puts the simple view back"
+  },
+  {
+   "n": 2,
+   "x": 2,
+   "y": 110.7,
+   "w": 22,
+   "h": 22,
+   "label": "Drag to order the list, or press ↑ / ↓"
+  },
+  {
+   "n": 3,
+   "x": 28,
+   "y": 113.6,
+   "w": 64.1,
+   "h": 16.3,
+   "label": "The open graph's type — ✓ saved in this preset, or + to add it"
+  },
+  {
+   "n": 4,
+   "x": 96.1,
+   "y": 112.6,
+   "w": 68.2,
+   "h": 18.3,
+   "label": "How many other types it holds — click to list them"
+  },
+  {
+   "n": 5,
+   "x": 258.3,
+   "y": 110.7,
+   "w": 22,
+   "h": 22,
+   "label": "Rename, Duplicate, Types…, Export…, Delete"
+  }
+ ]
+}

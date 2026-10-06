@@ -1,0 +1,1569 @@
+[
+  {
+    "kind": "xy",
+    "card": "XY (points + fitted curve)",
+    "label": "XY: points & line",
+    "changes": [
+      {
+        "path": [
+          "spread",
+          "mode"
+        ],
+        "value": "none",
+        "alt": "range"
+      },
+      {
+        "path": [
+          "showIdentity"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "plotRanks"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "equalAspect"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "fitStyle",
+          "show"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "ellipse",
+          "show"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "refLine"
+        ],
+        "value": {
+          "color": "#ff0000",
+          "width": 4,
+          "show": true
+        },
+        "alt": {
+          "show": false
+        }
+      }
+    ]
+  },
+  {
+    "kind": "area",
+    "card": "Area",
+    "label": "Area",
+    "changes": [
+      {
+        "path": [
+          "areaStack"
+        ],
+        "value": "none",
+        "alt": "stacked"
+      },
+      {
+        "path": [
+          "areaBaseline"
+        ],
+        "value": 7,
+        "alt": 2
+      },
+      {
+        "path": [
+          "spread",
+          "mode"
+        ],
+        "value": "none",
+        "alt": "range"
+      },
+      {
+        "path": [
+          "equalAspect"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "fitStyle",
+          "show"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "ellipse",
+          "show"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "refLine"
+        ],
+        "value": {
+          "color": "#ff0000",
+          "width": 4,
+          "show": true
+        },
+        "alt": {
+          "show": false
+        }
+      }
+    ]
+  },
+  {
+    "kind": "bubble",
+    "card": "Bubble",
+    "label": "Bubble",
+    "changes": [
+      {
+        "path": [
+          "spread",
+          "mode"
+        ],
+        "value": "none",
+        "alt": "range"
+      },
+      {
+        "path": [
+          "equalAspect"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "fitStyle",
+          "show"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "ellipse",
+          "show"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "refLine"
+        ],
+        "value": {
+          "color": "#ff0000",
+          "width": 4,
+          "show": true
+        },
+        "alt": {
+          "show": false
+        }
+      },
+      {
+        "path": [
+          "bubble",
+          "showSizeLegend"
+        ],
+        "value": true,
+        "alt": false
+      }
+    ]
+  },
+  {
+    "kind": "bar",
+    "card": "Bar / column (+ error bars)",
+    "label": "Bar / column",
+    "changes": [
+      {
+        "path": [
+          "barLayout"
+        ],
+        "value": "grouped",
+        "alt": "stacked"
+      },
+      {
+        "path": [
+          "barSort"
+        ],
+        "value": "none",
+        "alt": "asc"
+      },
+      {
+        "path": [
+          "barShape"
+        ],
+        "value": "square",
+        "alt": "rounded"
+      },
+      {
+        "path": [
+          "barWidth"
+        ],
+        "value": 7,
+        "alt": 2
+      },
+      {
+        "path": [
+          "barRibbons"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "barRibbonOpacity"
+        ],
+        "value": 7,
+        "alt": 2
+      },
+      {
+        "path": [
+          "paretoLine"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "paretoLineColor"
+        ],
+        "value": "#ff0000",
+        "alt": "#00aa55"
+      },
+      {
+        "path": [
+          "showBarPoints"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "showValues"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "valueDecimals"
+        ],
+        "value": 7,
+        "alt": 2
+      },
+      {
+        "path": [
+          "valueLabelDy"
+        ],
+        "value": 7,
+        "alt": 2
+      },
+      {
+        "path": [
+          "valuePlacement"
+        ],
+        "value": "above",
+        "alt": "insideEnd"
+      },
+      {
+        "path": [
+          "barOrientation"
+        ],
+        "value": "vertical",
+        "alt": "horizontal"
+      },
+      {
+        "path": [
+          "zoneLegend"
+        ],
+        "value": "off",
+        "alt": "topleft"
+      },
+      {
+        "path": [
+          "significance",
+          "display"
+        ],
+        "value": "stars",
+        "alt": "numeric"
+      }
+    ]
+  },
+  {
+    "kind": "pyramid",
+    "card": "Population pyramid",
+    "label": "Population pyramid",
+    "changes": [
+      {
+        "path": [
+          "refLine"
+        ],
+        "value": {
+          "color": "#ff0000",
+          "width": 4,
+          "show": true
+        },
+        "alt": {
+          "show": false
+        }
+      },
+      {
+        "path": [
+          "pyramid",
+          "showValues"
+        ],
+        "value": false,
+        "alt": true
+      }
+    ]
+  },
+  {
+    "kind": "lollipop",
+    "card": "Lollipop / dumbbell",
+    "label": "Lollipop / dumbbell",
+    "changes": [
+      {
+        "path": [
+          "barOrientation"
+        ],
+        "value": "vertical",
+        "alt": "horizontal"
+      },
+      {
+        "path": [
+          "significance",
+          "display"
+        ],
+        "value": "stars",
+        "alt": "numeric"
+      },
+      {
+        "path": [
+          "lollipop",
+          "baseline"
+        ],
+        "value": 7,
+        "alt": 2
+      }
+    ]
+  },
+  {
+    "kind": "box",
+    "card": "Box & whisker",
+    "label": "Box & whisker",
+    "changes": [
+      {
+        "path": [
+          "barOrientation"
+        ],
+        "value": "vertical",
+        "alt": "horizontal"
+      },
+      {
+        "path": [
+          "boxWhisker"
+        ],
+        "value": "tukey",
+        "alt": "minmax"
+      },
+      {
+        "path": [
+          "showBoxPoints"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "showBoxMean"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "significance",
+          "display"
+        ],
+        "value": "stars",
+        "alt": "numeric"
+      }
+    ]
+  },
+  {
+    "kind": "violin",
+    "card": "Violin",
+    "label": "Violin",
+    "changes": [
+      {
+        "path": [
+          "barOrientation"
+        ],
+        "value": "vertical",
+        "alt": "horizontal"
+      },
+      {
+        "path": [
+          "boxWhisker"
+        ],
+        "value": "tukey",
+        "alt": "minmax"
+      },
+      {
+        "path": [
+          "showBoxPoints"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "showBoxMean"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "significance",
+          "display"
+        ],
+        "value": "stars",
+        "alt": "numeric"
+      }
+    ]
+  },
+  {
+    "kind": "scatter",
+    "card": "Column scatter",
+    "label": "Column scatter",
+    "changes": [
+      {
+        "path": [
+          "barOrientation"
+        ],
+        "value": "vertical",
+        "alt": "horizontal"
+      },
+      {
+        "path": [
+          "significance",
+          "display"
+        ],
+        "value": "stars",
+        "alt": "numeric"
+      },
+      {
+        "path": [
+          "columnScatter",
+          "center"
+        ],
+        "value": "mean",
+        "alt": "median"
+      }
+    ]
+  },
+  {
+    "kind": "raincloud",
+    "card": "Raincloud",
+    "label": "Raincloud",
+    "changes": [
+      {
+        "path": [
+          "boxWhisker"
+        ],
+        "value": "tukey",
+        "alt": "minmax"
+      },
+      {
+        "path": [
+          "significance",
+          "display"
+        ],
+        "value": "stars",
+        "alt": "numeric"
+      }
+    ]
+  },
+  {
+    "kind": "floatingbar",
+    "card": "Floating bars (min→max)",
+    "label": "Floating bars (min→max)",
+    "changes": [
+      {
+        "path": [
+          "barOrientation"
+        ],
+        "value": "vertical",
+        "alt": "horizontal"
+      },
+      {
+        "path": [
+          "boxWhisker"
+        ],
+        "value": "tukey",
+        "alt": "minmax"
+      },
+      {
+        "path": [
+          "significance",
+          "display"
+        ],
+        "value": "stars",
+        "alt": "numeric"
+      },
+      {
+        "path": [
+          "floatingBar",
+          "line"
+        ],
+        "value": "mean",
+        "alt": "median"
+      }
+    ]
+  },
+  {
+    "kind": "estimation",
+    "card": "Estimation (Gardner-Altman)",
+    "label": "Estimation plot",
+    "changes": [
+      {
+        "path": [
+          "refLine"
+        ],
+        "value": {
+          "color": "#ff0000",
+          "width": 4,
+          "show": true
+        },
+        "alt": {
+          "show": false
+        }
+      },
+      {
+        "path": [
+          "significance",
+          "display"
+        ],
+        "value": "stars",
+        "alt": "numeric"
+      },
+      {
+        "path": [
+          "estimation",
+          "paired"
+        ],
+        "value": true,
+        "alt": false
+      }
+    ]
+  },
+  {
+    "kind": "histogram",
+    "card": "Histogram",
+    "label": "Histogram",
+    "changes": [
+      {
+        "path": [
+          "barSort"
+        ],
+        "value": "none",
+        "alt": "asc"
+      },
+      {
+        "path": [
+          "barShape"
+        ],
+        "value": "square",
+        "alt": "rounded"
+      },
+      {
+        "path": [
+          "barWidth"
+        ],
+        "value": 7,
+        "alt": 2
+      },
+      {
+        "path": [
+          "barRibbons"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "paretoLine"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "showValues"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "valueDecimals"
+        ],
+        "value": 7,
+        "alt": 2
+      },
+      {
+        "path": [
+          "valueLabelDy"
+        ],
+        "value": 7,
+        "alt": 2
+      },
+      {
+        "path": [
+          "valuePlacement"
+        ],
+        "value": "above",
+        "alt": "insideEnd"
+      },
+      {
+        "path": [
+          "barOrientation"
+        ],
+        "value": "vertical",
+        "alt": "horizontal"
+      },
+      {
+        "path": [
+          "histogram",
+          "bins"
+        ],
+        "value": 7,
+        "alt": 2
+      }
+    ]
+  },
+  {
+    "kind": "ridgeline",
+    "card": "Ridgeline / horizon fold",
+    "label": "Ridgeline / joyplot",
+    "changes": [
+      {
+        "path": [
+          "ridgeline",
+          "overlap"
+        ],
+        "value": 7,
+        "alt": 2
+      }
+    ]
+  },
+  {
+    "kind": "rose",
+    "card": "Polar histogram (wind rose)",
+    "label": "Polar histogram / wind rose",
+    "changes": [
+      {
+        "path": [
+          "rose",
+          "sectors"
+        ],
+        "value": 7,
+        "alt": 2
+      }
+    ]
+  },
+  {
+    "kind": "beforeafter",
+    "card": "Before–after (paired)",
+    "label": "Before–after (paired)",
+    "changes": [
+      {
+        "path": [
+          "significance",
+          "display"
+        ],
+        "value": "stars",
+        "alt": "numeric"
+      }
+    ]
+  },
+  {
+    "kind": "paireddot",
+    "card": "Paired dot plot",
+    "label": "Paired dot plot",
+    "changes": [
+      {
+        "path": [
+          "refLine"
+        ],
+        "value": {
+          "color": "#ff0000",
+          "width": 4,
+          "show": true
+        },
+        "alt": {
+          "show": false
+        }
+      },
+      {
+        "path": [
+          "significance",
+          "display"
+        ],
+        "value": "stars",
+        "alt": "numeric"
+      },
+      {
+        "path": [
+          "paireddot",
+          "connector"
+        ],
+        "value": "toZero",
+        "alt": "dumbbell"
+      }
+    ]
+  },
+  {
+    "kind": "pie",
+    "card": "Pie",
+    "label": "Pie",
+    "changes": [
+      {
+        "path": [
+          "pieStartAngle"
+        ],
+        "value": 7,
+        "alt": 2
+      },
+      {
+        "path": [
+          "pieDirection"
+        ],
+        "value": "cw",
+        "alt": "ccw"
+      },
+      {
+        "path": [
+          "pieDonut"
+        ],
+        "value": 7,
+        "alt": 2
+      },
+      {
+        "path": [
+          "pieLabels"
+        ],
+        "value": "none",
+        "alt": "percent"
+      },
+      {
+        "path": [
+          "pieLabelPosition"
+        ],
+        "value": "inside",
+        "alt": "outside"
+      },
+      {
+        "path": [
+          "pieDisplay"
+        ],
+        "value": "pie",
+        "alt": "waffle"
+      }
+    ]
+  },
+  {
+    "kind": "treemap",
+    "card": "Treemap",
+    "label": "Treemap (Voronoi)",
+    "changes": [
+      {
+        "path": [
+          "treemap",
+          "layout"
+        ],
+        "value": "voronoi",
+        "alt": "squarified"
+      }
+    ]
+  },
+  {
+    "kind": "sunburst",
+    "card": "Sunburst",
+    "label": "Sunburst",
+    "changes": [
+      {
+        "path": [
+          "sunburst",
+          "showLabels"
+        ],
+        "value": true,
+        "alt": false
+      }
+    ]
+  },
+  {
+    "kind": "ternary",
+    "card": "Ternary plot",
+    "label": "Ternary plot",
+    "changes": [
+      {
+        "path": [
+          "ternary",
+          "percent"
+        ],
+        "value": true,
+        "alt": false
+      }
+    ]
+  },
+  {
+    "kind": "venn",
+    "card": "Venn diagram",
+    "label": "Venn / Euler diagram",
+    "changes": [
+      {
+        "path": [
+          "venn",
+          "proportional"
+        ],
+        "value": true,
+        "alt": false
+      }
+    ]
+  },
+  {
+    "kind": "upset",
+    "card": "UpSet plot",
+    "label": "UpSet plot",
+    "changes": [
+      {
+        "path": [
+          "barShape"
+        ],
+        "value": "square",
+        "alt": "rounded"
+      },
+      {
+        "path": [
+          "barWidth"
+        ],
+        "value": 7,
+        "alt": 2
+      },
+      {
+        "path": [
+          "barRibbons"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "paretoLine"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "showValues"
+        ],
+        "value": false,
+        "alt": true
+      },
+      {
+        "path": [
+          "valueDecimals"
+        ],
+        "value": 7,
+        "alt": 2
+      },
+      {
+        "path": [
+          "valueLabelDy"
+        ],
+        "value": 7,
+        "alt": 2
+      },
+      {
+        "path": [
+          "valuePlacement"
+        ],
+        "value": "above",
+        "alt": "insideEnd"
+      },
+      {
+        "path": [
+          "upset",
+          "sortBy"
+        ],
+        "value": "size",
+        "alt": "degree"
+      }
+    ]
+  },
+  {
+    "kind": "heatmap",
+    "card": "Heatmap",
+    "label": "Heatmap",
+    "changes": [
+      {
+        "path": [
+          "heatmap",
+          "mode"
+        ],
+        "value": "matrix",
+        "alt": "density2d"
+      }
+    ]
+  },
+  {
+    "kind": "corrmatrix",
+    "card": "Correlation matrix",
+    "label": "Correlation matrix",
+    "changes": [
+      {
+        "path": [
+          "corrmatrix",
+          "method"
+        ],
+        "value": "pearson",
+        "alt": "spearman"
+      }
+    ]
+  },
+  {
+    "kind": "parallel",
+    "card": "Parallel coordinates",
+    "label": "Parallel coordinates",
+    "changes": [
+      {
+        "path": [
+          "parallel",
+          "colorScale"
+        ],
+        "value": "auto",
+        "alt": "category"
+      }
+    ]
+  },
+  {
+    "kind": "scatter3d",
+    "card": "3D scatter",
+    "label": "3D scatter",
+    "changes": [
+      {
+        "path": [
+          "scatter3d",
+          "azimuth"
+        ],
+        "value": 7,
+        "alt": 2
+      }
+    ]
+  },
+  {
+    "kind": "radar",
+    "card": "Radar / spider",
+    "label": "Radar / spider",
+    "changes": [
+      {
+        "path": [
+          "radar",
+          "spokeColor"
+        ],
+        "value": "#ff0000",
+        "alt": "#00aa55"
+      }
+    ]
+  },
+  {
+    "kind": "dendrogram",
+    "card": "Dendrogram",
+    "label": "Dendrogram (clustering)",
+    "changes": [
+      {
+        "path": [
+          "dendrogram",
+          "target"
+        ],
+        "value": "rows",
+        "alt": "columns"
+      }
+    ]
+  },
+  {
+    "kind": "alluvial",
+    "card": "Alluvial / parallel sets",
+    "label": "Alluvial / parallel sets",
+    "changes": [
+      {
+        "path": [
+          "alluvial",
+          "colorBy"
+        ],
+        "value": "first",
+        "alt": "last"
+      }
+    ]
+  },
+  {
+    "kind": "network",
+    "card": "Network graph",
+    "label": "Network graph",
+    "changes": [
+      {
+        "path": [
+          "network",
+          "layout"
+        ],
+        "value": "force",
+        "alt": "circular"
+      }
+    ]
+  },
+  {
+    "kind": "chord",
+    "card": "Chord / circos",
+    "label": "Chord / circos",
+    "changes": [
+      {
+        "path": [
+          "chord",
+          "order"
+        ],
+        "value": "input",
+        "alt": "weight"
+      }
+    ]
+  },
+  {
+    "kind": "survival",
+    "card": "Survival (Kaplan-Meier)",
+    "label": "Survival (Kaplan-Meier)",
+    "changes": [
+      {
+        "path": [
+          "survivalShowCI"
+        ],
+        "value": false,
+        "alt": true
+      },
+      {
+        "path": [
+          "survivalCiOpacity"
+        ],
+        "value": 7,
+        "alt": 2
+      },
+      {
+        "path": [
+          "survivalShowCensor"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "survivalShowAtRisk"
+        ],
+        "value": false,
+        "alt": true
+      },
+      {
+        "path": [
+          "survivalCumulativeIncidence"
+        ],
+        "value": true,
+        "alt": false
+      }
+    ]
+  },
+  {
+    "kind": "swimmer",
+    "card": "Swimmer plot",
+    "label": "Swimmer plot",
+    "changes": [
+      {
+        "path": [
+          "showValues"
+        ],
+        "value": false,
+        "alt": true
+      },
+      {
+        "path": [
+          "swimmer",
+          "sortBy"
+        ],
+        "value": "duration",
+        "alt": "table"
+      }
+    ]
+  },
+  {
+    "kind": "tracks",
+    "card": "Timeline tracks",
+    "label": "Timeline tracks",
+    "changes": [
+      {
+        "path": [
+          "tracks",
+          "trackHeight"
+        ],
+        "value": 7,
+        "alt": 2
+      }
+    ]
+  },
+  {
+    "kind": "forest",
+    "card": "Forest plot",
+    "label": "Forest plot",
+    "changes": [
+      {
+        "path": [
+          "refLine"
+        ],
+        "value": {
+          "color": "#ff0000",
+          "width": 4,
+          "show": true
+        },
+        "alt": {
+          "show": false
+        }
+      },
+      {
+        "path": [
+          "forest",
+          "refValue"
+        ],
+        "value": 0.5,
+        "alt": 2
+      }
+    ]
+  },
+  {
+    "kind": "funnel",
+    "card": "Funnel plot",
+    "label": "Funnel plot",
+    "changes": [
+      {
+        "path": [
+          "refLine"
+        ],
+        "value": {
+          "color": "#ff0000",
+          "width": 4,
+          "show": true
+        },
+        "alt": {
+          "show": false
+        }
+      },
+      {
+        "path": [
+          "funnel",
+          "model"
+        ],
+        "value": "fixed",
+        "alt": "random"
+      }
+    ]
+  },
+  {
+    "kind": "blandaltman",
+    "card": "Bland-Altman",
+    "label": "Bland-Altman",
+    "changes": [
+      {
+        "path": [
+          "refLine"
+        ],
+        "value": {
+          "color": "#ff0000",
+          "width": 4,
+          "show": true
+        },
+        "alt": {
+          "show": false
+        }
+      },
+      {
+        "path": [
+          "blandAltman",
+          "percent"
+        ],
+        "value": true,
+        "alt": false
+      }
+    ]
+  },
+  {
+    "kind": "roc",
+    "card": "ROC curve",
+    "label": "ROC curve",
+    "changes": [
+      {
+        "path": [
+          "refLine"
+        ],
+        "value": {
+          "color": "#ff0000",
+          "width": 4,
+          "show": true
+        },
+        "alt": {
+          "show": false
+        }
+      }
+    ]
+  },
+  {
+    "kind": "volcano",
+    "card": "Volcano",
+    "label": "Volcano",
+    "changes": [
+      {
+        "path": [
+          "spread",
+          "mode"
+        ],
+        "value": "none",
+        "alt": "range"
+      },
+      {
+        "path": [
+          "equalAspect"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "fitStyle",
+          "show"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "ellipse",
+          "show"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "refLine"
+        ],
+        "value": {
+          "color": "#ff0000",
+          "width": 4,
+          "show": true
+        },
+        "alt": {
+          "show": false
+        }
+      },
+      {
+        "path": [
+          "volcano",
+          "fcThreshold"
+        ],
+        "value": 7,
+        "alt": 2
+      }
+    ]
+  },
+  {
+    "kind": "qq",
+    "card": "QQ plot (GWAS)",
+    "label": "QQ plot",
+    "changes": [
+      {
+        "path": [
+          "refLine"
+        ],
+        "value": {
+          "color": "#ff0000",
+          "width": 4,
+          "show": true
+        },
+        "alt": {
+          "show": false
+        }
+      },
+      {
+        "path": [
+          "qq",
+          "showIdentityLine"
+        ],
+        "value": true,
+        "alt": false
+      }
+    ]
+  },
+  {
+    "kind": "manhattan",
+    "card": "Manhattan plot (GWAS)",
+    "label": "Manhattan plot",
+    "changes": [
+      {
+        "path": [
+          "refLine"
+        ],
+        "value": {
+          "color": "#ff0000",
+          "width": 4,
+          "show": true
+        },
+        "alt": {
+          "show": false
+        }
+      },
+      {
+        "path": [
+          "manhattan",
+          "genomeWideLine"
+        ],
+        "value": true,
+        "alt": false
+      }
+    ]
+  },
+  {
+    "kind": "oncoprint",
+    "card": "Oncoprint",
+    "label": "Oncoprint",
+    "changes": [
+      {
+        "path": [
+          "oncoprint",
+          "geneSort"
+        ],
+        "value": "freq",
+        "alt": "input"
+      }
+    ]
+  },
+  {
+    "kind": "pcascore",
+    "card": "Ordination — sites",
+    "label": "Ordination — sites",
+    "changes": [
+      {
+        "path": [
+          "equalAspect"
+        ],
+        "value": false,
+        "alt": true
+      },
+      {
+        "path": [
+          "ellipse",
+          "show"
+        ],
+        "value": false,
+        "alt": true
+      },
+      {
+        "path": [
+          "refLine"
+        ],
+        "value": {
+          "color": "#ff0000",
+          "width": 4,
+          "show": true
+        },
+        "alt": {
+          "show": false
+        }
+      },
+      {
+        "path": [
+          "bubble",
+          "showSizeLegend"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "pcaStyle",
+          "xComponent"
+        ],
+        "value": 7,
+        "alt": 2
+      }
+    ]
+  },
+  {
+    "kind": "pcaload",
+    "card": "Ordination — variables",
+    "label": "Ordination — variables",
+    "changes": [
+      {
+        "path": [
+          "equalAspect"
+        ],
+        "value": false,
+        "alt": true
+      },
+      {
+        "path": [
+          "refLine"
+        ],
+        "value": {
+          "color": "#ff0000",
+          "width": 4,
+          "show": true
+        },
+        "alt": {
+          "show": false
+        }
+      },
+      {
+        "path": [
+          "pcaStyle",
+          "xComponent"
+        ],
+        "value": 7,
+        "alt": 2
+      }
+    ]
+  },
+  {
+    "kind": "pcabiplot",
+    "card": "Ordination — biplot",
+    "label": "Ordination — biplot",
+    "changes": [
+      {
+        "path": [
+          "equalAspect"
+        ],
+        "value": false,
+        "alt": true
+      },
+      {
+        "path": [
+          "ellipse",
+          "show"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "refLine"
+        ],
+        "value": {
+          "color": "#ff0000",
+          "width": 4,
+          "show": true
+        },
+        "alt": {
+          "show": false
+        }
+      },
+      {
+        "path": [
+          "bubble",
+          "showSizeLegend"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "pcaStyle",
+          "xComponent"
+        ],
+        "value": 7,
+        "alt": 2
+      }
+    ]
+  },
+  {
+    "kind": "triplot",
+    "card": "Ordination — triplot (constrained)",
+    "label": "Ordination — triplot",
+    "changes": [
+      {
+        "path": [
+          "equalAspect"
+        ],
+        "value": false,
+        "alt": true
+      },
+      {
+        "path": [
+          "ellipse",
+          "show"
+        ],
+        "value": true,
+        "alt": false
+      },
+      {
+        "path": [
+          "refLine"
+        ],
+        "value": {
+          "color": "#ff0000",
+          "width": 4,
+          "show": true
+        },
+        "alt": {
+          "show": false
+        }
+      },
+      {
+        "path": [
+          "pcaStyle",
+          "xComponent"
+        ],
+        "value": 7,
+        "alt": 2
+      }
+    ]
+  },
+  {
+    "kind": "scree",
+    "card": "Scree plot",
+    "label": "Scree plot",
+    "changes": [
+      {
+        "path": [
+          "pcaStyle",
+          "xComponent"
+        ],
+        "value": 7,
+        "alt": 2
+      }
+    ]
+  }
+]

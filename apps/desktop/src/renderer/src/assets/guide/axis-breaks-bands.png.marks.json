@@ -1,0 +1,78 @@
+{
+ "w": 300,
+ "h": 1143,
+ "marks": [
+  {
+   "n": 1,
+   "x": 11,
+   "y": 529.6,
+   "w": 282.4,
+   "h": 32,
+   "label": "from / to / Add cut — compress a range out of the axis"
+  },
+  {
+   "n": 2,
+   "x": 11,
+   "y": 561.6,
+   "w": 282.4,
+   "h": 27,
+   "label": "Suggest cut — when one wide gap dominates"
+  },
+  {
+   "n": 3,
+   "x": 11,
+   "y": 588.6,
+   "w": 282.4,
+   "h": 34,
+   "label": "Break mark — slash, zigzag or a plain gap"
+  },
+  {
+   "n": 4,
+   "x": 11,
+   "y": 501.6,
+   "w": 282.4,
+   "h": 28,
+   "label": "A cut you have added — the cross removes it"
+  },
+  {
+   "n": 5,
+   "x": 11,
+   "y": 756.4,
+   "w": 282.4,
+   "h": 32,
+   "label": "value / label / Add tick — a tick exactly where you want one"
+  },
+  {
+   "n": 6,
+   "x": 11,
+   "y": 728.4,
+   "w": 282.4,
+   "h": 28,
+   "label": "A tick you have added"
+  },
+  {
+   "n": 7,
+   "x": 11,
+   "y": 904.6,
+   "w": 282.4,
+   "h": 32,
+   "label": "from / to / colour / Add band — shade a zone"
+  },
+  {
+   "n": 8,
+   "x": 11,
+   "y": 876.6,
+   "w": 282.4,
+   "h": 28,
+   "label": "A band you have added"
+  },
+  {
+   "n": 9,
+   "x": 11,
+   "y": 175,
+   "w": 282.4,
+   "h": 96.6,
+   "label": "Series on this axis — how a second Y axis gets its data"
+  }
+ ]
+}

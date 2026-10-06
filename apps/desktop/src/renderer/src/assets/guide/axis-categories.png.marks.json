@@ -1,0 +1,70 @@
+{
+ "w": 300,
+ "h": 773,
+ "marks": [
+  {
+   "n": 1,
+   "x": 11,
+   "y": 331,
+   "w": 282.4,
+   "h": 34,
+   "label": "Group by — a column that names each row's group, or By hand"
+  },
+  {
+   "n": 2,
+   "x": 11,
+   "y": 365,
+   "w": 282.4,
+   "h": 32,
+   "label": "One box per category — type the group it belongs to"
+  },
+  {
+   "n": 3,
+   "x": 11,
+   "y": 535.8,
+   "w": 282.4,
+   "h": 27,
+   "label": "Colour labels"
+  },
+  {
+   "n": 4,
+   "x": 11,
+   "y": 562.8,
+   "w": 282.4,
+   "h": 27,
+   "label": "Separators — a rule between groups"
+  },
+  {
+   "n": 5,
+   "x": 11,
+   "y": 589.8,
+   "w": 282.4,
+   "h": 27,
+   "label": "Group names — written alongside the axis"
+  },
+  {
+   "n": 6,
+   "x": 11,
+   "y": 616.8,
+   "w": 282.4,
+   "h": 27,
+   "label": "Block tint"
+  },
+  {
+   "n": 7,
+   "x": 11,
+   "y": 643.8,
+   "w": 282.4,
+   "h": 26,
+   "label": "Tint strength — only once Block tint is on"
+  },
+  {
+   "n": 8,
+   "x": 223.4,
+   "y": 672.8,
+   "w": 42,
+   "h": 24,
+   "label": "One swatch per group"
+  }
+ ]
+}

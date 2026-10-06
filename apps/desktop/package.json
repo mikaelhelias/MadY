@@ -1,0 +1,47 @@
+{
+  "name": "@mady/desktop",
+  "version": "0.6.1",
+  "private": true,
+  "description": "MadY — a modern scientific graphing and statistics application.",
+  "author": "MadY",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "dev:llm": "node ../../scripts/dev-llm.mjs",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "freeze-engine": "node ../../scripts/freeze-engine.mjs",
+    "manual": "cd ../.. && node scripts/gen-manual-html.mjs",
+    "dist": "electron-vite build && npm run manual && electron-builder --config electron-builder.yml",
+    "dist:mac": "electron-vite build && npm run manual && electron-builder --config electron-builder.yml --mac",
+    "dist:dir": "electron-vite build && electron-builder --config electron-builder.yml --dir",
+    "dist:portable": "electron-vite build && electron-builder --config electron-builder.yml --win zip",
+    "dist:agent": "set MADY_EDITION=agent&& electron-vite build && electron-builder --config electron-builder.yml -c.productName=\"MadY Agent\" -c.appId=com.mady.agent -c.nsis.shortcutName=\"MadY Agent\"",
+    "dist:agent:dir": "set MADY_EDITION=agent&& electron-vite build && electron-builder --config electron-builder.yml --dir -c.productName=\"MadY Agent\" -c.appId=com.mady.agent"
+  },
+  "dependencies": {
+    "@mady/graphics": "*",
+    "@mady/engine-client": "*",
+    "electron-log": "^5.4.4",
+    "exceljs": "^4.4.0",
+    "lucide-react": "^1.21.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^26.0.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.2.0",
+    "electron": "^42.4.1",
+    "electron-builder": "^26.15.3",
+    "electron-vite": "^5.0.0",
+    "jsdom": "^29.1.1",
+    "vite": "^7.0.0"
+  },
+  "license": "GPL-3.0-or-later"
+}

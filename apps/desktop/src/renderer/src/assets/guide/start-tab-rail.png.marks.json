@@ -1,0 +1,30 @@
+{
+ "w": 974,
+ "h": 35,
+ "marks": [
+  {
+   "n": 1,
+   "x": 8,
+   "y": 6,
+   "w": 370.6,
+   "h": 29,
+   "label": "One datasheet's group: the data, the graphs drawn from it and the analyses run on it, in that order"
+  },
+  {
+   "n": 2,
+   "x": 8,
+   "y": 6,
+   "w": 10,
+   "h": 29,
+   "label": "Open, the group label is just this coloured handle — click it to fold the group away"
+  },
+  {
+   "n": 3,
+   "x": 393.6,
+   "y": 10,
+   "w": 77,
+   "h": 25,
+   "label": "Folded, it shows the group's name and how many tabs are inside it"
+  }
+ ]
+}

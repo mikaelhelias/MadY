@@ -1,0 +1,30 @@
+{
+ "w": 340,
+ "h": 252,
+ "marks": [
+  {
+   "n": 1,
+   "x": 21,
+   "y": 143.2,
+   "w": 298,
+   "h": 41,
+   "label": "Every project, experiment and object, each with its own tick box"
+  },
+  {
+   "n": 2,
+   "x": 30,
+   "y": 150.2,
+   "w": 280,
+   "h": 27,
+   "label": "A container's box is three-state: on, off, or “some of what is under me”"
+  },
+  {
+   "n": 3,
+   "x": 206.8,
+   "y": 198.2,
+   "w": 112.3,
+   "h": 33,
+   "label": "The button says what will be written — “Save everything…”, “Save this graph…”, or “Save N items…”"
+  }
+ ]
+}
