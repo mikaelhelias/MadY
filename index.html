@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MadY</title>
+<meta name="description" content="MadY: scientific graphing and statistics on your own computer. An 80-second video tour.">
+<link rel="icon" href="logo.png">
+<style>
+  :root { --bg: #0d0a1a; --txt: #eee9f8; --dim: #a99bc4; --accent: #8b3fd1; --accent-soft: #c49cf0; --border: rgba(196,156,240,0.28); }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: radial-gradient(ellipse at top, #251343 0%, var(--bg) 60%) fixed, var(--bg); color: var(--txt);
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 1100px; margin: 0 auto; padding: 40px 16px 56px; }
+  header { display: flex; align-items: center; gap: 18px; margin-bottom: 26px; }
+  header img { width: 72px; height: 72px; border-radius: 16px; filter: drop-shadow(0 0 18px rgba(139,63,209,0.6)); }
+  h1 { margin: 0; font: 700 clamp(32px, 6vw, 50px)/1 "Segoe UI", system-ui, sans-serif; letter-spacing: 0.04em; }
+  h1 span { color: var(--accent-soft); }
+  .sub { margin: 6px 0 0; color: var(--dim); font-size: clamp(15px, 2.4vw, 18px); line-height: 1.45; }
+  .video { border: 1px solid var(--border); border-radius: 14px; overflow: hidden; background: #000;
+    box-shadow: 0 24px 70px rgba(0,0,0,0.55), 0 0 40px rgba(139,63,209,0.16); }
+  video { display: block; width: 100%; height: auto; }
+  .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .links a { padding: 11px 20px; border-radius: 999px; border: 1px solid var(--border); color: var(--txt); text-decoration: none;
+    font: 600 15px "Segoe UI", system-ui, sans-serif; letter-spacing: 0.06em; text-transform: uppercase; background: rgba(139,63,209,0.10); }
+  .links a.main { background: var(--accent); color: #ffffff; border-color: var(--accent); }
+  .links a:hover { border-color: var(--accent-soft); }
+  footer { margin-top: 30px; color: #8a7da6; font-size: 14px; line-height: 1.6; }
+  footer a { color: var(--dim); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="logo.png" alt="">
+    <div>
+      <h1>Mad<span>Y</span></h1>
+      <p class="sub">Scientific graphing and statistics on your own computer: over 50 editable graph types, 49 analyses and publication-ready figures.</p>
+    </div>
+  </header>
+  <div class="video">
+    <video controls playsinline preload="metadata" poster="poster.jpg">
+      <source src="mady-promo.mp4" type="video/mp4">
+    </video>
+  </div>
+  <nav class="links">
+    <a class="main" href="https://github.com/mikaelhelias/MadY">MadY on GitHub</a>
+    <a href="https://github.com/mikaelhelias/MadY/releases">Downloads</a>
+  </nav>
+  <footer>
+    Free software under the GNU GPL v3 or later. Windows 10 and 11, 64-bit. Runs entirely offline, with no account.<br>
+    Cite: Elias, M. (2026). MadY (version 0.6.0). <a href="https://doi.org/10.5281/zenodo.23178166">doi:10.5281/zenodo.23178166</a>
+  </footer>
+</main>
+</body>
+</html>
