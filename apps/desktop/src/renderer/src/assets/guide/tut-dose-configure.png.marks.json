@@ -1,0 +1,38 @@
+{
+ "w": 720,
+ "h": 1312,
+ "marks": [
+  {
+   "n": 1,
+   "x": 509,
+   "y": 240.3,
+   "w": 180,
+   "h": 29,
+   "label": "Family — Dose-response; the Type under it is 4PL for the usual case"
+  },
+  {
+   "n": 2,
+   "x": 21,
+   "y": 316.3,
+   "w": 668,
+   "h": 35.5,
+   "label": "The exact equation that will be fitted — no guessing which parameterisation"
+  },
+  {
+   "n": 3,
+   "x": 445,
+   "y": 768.8,
+   "w": 244,
+   "h": 29,
+   "label": "Weighting — when the scatter grows with Y"
+  },
+  {
+   "n": 4,
+   "x": 468.6,
+   "y": 1259.2,
+   "w": 95.2,
+   "h": 33,
+   "label": "Make default — keep these settings for the next fit"
+  }
+ ]
+}

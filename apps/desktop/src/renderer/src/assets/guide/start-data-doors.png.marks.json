@@ -1,0 +1,30 @@
+{
+ "w": 240,
+ "h": 457,
+ "marks": [
+  {
+   "n": 1,
+   "x": 16,
+   "y": 65,
+   "w": 208,
+   "h": 29,
+   "label": "Import data… — a CSV, text, Excel or OpenDocument file"
+  },
+  {
+   "n": 2,
+   "x": 16,
+   "y": 123,
+   "w": 208,
+   "h": 63,
+   "label": "Paste data as new datasheet… — a block of cells on the clipboard"
+  },
+  {
+   "n": 3,
+   "x": 16,
+   "y": 412,
+   "w": 208,
+   "h": 29,
+   "label": "New datasheet / graph… — a blank sheet to type into"
+  }
+ ]
+}

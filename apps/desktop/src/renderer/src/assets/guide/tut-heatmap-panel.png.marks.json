@@ -1,0 +1,30 @@
+{
+ "w": 305,
+ "h": 1323,
+ "marks": [
+  {
+   "n": 1,
+   "x": 11,
+   "y": 1147,
+   "w": 282.5,
+   "h": 34,
+   "label": "Cluster — Rows, Columns or both; Distance and Linkage appear once it is on"
+  },
+  {
+   "n": 2,
+   "x": 11,
+   "y": 317,
+   "w": 50.5,
+   "h": 16,
+   "label": "Centre at — pin the middle colour to a value, so white sits on zero"
+  },
+  {
+   "n": 3,
+   "x": 244.9,
+   "y": 976,
+   "w": 48.6,
+   "h": 21,
+   "label": "Add a row strip — say what each row is, from a column of your sheet"
+  }
+ ]
+}

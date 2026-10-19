@@ -1,0 +1,38 @@
+{
+ "w": 300,
+ "h": 272,
+ "marks": [
+  {
+   "n": 1,
+   "x": 11,
+   "y": 36,
+   "w": 282,
+   "h": 34,
+   "label": "Colour by — the column; None removes it"
+  },
+  {
+   "n": 2,
+   "x": 11,
+   "y": 70,
+   "w": 282,
+   "h": 34,
+   "label": "Mapping — Category (a colour per value) or Continuous (a ramp)"
+  },
+  {
+   "n": 3,
+   "x": 11,
+   "y": 149,
+   "w": 282,
+   "h": 34,
+   "label": "Shape by — a marker shape per value"
+  },
+  {
+   "n": 4,
+   "x": 11,
+   "y": 228,
+   "w": 282,
+   "h": 34,
+   "label": "Label points — a column's text beside each point"
+  }
+ ]
+}

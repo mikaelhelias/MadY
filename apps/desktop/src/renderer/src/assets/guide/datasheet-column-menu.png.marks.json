@@ -1,0 +1,30 @@
+{
+ "w": 338,
+ "h": 307,
+ "marks": [
+  {
+   "n": 1,
+   "x": 5,
+   "y": 5,
+   "w": 327.1,
+   "h": 29,
+   "label": "Sort every row by this column"
+  },
+  {
+   "n": 2,
+   "x": 5,
+   "y": 72,
+   "w": 327.1,
+   "h": 29,
+   "label": "Add or remove a column here"
+  },
+  {
+   "n": 3,
+   "x": 41.8,
+   "y": 258,
+   "w": 280.3,
+   "h": 21,
+   "label": "ƒ(x) — compute this column from the others"
+  }
+ ]
+}

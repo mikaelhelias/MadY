@@ -1,0 +1,86 @@
+{
+ "w": 300,
+ "h": 843,
+ "marks": [
+  {
+   "n": 1,
+   "x": 11,
+   "y": 144,
+   "w": 282.4,
+   "h": 27,
+   "label": "X / Y / Y2 / Y3 — which axis this panel is editing"
+  },
+  {
+   "n": 2,
+   "x": 11,
+   "y": 199,
+   "w": 282.4,
+   "h": 32,
+   "label": "Title — the name written along the axis"
+  },
+  {
+   "n": 3,
+   "x": 11,
+   "y": 231,
+   "w": 282.4,
+   "h": 56,
+   "label": "Title direction — Level, 45°, 90°, 135°, 180°, or any angle you type"
+  },
+  {
+   "n": 4,
+   "x": 11,
+   "y": 287,
+   "w": 282.4,
+   "h": 27,
+   "label": "Above the axis — the level title written over the top of the axis"
+  },
+  {
+   "n": 5,
+   "x": 11,
+   "y": 339,
+   "w": 282.4,
+   "h": 34,
+   "label": "Type — linear, log, or probability"
+  },
+  {
+   "n": 6,
+   "x": 11,
+   "y": 373,
+   "w": 282.4,
+   "h": 27,
+   "label": "Reversed — run the axis the other way"
+  },
+  {
+   "n": 7,
+   "x": 11,
+   "y": 400,
+   "w": 282.4,
+   "h": 27,
+   "label": "Equal aspect (1:1)"
+  },
+  {
+   "n": 8,
+   "x": 11,
+   "y": 427,
+   "w": 282.4,
+   "h": 27,
+   "label": "Hide axis — the scale stays; the line, ticks and labels go"
+  },
+  {
+   "n": 9,
+   "x": 11,
+   "y": 454,
+   "w": 282.4,
+   "h": 32,
+   "label": "Scale bar — a corner bar instead of a numbered axis"
+  },
+  {
+   "n": 10,
+   "x": 11,
+   "y": 517,
+   "w": 282.4,
+   "h": 32,
+   "label": "Min / Max — the range shown"
+  }
+ ]
+}
