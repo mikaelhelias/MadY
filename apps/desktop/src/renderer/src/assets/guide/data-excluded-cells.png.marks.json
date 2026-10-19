@@ -1,0 +1,30 @@
+{
+ "w": 1271,
+ "h": 470,
+ "marks": [
+  {
+   "n": 1,
+   "x": 117.9,
+   "y": 199.5,
+   "w": 84,
+   "h": 27,
+   "label": "An excluded value — blue and italic. The number stays on the sheet and stops counting"
+  },
+  {
+   "n": 2,
+   "x": 1036.4,
+   "y": 16,
+   "w": 67.2,
+   "h": 28,
+   "label": "Exclude — available once cells are selected; takes them out of every graph and analysis"
+  },
+  {
+   "n": 3,
+   "x": 1111.6,
+   "y": 16,
+   "w": 65.5,
+   "h": 28,
+   "label": "Include — puts them back into every graph and analysis"
+  }
+ ]
+}

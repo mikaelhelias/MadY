@@ -1,0 +1,38 @@
+{
+ "w": 1700,
+ "h": 950,
+ "marks": [
+  {
+   "n": 1,
+   "x": 315.7,
+   "y": 189,
+   "w": 113.6,
+   "h": 26,
+   "label": "Columns and Gutter — how the panels tile, and the gap between them"
+  },
+  {
+   "n": 2,
+   "x": 238,
+   "y": 225.5,
+   "w": 66.7,
+   "h": 20,
+   "label": "Align all — axes down each column, across each row, and the letters with them"
+  },
+  {
+   "n": 3,
+   "x": 1530.2,
+   "y": 509.8,
+   "w": 84,
+   "h": 23,
+   "label": "Shared axes — strip the repeated tick numbers from the inner panels"
+  },
+  {
+   "n": 4,
+   "x": 1411,
+   "y": 419.8,
+   "w": 78.2,
+   "h": 26,
+   "label": "Renumber — re-letter in reading order after moving things about"
+  }
+ ]
+}

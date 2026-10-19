@@ -1,0 +1,30 @@
+{
+ "w": 1500,
+ "h": 900,
+ "marks": [
+  {
+   "n": 1,
+   "x": 237,
+   "y": 206,
+   "w": 1216,
+   "h": 46,
+   "label": "Tick this — the brackets stay bound to the analysis, so a re-run refreshes every p"
+  },
+  {
+   "n": 2,
+   "x": 701.3,
+   "y": 172,
+   "w": 106.4,
+   "h": 26,
+   "label": "Add to graph — the one-shot alternative, offered only until the tickbox is used"
+  },
+  {
+   "n": 3,
+   "x": 237,
+   "y": 308,
+   "w": 1216,
+   "h": 70,
+   "label": "Key result — the numbers a paper quotes"
+  }
+ ]
+}

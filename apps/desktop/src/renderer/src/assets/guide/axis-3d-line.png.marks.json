@@ -1,0 +1,62 @@
+{
+ "w": 300,
+ "h": 973,
+ "marks": [
+  {
+   "n": 1,
+   "x": 11,
+   "y": 680,
+   "w": 282.4,
+   "h": 30,
+   "label": "Colour — this edge's own colour"
+  },
+  {
+   "n": 2,
+   "x": 11,
+   "y": 710,
+   "w": 282.4,
+   "h": 32,
+   "label": "Thickness"
+  },
+  {
+   "n": 3,
+   "x": 11,
+   "y": 742,
+   "w": 282.4,
+   "h": 27,
+   "label": "Hide axis"
+  },
+  {
+   "n": 4,
+   "x": 11,
+   "y": 927,
+   "w": 282.4,
+   "h": 28,
+   "label": "Reset — Clear puts this edge back to its defaults"
+  },
+  {
+   "n": 5,
+   "x": 11,
+   "y": 793,
+   "w": 282.4,
+   "h": 32,
+   "label": "Labels to axis"
+  },
+  {
+   "n": 6,
+   "x": 11,
+   "y": 825,
+   "w": 282.4,
+   "h": 32,
+   "label": "Title to labels"
+  },
+  {
+   "n": 7,
+   "x": 11,
+   "y": 857,
+   "w": 282.4,
+   "h": 34,
+   "label": "Label side — flip the numbers to the other side"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "w": 560,
+ "h": 806,
+ "marks": [
+  {
+   "n": 1,
+   "x": 303,
+   "y": 147.4,
+   "w": 224,
+   "h": 26,
+   "label": "The look every new graph starts from"
+  },
+  {
+   "n": 2,
+   "x": 23,
+   "y": 191.4,
+   "w": 508,
+   "h": 28,
+   "label": "A different default per chart type"
+  },
+  {
+   "n": 3,
+   "x": 303,
+   "y": 719,
+   "w": 224,
+   "h": 26,
+   "label": "Common defaults layered on the preset — blank means “use the preset's”"
+  }
+ ]
+}

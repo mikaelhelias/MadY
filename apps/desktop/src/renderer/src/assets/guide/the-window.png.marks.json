@@ -1,0 +1,62 @@
+{
+ "w": 1500,
+ "h": 950,
+ "marks": [
+  {
+   "n": 1,
+   "x": 0,
+   "y": 0,
+   "w": 1500,
+   "h": 41,
+   "label": "Menu bar"
+  },
+  {
+   "n": 2,
+   "x": 0,
+   "y": 41,
+   "w": 1500,
+   "h": 53,
+   "label": "Toolbar"
+  },
+  {
+   "n": 3,
+   "x": 0,
+   "y": 119,
+   "w": 216,
+   "h": 773,
+   "label": "Navigator — every project, datasheet, graph and analysis"
+  },
+  {
+   "n": 4,
+   "x": 221,
+   "y": 94,
+   "w": 974,
+   "h": 35,
+   "label": "Tabs — what you have open"
+  },
+  {
+   "n": 5,
+   "x": 237,
+   "y": 246,
+   "w": 928,
+   "h": 608,
+   "label": "The figure"
+  },
+  {
+   "n": 6,
+   "x": 1200,
+   "y": 161,
+   "w": 300,
+   "h": 32,
+   "label": "Inspector tabs — Chart · Frame · Axis · Data · Text · Annotate · Style"
+  },
+  {
+   "n": 7,
+   "x": 1285.2,
+   "y": 926,
+   "w": 86,
+   "h": 20,
+   "label": "Zoom"
+  }
+ ]
+}

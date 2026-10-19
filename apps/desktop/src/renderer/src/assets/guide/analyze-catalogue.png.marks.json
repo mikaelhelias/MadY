@@ -1,0 +1,38 @@
+{
+ "w": 720,
+ "h": 1440,
+ "marks": [
+  {
+   "n": 1,
+   "x": 21,
+   "y": 281.9,
+   "w": 668,
+   "h": 32,
+   "label": "Search every method by name"
+  },
+  {
+   "n": 2,
+   "x": 21,
+   "y": 323.9,
+   "w": 668,
+   "h": 288.9,
+   "label": "Narrow the list to the methods that suit one shape of data"
+  },
+  {
+   "n": 3,
+   "x": 21,
+   "y": 626.8,
+   "w": 668,
+   "h": 813.2,
+   "label": "Every method, in the same eight groups this manual uses"
+  },
+  {
+   "n": 4,
+   "x": 587.8,
+   "y": 242.5,
+   "w": 101.2,
+   "h": 21,
+   "label": "Back to guidance — the recommendations and the goal tiles"
+  }
+ ]
+}

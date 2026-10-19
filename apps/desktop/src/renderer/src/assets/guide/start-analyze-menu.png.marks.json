@@ -1,0 +1,30 @@
+{
+ "w": 240,
+ "h": 206,
+ "marks": [
+  {
+   "n": 1,
+   "x": 16,
+   "y": 36,
+   "w": 208,
+   "h": 29,
+   "label": "Analyze… — the front door, when you are not sure what you need"
+  },
+  {
+   "n": 2,
+   "x": 16,
+   "y": 65,
+   "w": 208,
+   "h": 29,
+   "label": "Common analyses — the named front doors: dose-response, enzyme kinetics, binding, standard curve, method comparison"
+  },
+  {
+   "n": 3,
+   "x": 16,
+   "y": 103,
+   "w": 208,
+   "h": 29,
+   "label": "Sample size & power… — before you run the experiment, not after"
+  }
+ ]
+}

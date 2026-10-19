@@ -1,0 +1,30 @@
+{
+ "w": 237,
+ "h": 44,
+ "marks": [
+  {
+   "n": 1,
+   "x": 8,
+   "y": 8,
+   "w": 219.5,
+   "h": 28,
+   "label": "🔗 and the file's name — this table re-reads itself when that file changes on disk"
+  },
+  {
+   "n": 2,
+   "x": 96.8,
+   "y": 8,
+   "w": 66.2,
+   "h": 28,
+   "label": "Refresh — re-read it now"
+  },
+  {
+   "n": 3,
+   "x": 167.1,
+   "y": 8,
+   "w": 60.5,
+   "h": 28,
+   "label": "Unlink — stop auto-updating and keep the data you have"
+  }
+ ]
+}

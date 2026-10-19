@@ -1,0 +1,14 @@
+{
+ "w": 300,
+ "h": 1073,
+ "marks": [
+  {
+   "n": 1,
+   "x": 11,
+   "y": 180,
+   "w": 282.5,
+   "h": 34,
+   "label": "The chart type — change it here; the data mapping is kept wherever the new type can use it"
+  }
+ ]
+}

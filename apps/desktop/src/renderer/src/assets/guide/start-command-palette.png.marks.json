@@ -1,0 +1,30 @@
+{
+ "w": 520,
+ "h": 488,
+ "marks": [
+  {
+   "n": 1,
+   "x": 1,
+   "y": 1,
+   "w": 518,
+   "h": 47,
+   "label": "Type a few letters of what you want; Enter runs the top hit"
+  },
+  {
+   "n": 2,
+   "x": 7,
+   "y": 54,
+   "w": 506,
+   "h": 33,
+   "label": "A command, with the menu it lives in beside it — so you learn where it is"
+  },
+  {
+   "n": 3,
+   "x": 7,
+   "y": 289,
+   "w": 506,
+   "h": 26,
+   "label": "In the manual — what this documentation can answer, for a question with no command behind it"
+  }
+ ]
+}

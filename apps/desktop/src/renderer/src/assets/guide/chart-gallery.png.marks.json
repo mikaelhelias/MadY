@@ -1,0 +1,30 @@
+{
+ "w": 1500,
+ "h": 1400,
+ "marks": [
+  {
+   "n": 1,
+   "x": 237,
+   "y": 203.2,
+   "w": 1216,
+   "h": 88,
+   "label": "Palette, colour ramp, line width, marker size and font — each applied to every card"
+  },
+  {
+   "n": 2,
+   "x": 237,
+   "y": 305.2,
+   "w": 1216,
+   "h": 21,
+   "label": "The families — charts grouped by what they are for"
+  },
+  {
+   "n": 3,
+   "x": 237,
+   "y": 336.2,
+   "w": 394.7,
+   "h": 386.9,
+   "label": "A card — click it to open that chart as a real, editable graph"
+  }
+ ]
+}
