@@ -1,0 +1,30 @@
+{
+ "w": 518,
+ "h": 621,
+ "marks": [
+  {
+   "n": 1,
+   "x": 282,
+   "y": 112.4,
+   "w": 224,
+   "h": 26,
+   "label": "How an ambiguous typed date is read — 05/06 is 5 June or 6 May"
+  },
+  {
+   "n": 2,
+   "x": 282,
+   "y": 146.4,
+   "w": 224,
+   "h": 26,
+   "label": "Words every import should read as blank"
+  },
+  {
+   "n": 3,
+   "x": 282,
+   "y": 262.4,
+   "w": 224,
+   "h": 26,
+   "label": "Round results tables on screen only — exports keep full precision"
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "w": 1400,
+ "h": 29,
+ "marks": [
+  {
+   "n": 1,
+   "x": 11,
+   "y": 7.5,
+   "w": 104.3,
+   "h": 15,
+   "label": "How much is in the document — datasets and graphs"
+  },
+  {
+   "n": 2,
+   "x": 1112.2,
+   "y": 5.5,
+   "w": 59,
+   "h": 19,
+   "label": "Layout — the same popover as View ▸ Layouts…"
+  },
+  {
+   "n": 3,
+   "x": 1185.2,
+   "y": 5,
+   "w": 86,
+   "h": 20,
+   "label": "Zoom — the − and + are disabled at each end of the range, and the middle opens Set zoom level…"
+  },
+  {
+   "n": 4,
+   "x": 1285.2,
+   "y": 7.5,
+   "w": 103.8,
+   "h": 15,
+   "label": "Whether the statistics engine is up, and that your work is saved"
+  }
+ ]
+}

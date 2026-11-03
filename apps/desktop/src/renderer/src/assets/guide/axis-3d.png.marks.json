@@ -1,0 +1,86 @@
+{
+ "w": 300,
+ "h": 723,
+ "marks": [
+  {
+   "n": 1,
+   "x": 11,
+   "y": 144,
+   "w": 282.4,
+   "h": 27,
+   "label": "X / Y / Z — which cube edge you are editing"
+  },
+  {
+   "n": 2,
+   "x": 11,
+   "y": 171,
+   "w": 282.4,
+   "h": 32,
+   "label": "Title — the name at this edge's end"
+  },
+  {
+   "n": 3,
+   "x": 11,
+   "y": 233,
+   "w": 282.4,
+   "h": 32,
+   "label": "Min"
+  },
+  {
+   "n": 4,
+   "x": 11,
+   "y": 265,
+   "w": 282.4,
+   "h": 32,
+   "label": "Max"
+  },
+  {
+   "n": 5,
+   "x": 11,
+   "y": 297,
+   "w": 282.4,
+   "h": 34,
+   "label": "Scale — linear or log on this edge"
+  },
+  {
+   "n": 6,
+   "x": 11,
+   "y": 361,
+   "w": 282.4,
+   "h": 32,
+   "label": "Tick interval"
+  },
+  {
+   "n": 7,
+   "x": 11,
+   "y": 393,
+   "w": 282.4,
+   "h": 27,
+   "label": "Show ticks"
+  },
+  {
+   "n": 8,
+   "x": 11,
+   "y": 420,
+   "w": 282.4,
+   "h": 32,
+   "label": "Tick length"
+  },
+  {
+   "n": 9,
+   "x": 11,
+   "y": 452,
+   "w": 282.4,
+   "h": 34,
+   "label": "Number format"
+  },
+  {
+   "n": 10,
+   "x": 11,
+   "y": 452,
+   "w": 282.4,
+   "h": 34,
+   "label": "Decimals"
+  }
+ ]
+}

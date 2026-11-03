@@ -1,0 +1,46 @@
+{
+ "w": 300,
+ "h": 343,
+ "marks": [
+  {
+   "n": 1,
+   "x": 11,
+   "y": 22,
+   "w": 282.5,
+   "h": 34,
+   "label": "Bar shape and Bar width — the bar chart's own rows"
+  },
+  {
+   "n": 2,
+   "x": 11,
+   "y": 82,
+   "w": 282.5,
+   "h": 34,
+   "label": "Bar fill — Solid or Two-tone"
+  },
+  {
+   "n": 3,
+   "x": 11,
+   "y": 175,
+   "w": 282.5,
+   "h": 32,
+   "label": "Outline colour and width — a contour round every bar"
+  },
+  {
+   "n": 4,
+   "x": 11,
+   "y": 207,
+   "w": 282.5,
+   "h": 34,
+   "label": "Highlight bar — one intersection, by its sets"
+  },
+  {
+   "n": 5,
+   "x": 11,
+   "y": 241,
+   "w": 282.5,
+   "h": 33,
+   "label": "That bar's own colour, opacity and outline"
+  }
+ ]
+}
