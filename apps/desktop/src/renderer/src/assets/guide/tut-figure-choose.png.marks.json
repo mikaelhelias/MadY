@@ -1,0 +1,30 @@
+{
+ "w": 1500,
+ "h": 950,
+ "marks": [
+  {
+   "n": 1,
+   "x": 229,
+   "y": 308,
+   "w": 197,
+   "h": 159,
+   "label": "Tick the panels you want — every graph in the project, as a live thumbnail"
+  },
+  {
+   "n": 2,
+   "x": 1164.7,
+   "y": 157,
+   "w": 144.2,
+   "h": 19,
+   "label": "Leave this on and each new panel matches the first one as it arrives"
+  },
+  {
+   "n": 3,
+   "x": 240,
+   "y": 188,
+   "w": 116.8,
+   "h": 24,
+   "label": "Build / Arrange → — on to the canvas, with A, B, C already assigned"
+  }
+ ]
+}

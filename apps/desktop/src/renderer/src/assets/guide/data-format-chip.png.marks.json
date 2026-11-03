@@ -1,0 +1,22 @@
+{
+ "w": 602,
+ "h": 55,
+ "marks": [
+  {
+   "n": 1,
+   "x": 208.3,
+   "y": 21,
+   "w": 174,
+   "h": 22,
+   "label": "The format chip — open it for all fifteen. The one in force decides which analyses and which charts you are offered"
+  },
+  {
+   "n": 2,
+   "x": 19,
+   "y": 22.5,
+   "w": 181.3,
+   "h": 19,
+   "label": "The sheet's name, for telling two open datasheets apart"
+  }
+ ]
+}

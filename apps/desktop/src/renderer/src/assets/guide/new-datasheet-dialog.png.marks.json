@@ -1,0 +1,54 @@
+{
+ "w": 720,
+ "h": 1200,
+ "marks": [
+  {
+   "n": 1,
+   "x": 21,
+   "y": 49,
+   "w": 367.3,
+   "h": 30,
+   "label": "What to create — a datasheet, a graph, or both"
+  },
+  {
+   "n": 2,
+   "x": 21,
+   "y": 114,
+   "w": 668,
+   "h": 338,
+   "label": "Filter by the shape your data is in"
+  },
+  {
+   "n": 3,
+   "x": 21,
+   "y": 466,
+   "w": 668,
+   "h": 33,
+   "label": "Search the graph types by name"
+  },
+  {
+   "n": 4,
+   "x": 21,
+   "y": 534,
+   "w": 668,
+   "h": 606.8,
+   "label": "Every graph the chosen shape can draw"
+  },
+  {
+   "n": 5,
+   "x": 21,
+   "y": 621,
+   "w": 678,
+   "h": 500,
+   "label": "The new sheet's settings — format, X type, sample data, entry mode, replicates, error bars, and where to file it"
+  },
+  {
+   "n": 6,
+   "x": 21,
+   "y": 809,
+   "w": 668,
+   "h": 306,
+   "label": "What it would look like, drawn from sample data"
+  }
+ ]
+}

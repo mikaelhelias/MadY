@@ -1,0 +1,30 @@
+{
+ "w": 720,
+ "h": 1200,
+ "marks": [
+  {
+   "n": 1,
+   "x": 21,
+   "y": 534,
+   "w": 668,
+   "h": 606.8,
+   "label": "Every graph this sheet can draw — the best fit is already picked"
+  },
+  {
+   "n": 2,
+   "x": 21,
+   "y": 967.4,
+   "w": 678,
+   "h": 153.6,
+   "label": "The sheet's own settings: format, X type, replicates and error bars"
+  },
+  {
+   "n": 3,
+   "x": 594.6,
+   "y": 1148,
+   "w": 104.4,
+   "h": 33,
+   "label": "Create graph — the sheet and the graph are made together"
+  }
+ ]
+}

@@ -1,0 +1,5880 @@
+{
+ "roc_compare": {
+  "method": "roc",
+  "title": "Compare ROC curves (DeLong)",
+  "terms": [
+   {
+    "term": "AUC (CRP)",
+    "estimate": 1.0,
+    "se": 0.0
+   },
+   {
+    "term": "AUC (PCT)",
+    "estimate": 0.74,
+    "se": 0.112694
+   },
+   {
+    "term": "AUC difference (CRP − PCT)",
+    "estimate": 0.26,
+    "se": 0.112694,
+    "ciLow": 0.0391233,
+    "ciHigh": 0.480877,
+    "statistic": 2.307127,
+    "p": 0.0210477
+   }
+  ],
+  "glance": {
+   "auc1": 1.0,
+   "auc2": 0.74,
+   "auc_diff": 0.26,
+   "se_diff": 0.112694,
+   "ci_diff_low": 0.0391233,
+   "ci_diff_high": 0.480877,
+   "z": 2.307127,
+   "p": 0.0210477,
+   "n_pos": 10,
+   "n_neg": 10
+  },
+  "summary": "DeLong: AUC 1.000 vs 0.740 (Δ = 0.260, 95% CI 0.039–0.481), z = 2.31, p = 0.02105 — the two ROC curves differ significantly."
+ },
+ "cox": {
+  "method": "cox",
+  "title": "Cox proportional-hazards regression",
+  "glance": {
+   "n": 20,
+   "events": 15,
+   "lr_chi2": 3.438432,
+   "p": 0.179207,
+   "concordance": 0.62069,
+   "loglik": -30.085906,
+   "k": 2
+  },
+  "terms": [
+   {
+    "term": "x1",
+    "estimate": 0.630576,
+    "se": 0.350071,
+    "statistic": 1.80128,
+    "p": 0.0716588,
+    "ciLow": -0.0555508,
+    "ciHigh": 1.316702
+   },
+   {
+    "term": "x2",
+    "estimate": -0.701264,
+    "se": 0.66202,
+    "statistic": -1.059279,
+    "p": 0.289473,
+    "ciLow": -1.9988,
+    "ciHigh": 0.596272
+   },
+   {
+    "term": "LR χ² (model)",
+    "estimate": 3.438432,
+    "p": 0.179207,
+    "df": 2
+   },
+   {
+    "term": "Concordance (Harrell C)",
+    "estimate": 0.62069
+   },
+   {
+    "term": "Events / n",
+    "estimate": "15 / 20"
+   }
+  ],
+  "summary": "Cox PH ~ 2 predictor(s), 15 events in 20 subjects; LR χ²(2) = 3.438, p = 0.1792 (not statistically significant); C = 0.621."
+ },
+ "describe": {
+  "method": "describe",
+  "title": "Descriptive statistics",
+  "glance": {
+   "n": 8,
+   "mean": 5.0,
+   "sd": 2.13809
+  },
+  "terms": [
+   {
+    "term": "n",
+    "estimate": 8
+   },
+   {
+    "term": "Mean",
+    "estimate": 5.0,
+    "ciLow": 3.212512,
+    "ciHigh": 6.787488
+   },
+   {
+    "term": "Median",
+    "estimate": 4.5,
+    "ciLow": 2.0,
+    "ciHigh": 9.0
+   },
+   {
+    "term": "Geometric mean",
+    "estimate": 4.603216,
+    "ciLow": 3.170259,
+    "ciHigh": 6.683868
+   },
+   {
+    "term": "Harmonic mean",
+    "estimate": 4.201751
+   },
+   {
+    "term": "Quadratic mean (RMS)",
+    "estimate": 5.385165
+   },
+   {
+    "term": "Trimmed mean (10%)",
+    "estimate": 5.0
+   },
+   {
+    "term": "Winsorized mean (10%)",
+    "estimate": 5.0
+   },
+   {
+    "term": "SD",
+    "estimate": 2.13809
+   },
+   {
+    "term": "Variance",
+    "estimate": 4.571429
+   },
+   {
+    "term": "SEM",
+    "estimate": 0.755929
+   },
+   {
+    "term": "Geometric SD factor",
+    "estimate": 1.562194
+   },
+   {
+    "term": "Coefficient of variation (%CV)",
+    "estimate": 42.761799
+   },
+   {
+    "term": "Skewness",
+    "estimate": 0.818488
+   },
+   {
+    "term": "Kurtosis (excess)",
+    "estimate": 0.940625
+   },
+   {
+    "term": "Min",
+    "estimate": 2.0
+   },
+   {
+    "term": "25th percentile",
+    "estimate": 4.0
+   },
+   {
+    "term": "75th percentile",
+    "estimate": 5.5
+   },
+   {
+    "term": "Max",
+    "estimate": 9.0
+   },
+   {
+    "term": "Range",
+    "estimate": 7.0
+   },
+   {
+    "term": "Interquartile range",
+    "estimate": 1.5
+   },
+   {
+    "term": "Sum",
+    "estimate": 40.0
+   }
+  ],
+  "summary": "n = 8. Mean = 5 (95% CI 3.213 to 6.787); SD = 2.138; median = 4.5."
+ },
+ "normality": {
+  "method": "normality",
+  "title": "Normality & lognormality",
+  "glance": {
+   "n": 15,
+   "shapiro_W": 0.984921,
+   "shapiro_p": 0.992495,
+   "prefers": "lognormal",
+   "lognormal_prob": 0.565756
+  },
+  "terms": [
+   {
+    "term": "Shapiro-Wilk",
+    "statistic": 0.984921,
+    "p": 0.992495,
+    "df": 15
+   },
+   {
+    "term": "D'Agostino-Pearson",
+    "statistic": 0.54034,
+    "p": 0.76325
+   },
+   {
+    "term": "Anderson-Darling",
+    "statistic": 0.120296,
+    "p": 0.984656
+   },
+   {
+    "term": "Kolmogorov-Smirnov (Lilliefors)",
+    "statistic": 0.101648,
+    "p": 0.945272
+   },
+   {
+    "term": "More consistent with",
+    "estimate": "lognormal"
+   },
+   {
+    "term": "P(preferred, by AIC)",
+    "estimate": 0.565756
+   }
+  ],
+  "summary": "Shapiro-Wilk p = 0.9925 — the data are consistent with normal at α = 0.05 (plus D'Agostino, Anderson-Darling, KS/Lilliefors). Distribution: more consistent with lognormal (P ≈ 56.6%)."
+ },
+ "ttest": {
+  "method": "ttest",
+  "title": "Unpaired t test (Student)",
+  "glance": {
+   "t": -1.345074,
+   "df": 9.0,
+   "p": 0.211512,
+   "cohens_d": -0.814483,
+   "hedges_g": -0.74467,
+   "glass_delta": -0.610462,
+   "n_A": 5,
+   "n_B": 6
+  },
+  "terms": [
+   {
+    "term": "Group A mean",
+    "estimate": 7.0
+   },
+   {
+    "term": "Group B mean",
+    "estimate": 15.166667
+   },
+   {
+    "term": "Difference (A − B)",
+    "estimate": -8.166667,
+    "ciLow": -21.901441,
+    "ciHigh": 5.568108,
+    "statistic": -1.345074,
+    "df": 9.0,
+    "p": 0.211512
+   },
+   {
+    "term": "Cohen's d",
+    "estimate": -0.814483,
+    "ciLow": -2.037596,
+    "ciHigh": 0.44915
+   },
+   {
+    "term": "Hedges' g",
+    "estimate": -0.74467,
+    "ciLow": -1.862945,
+    "ciHigh": 0.410652
+   },
+   {
+    "term": "Glass's Δ (vs Group B SD)",
+    "estimate": -0.610462
+   },
+   {
+    "term": "Equal variances (F test)",
+    "statistic": 71.586667,
+    "p": 0.00105695
+   },
+   {
+    "term": "Residual normality (Shapiro-Wilk)",
+    "statistic": 0.927268,
+    "p": 0.383879
+   }
+  ],
+  "summary": "Unpaired t test (Student) (two-tailed): the difference is not statistically significant (p = 0.2115)."
+ },
+ "correlation": {
+  "method": "correlation",
+  "title": "Pearson correlation",
+  "glance": {
+   "r": 0.821429,
+   "p": 0.0234488,
+   "n": 7,
+   "r_sq": 0.674745
+  },
+  "terms": [
+   {
+    "term": "Pearson r",
+    "estimate": 0.821429,
+    "p": 0.0234488,
+    "df": 5,
+    "ciLow": 0.179254,
+    "ciHigh": 0.972756
+   }
+  ],
+  "summary": "Pearson r = 0.8214 (p = 0.02345, two-tailed) — statistically significant; explains 67% of the variance."
+ },
+ "corrmatrix": {
+  "method": "corrmatrix",
+  "title": "Correlation matrix (Pearson r)",
+  "glance": {
+   "variables": 3,
+   "pairs": 3,
+   "n_min": 7
+  },
+  "terms": [
+   {
+    "term": "A vs B",
+    "estimate": 0.90351,
+    "p": 0.00527031,
+    "df": 5
+   },
+   {
+    "term": "A vs C",
+    "estimate": -0.996641,
+    "p": 1.2535e-06,
+    "df": 5
+   },
+   {
+    "term": "B vs C",
+    "estimate": -0.903478,
+    "p": 0.00527456,
+    "df": 5
+   }
+  ],
+  "summary": "3 variables, 3 pairwise Pearson r correlations; strongest: A vs C (r = -0.997)."
+ },
+ "deming": {
+  "method": "deming",
+  "title": "Deming regression",
+  "glance": {
+   "slope": 1.008469,
+   "intercept": 0.0534189,
+   "lambda": 1.0,
+   "r": 0.997631,
+   "n": 10
+  },
+  "terms": [
+   {
+    "term": "Slope",
+    "estimate": 1.008469,
+    "se": 0.0207899,
+    "ciLow": 0.960528,
+    "ciHigh": 1.056411
+   },
+   {
+    "term": "Intercept",
+    "estimate": 0.0534189,
+    "se": 0.134792,
+    "ciLow": -0.257411,
+    "ciHigh": 0.364249
+   },
+   {
+    "term": "Pearson r",
+    "estimate": 0.997631
+   }
+  ],
+  "summary": "Deming (λ = 1): y = 1.008·x + 0.05342 (slope 95% CI 0.9605–1.056, intercept -0.2574–0.3642) — the methods agree (slope∋1, intercept∋0)."
+ },
+ "regression": {
+  "method": "regression",
+  "title": "Linear regression",
+  "glance": {
+   "slope": 1.008392,
+   "intercept": -0.0545455,
+   "r_sq": 0.996915,
+   "p": 6.88182e-14,
+   "n": 12
+  },
+  "terms": [
+   {
+    "term": "Slope",
+    "estimate": 1.008392,
+    "se": 0.017738,
+    "p": 6.88182e-14,
+    "df": 10,
+    "ciLow": 0.968869,
+    "ciHigh": 1.047914
+   },
+   {
+    "term": "Intercept",
+    "estimate": -0.0545455,
+    "se": 0.130548,
+    "ciLow": -0.345425,
+    "ciHigh": 0.236334
+   },
+   {
+    "term": "R²",
+    "estimate": 0.996915
+   },
+   {
+    "term": "Sy.x (RMSE)",
+    "estimate": 0.212116
+   },
+   {
+    "term": "F (1, 10)",
+    "estimate": 3231.837115,
+    "p": 6.88182e-14,
+    "df": 1
+   },
+   {
+    "term": "X-intercept",
+    "estimate": 0.0540915
+   },
+   {
+    "term": "1/slope",
+    "estimate": 0.991678
+   },
+   {
+    "term": "Runs test (lack of fit)",
+    "estimate": 8,
+    "statistic": 0.728721,
+    "p": 0.466172,
+    "ciLow": 6.833333
+   },
+   {
+    "term": "Residual normality (Shapiro)",
+    "statistic": 0.96253,
+    "p": 0.819243
+   }
+  ],
+  "summary": "y = 1.008·x − 0.05455; R² = 0.9969 (slope p = 6.882e-14, statistically significant)."
+ },
+ "outliers": {
+  "method": "outliers",
+  "title": "Outlier detection (Grubbs)",
+  "glance": {
+   "n_in": 11,
+   "n_clean": 9,
+   "removed": 2,
+   "alpha": 0.05
+  },
+  "terms": [
+   {
+    "term": "Outliers removed",
+    "estimate": 2
+   },
+   {
+    "term": "n (input → cleaned)",
+    "estimate": 9
+   },
+   {
+    "term": "Outlier 1",
+    "estimate": 25.0,
+    "statistic": 2.626078,
+    "p": 0.00530474,
+    "gCritical": 2.35473
+   },
+   {
+    "term": "Outlier 2",
+    "estimate": 18.0,
+    "statistic": 2.835789,
+    "p": 7.35851e-09,
+    "gCritical": 2.289954
+   }
+  ],
+  "summary": "Iterative Grubbs at α = 0.05: 2 outliers removed (11 → 9 values)."
+ },
+ "twoway": {
+  "method": "twoway",
+  "title": "Two-way ANOVA",
+  "glance": {
+   "ss_a": 124.0,
+   "ss_b": 144.5,
+   "ss_ab": 64.0,
+   "ss_resid": 12.0,
+   "df_a": 2,
+   "df_b": 1,
+   "df_ab": 2,
+   "df_resid": 12,
+   "F_a": 62.0,
+   "F_b": 144.5,
+   "F_ab": 32.0,
+   "p_a": 4.71904e-07,
+   "p_b": 4.74343e-08,
+   "p_ab": 1.54955e-05,
+   "n_per_cell": 3
+  },
+  "terms": [
+   {
+    "term": "Factor A (A, B, C)",
+    "estimate": 124.0,
+    "df": 2,
+    "statistic": 62.0,
+    "p": 4.71904e-07
+   },
+   {
+    "term": "Factor B (Col 1, Col 2)",
+    "estimate": 144.5,
+    "df": 1,
+    "statistic": 144.5,
+    "p": 4.74343e-08
+   },
+   {
+    "term": "Interaction A×B",
+    "estimate": 64.0,
+    "df": 2,
+    "statistic": 32.0,
+    "p": 1.54955e-05
+   },
+   {
+    "term": "Residual",
+    "estimate": 12.0,
+    "df": 12
+   },
+   {
+    "term": "A vs B",
+    "estimate": -6.0,
+    "p": 7.07818e-07,
+    "ciLow": -7.60473,
+    "ciHigh": -4.39527
+   },
+   {
+    "term": "A vs C",
+    "estimate": -5.0,
+    "p": 4.96348e-06,
+    "ciLow": -6.60473,
+    "ciHigh": -3.39527
+   },
+   {
+    "term": "B vs C",
+    "estimate": 1.0,
+    "p": 0.326593,
+    "ciLow": -0.60473,
+    "ciHigh": 2.60473
+   }
+  ],
+  "summary": "Two-way ANOVA — row factor p = 4.719e-07, column factor p = 4.743e-08, interaction p = 1.55e-05. All-pairs comparisons of row means — Bonferroni correction (pooled MS_residual, df 12)."
+ },
+ "contingency": {
+  "method": "contingency",
+  "title": "Chi-square (contingency table)",
+  "glance": {
+   "chi_sq": 4.0,
+   "df": 1,
+   "p": 0.0455003,
+   "n": 100,
+   "cramers_v": 0.2,
+   "min_expected": 25.0,
+   "rows": 2,
+   "cols": 2,
+   "odds_ratio": 0.444444,
+   "fisher_p": 0.0713424,
+   "yates_chi_sq": 3.24,
+   "yates_p": 0.0718606
+  },
+  "terms": [
+   {
+    "term": "Pearson χ²",
+    "statistic": 4.0,
+    "df": 1,
+    "p": 0.0455003
+   },
+   {
+    "term": "Cramer's V",
+    "estimate": 0.2
+   },
+   {
+    "term": "Yates-corrected χ²",
+    "statistic": 3.24,
+    "df": 1,
+    "p": 0.0718606
+   },
+   {
+    "term": "Fisher's exact (2-sided)",
+    "estimate": 0.444444,
+    "p": 0.0713424
+   },
+   {
+    "term": "Relative risk",
+    "estimate": 0.666667,
+    "ciLow": 0.436884,
+    "ciHigh": 0.992025
+   },
+   {
+    "term": "Odds ratio",
+    "estimate": 0.444444,
+    "ciLow": 0.191526,
+    "ciHigh": 1.0
+   },
+   {
+    "term": "Risk difference",
+    "estimate": -0.2,
+    "ciLow": -0.375244,
+    "ciHigh": -0.00457602
+   },
+   {
+    "term": "NNT (1/|risk diff|)",
+    "estimate": 5.0
+   },
+   {
+    "term": "Sensitivity",
+    "estimate": 0.4,
+    "ciLow": 0.276084,
+    "ciHigh": 0.538186
+   },
+   {
+    "term": "Specificity",
+    "estimate": 0.4,
+    "ciLow": 0.276084,
+    "ciHigh": 0.538186
+   },
+   {
+    "term": "PPV",
+    "estimate": 0.4,
+    "ciLow": 0.276084,
+    "ciHigh": 0.538186
+   },
+   {
+    "term": "NPV",
+    "estimate": 0.4,
+    "ciLow": 0.276084,
+    "ciHigh": 0.538186
+   },
+   {
+    "term": "LR+",
+    "estimate": 0.666667
+   },
+   {
+    "term": "LR−",
+    "estimate": 1.5
+   }
+  ],
+  "summary": "χ²(1, N = 100) = 4, p = 0.0455 — rows and columns are significantly associated (Cramer's V = 0.2)."
+ },
+ "survival": {
+  "method": "survival",
+  "title": "Survival (Kaplan-Meier)",
+  "glance": {
+   "groups": 2,
+   "chi_sq": 16.792941,
+   "df": 1,
+   "p": 4.16881e-05,
+   "gehan_chi_sq": 13.457852,
+   "gehan_p": 0.000243983,
+   "hazard_ratio": 0.239315
+  },
+  "terms": [
+   {
+    "term": "6-MP — median survival",
+    "estimate": 23.0,
+    "ciLow": 13.0,
+    "ciHigh": null
+   },
+   {
+    "term": "Placebo — median survival",
+    "estimate": 8.0,
+    "ciLow": 4.0,
+    "ciHigh": 11.0
+   },
+   {
+    "term": "Log-rank (Mantel-Cox)",
+    "statistic": 16.792941,
+    "df": 1,
+    "p": 4.16881e-05
+   },
+   {
+    "term": "Gehan-Breslow-Wilcoxon",
+    "statistic": 13.457852,
+    "df": 1,
+    "p": 0.000243983
+   },
+   {
+    "term": "Hazard ratio (6-MP / Placebo)",
+    "estimate": 0.239315,
+    "ciLow": 0.113467,
+    "ciHigh": 0.504741
+   }
+  ],
+  "summary": "Log-rank χ²(1) = 16.79, p = 4.169e-05 — survival differs significantly across the 2 groups."
+ },
+ "rmanova": {
+  "method": "rmanova",
+  "title": "One-way repeated-measures ANOVA",
+  "glance": {
+   "F": 1.0,
+   "df_cond": 2,
+   "df_resid": 6,
+   "p": 0.421875,
+   "partial_eta_sq": 0.25,
+   "gg_epsilon": 0.631579,
+   "p_gg": 0.402237,
+   "n_subjects": 4,
+   "k_conditions": 3
+  },
+  "terms": [
+   {
+    "term": "Conditions (Cond 1, Cond 2, Cond 3)",
+    "estimate": 2.666667,
+    "df": 2,
+    "statistic": 1.0,
+    "p": 0.421875
+   },
+   {
+    "term": "Subjects",
+    "estimate": 7.0,
+    "df": 3
+   },
+   {
+    "term": "Residual",
+    "estimate": 8.0,
+    "df": 6
+   }
+  ],
+  "summary": "RM ANOVA: F(2, 6) = 1, p = 0.4219 (Greenhouse-Geisser p = 0.4022, ε = 0.632); partial η² = 0.25."
+ },
+ "goodnessoffit": {
+  "method": "goodnessoffit",
+  "title": "Chi-square goodness-of-fit",
+  "glance": {
+   "chi_sq": 14.0,
+   "df": 2,
+   "p": 0.000911882,
+   "k": 3,
+   "n": 100,
+   "binom_p": null
+  },
+  "terms": [
+   {
+    "term": "Chi-square",
+    "statistic": 14.0,
+    "df": 2,
+    "p": 0.000911882
+   },
+   {
+    "term": "Category 1"
+   },
+   {
+    "term": "Category 2"
+   },
+   {
+    "term": "Category 3"
+   }
+  ],
+  "summary": "χ²(2, N=100) = 14, p = 0.0009119 — the observed counts are inconsistent with the expected distribution (statistically significant)."
+ },
+ "nested": {
+  "method": "nested",
+  "title": "Nested ANOVA / nested t",
+  "glance": {
+   "f_groups": 216.0,
+   "p": 0.000124726,
+   "df_groups": 1,
+   "df_subgroups": 4,
+   "df_within": 18,
+   "groups": 2,
+   "subgroups": 6,
+   "n": 24,
+   "t": -14.696938
+  },
+  "terms": [
+   {
+    "term": "Groups",
+    "estimate": 216.0,
+    "df": 1,
+    "statistic": 216.0,
+    "p": 0.000124726
+   },
+   {
+    "term": "Subgroups within groups",
+    "estimate": 4.0,
+    "df": 4,
+    "statistic": 0.6,
+    "p": 0.667421
+   },
+   {
+    "term": "Residual (within subgroups)",
+    "estimate": 30.0,
+    "df": 18
+   },
+   {
+    "term": "Nested t",
+    "statistic": -14.696938,
+    "df": 4,
+    "p": 0.000124726
+   }
+  ],
+  "summary": "Nested ANOVA: F(1, 4) = 216 for the group effect (tested against among-subgroup variation), p = 0.0001247 (statistically significant)."
+ },
+ "multipleregression": {
+  "method": "multipleregression",
+  "title": "Multiple linear regression",
+  "glance": {
+   "r_sq": 0.883866,
+   "adj_r_sq": 0.825799,
+   "f": 15.221449,
+   "p": 0.00327347,
+   "n": 10,
+   "k": 3
+  },
+  "terms": [
+   {
+    "term": "Intercept",
+    "estimate": -0.499713,
+    "se": 0.57791,
+    "statistic": -0.86469,
+    "p": 0.42043,
+    "df": 6,
+    "ciLow": -1.913809,
+    "ciHigh": 0.914382
+   },
+   {
+    "term": "x1",
+    "estimate": 0.189903,
+    "se": 0.844633,
+    "statistic": 0.224835,
+    "p": 0.829569,
+    "df": 6,
+    "ciLow": -1.876841,
+    "ciHigh": 2.256647
+   },
+   {
+    "term": "x2",
+    "estimate": 2.364642,
+    "se": 0.703415,
+    "statistic": 3.36166,
+    "p": 0.0151984,
+    "df": 6,
+    "ciLow": 0.643448,
+    "ciHigh": 4.085837
+   },
+   {
+    "term": "x3",
+    "estimate": 0.218125,
+    "se": 0.0724598,
+    "statistic": 3.010291,
+    "p": 0.0236916,
+    "df": 6,
+    "ciLow": 0.0408224,
+    "ciHigh": 0.395428
+   },
+   {
+    "term": "R²",
+    "estimate": 0.883866
+   },
+   {
+    "term": "Adjusted R²",
+    "estimate": 0.825799
+   },
+   {
+    "term": "F (3, 6)",
+    "estimate": 15.221449,
+    "p": 0.00327347,
+    "df": 3
+   },
+   {
+    "term": "Sy.x (RMSE)",
+    "estimate": 0.496989
+   }
+  ],
+  "summary": "Y ~ 3 predictors; R² = 0.8839 (adjusted 0.8258), F(3, 6) = 15.22, p = 0.003273 (statistically significant)."
+ },
+ "logistic": {
+  "method": "logistic",
+  "title": "Logistic regression",
+  "glance": {
+   "mcfadden_r_sq": 0.135104,
+   "nagelkerke_r_sq": 0.226424,
+   "tjur_r_sq": 0.171267,
+   "accuracy": 0.75,
+   "lr_chi2": 11.093071,
+   "p": 0.00390095,
+   "n": 60,
+   "k": 2
+  },
+  "terms": [
+   {
+    "term": "Intercept",
+    "estimate": 0.384501,
+    "se": 0.292361,
+    "statistic": 1.315158,
+    "p": 0.188457,
+    "ciLow": -0.188516,
+    "ciHigh": 0.957518
+   },
+   {
+    "term": "x1",
+    "estimate": 0.656766,
+    "se": 0.306141,
+    "statistic": 2.145305,
+    "p": 0.0319285,
+    "ciLow": 0.0567405,
+    "ciHigh": 1.256792
+   },
+   {
+    "term": "x2",
+    "estimate": -0.527552,
+    "se": 0.248903,
+    "statistic": -2.119512,
+    "p": 0.0340472,
+    "ciLow": -1.015392,
+    "ciHigh": -0.039712
+   },
+   {
+    "term": "McFadden R²",
+    "estimate": 0.135104
+   },
+   {
+    "term": "Nagelkerke R²",
+    "estimate": 0.226424
+   },
+   {
+    "term": "Tjur R²",
+    "estimate": 0.171267
+   },
+   {
+    "term": "LR χ² (model)",
+    "estimate": 11.093071,
+    "p": 0.00390095,
+    "df": 2
+   },
+   {
+    "term": "Accuracy (p≥0.5)",
+    "estimate": 0.75
+   }
+  ],
+  "summary": "event ~ 2 predictor(s); LR χ²(2) = 11.09, p = 0.003901 (statistically significant); McFadden R² = 0.1351, accuracy = 75.0%."
+ },
+ "poisson": {
+  "method": "poisson",
+  "title": "Poisson regression",
+  "glance": {
+   "mcfadden_r_sq": 0.62418,
+   "lr_chi2": 53.343495,
+   "p": 2.80037e-13,
+   "deviance": 0.293174,
+   "dispersion": 0.0491689,
+   "n": 8,
+   "k": 1
+  },
+  "terms": [
+   {
+    "term": "Intercept",
+    "estimate": 0.488766,
+    "se": 0.354682,
+    "statistic": 1.378039,
+    "p": 0.168191,
+    "ciLow": -0.206398,
+    "ciHigh": 1.183929
+   },
+   {
+    "term": "dose",
+    "estimate": 0.364105,
+    "se": 0.0548595,
+    "statistic": 6.637038,
+    "p": 3.20049e-11,
+    "ciLow": 0.256582,
+    "ciHigh": 0.471627
+   },
+   {
+    "term": "McFadden R²",
+    "estimate": 0.62418
+   },
+   {
+    "term": "LR χ² (model)",
+    "estimate": 53.343495,
+    "p": 2.80037e-13,
+    "df": 1
+   },
+   {
+    "term": "Deviance",
+    "estimate": 0.293174,
+    "df": 6
+   },
+   {
+    "term": "Dispersion (Pearson χ²/df)",
+    "estimate": 0.0491689
+   }
+  ],
+  "summary": "count ~ 1 predictor(s); LR χ²(1) = 53.34, p = 2.8e-13 (statistically significant); dispersion = 0.0492."
+ },
+ "pca": {
+  "method": "pca",
+  "title": "Principal component analysis",
+  "glance": {
+   "variables": 3,
+   "cases": 10,
+   "components": 3,
+   "pc1_pct": 67.334602,
+   "pc2_pct": 32.651592,
+   "kaiser": 1,
+   "retained": 1,
+   "selection": "kaiser"
+  },
+  "terms": [
+   {
+    "term": "PC1",
+    "estimate": 2.020038,
+    "statistic": 67.334602,
+    "ciLow": 67.334602,
+    "retained": true
+   },
+   {
+    "term": "PC2",
+    "estimate": 0.979548,
+    "statistic": 32.651592,
+    "ciLow": 99.986194,
+    "retained": false
+   },
+   {
+    "term": "PC3",
+    "estimate": 0.000414173,
+    "statistic": 0.0138058,
+    "ciLow": 100.0,
+    "retained": false
+   }
+  ],
+  "summary": "3 variables, 10 cases, standardized; PC1 explains 67.3% and PC2 32.7% of the variance. Kaiser (eigenvalue > 1) retains 1 component(s)."
+ },
+ "roc": {
+  "method": "roc",
+  "title": "ROC curve analysis",
+  "glance": {
+   "auc": 0.75,
+   "se": 0.276296,
+   "ci_low": 0.20847,
+   "ci_high": 1.0,
+   "n_pos": 2,
+   "n_neg": 2,
+   "cutoff": 0.35,
+   "sensitivity": 1.0,
+   "specificity": 0.5,
+   "p": 0.365557
+  },
+  "terms": [
+   {
+    "term": "AUC",
+    "estimate": 0.75,
+    "se": 0.276296,
+    "ciLow": 0.20847,
+    "ciHigh": 1.0,
+    "p": 0.365557
+   },
+   {
+    "term": "Optimal cutoff (Youden)",
+    "estimate": 0.35
+   },
+   {
+    "term": "Sensitivity at cutoff",
+    "estimate": 1.0
+   },
+   {
+    "term": "Specificity at cutoff",
+    "estimate": 0.5
+   }
+  ],
+  "summary": "AUC = 0.750 (95% CI 0.208–1.000, p = 0.3656); at the Youden cutoff 0.35 — sensitivity 100%, specificity 50%."
+ },
+ "auc": {
+  "method": "auc",
+  "title": "Area under the curve",
+  "glance": {
+   "net": 10.0,
+   "peak_area": 10.0,
+   "peaks": 1,
+   "baseline": 0.0
+  },
+  "terms": [
+   {
+    "term": "Total area (net)",
+    "estimate": 10.0
+   },
+   {
+    "term": "Total peak area",
+    "estimate": 10.0
+   },
+   {
+    "term": "Number of peaks",
+    "estimate": 1
+   },
+   {
+    "term": "Baseline",
+    "estimate": 0.0
+   },
+   {
+    "term": "Peak 1 area",
+    "estimate": 10.0
+   },
+   {
+    "term": "Peak 1 height (at X=4)",
+    "estimate": 4.0
+   }
+  ],
+  "summary": "Net area = 10; total positive-peak area = 10 across 1 peak (baseline = 0)."
+ },
+ "ancova": {
+  "method": "ancova",
+  "title": "Compare regression lines (ANCOVA)",
+  "glance": {
+   "groups": 2,
+   "n": 10,
+   "F_slope": 0.969697,
+   "p_slope": 0.362784,
+   "F_intercept": 102.382609,
+   "p_intercept": 1.97955e-05,
+   "slope_diff": -0.08,
+   "slope_diff_se": 0.0812404,
+   "slope_diff_ci_low": -0.278788,
+   "slope_diff_ci_high": 0.118788,
+   "slope_diff_p": 0.362784
+  },
+  "terms": [
+   {
+    "term": "G1 — slope",
+    "estimate": 1.97
+   },
+   {
+    "term": "G1 — intercept",
+    "estimate": 0.09
+   },
+   {
+    "term": "G2 — slope",
+    "estimate": 2.05
+   },
+   {
+    "term": "G2 — intercept",
+    "estimate": 1.01
+   },
+   {
+    "term": "Slopes equal? (F)",
+    "statistic": 0.969697,
+    "df": 1,
+    "p": 0.362784
+   },
+   {
+    "term": "Slope difference (G1 − G2)",
+    "estimate": -0.08,
+    "se": 0.0812404,
+    "statistic": -0.984732,
+    "df": 6,
+    "p": 0.362784,
+    "ciLow": -0.278788,
+    "ciHigh": 0.118788
+   },
+   {
+    "term": "Common slope (if parallel)",
+    "estimate": 2.01
+   },
+   {
+    "term": "Intercepts equal? (F)",
+    "statistic": 102.382609,
+    "df": 1,
+    "p": 1.97955e-05
+   }
+  ],
+  "summary": "2 groups, N = 10: the slopes are parallel (p = 0.3628); the intercepts differ (p = 1.98e-05)."
+ },
+ "curvefit": {
+  "method": "curvefit",
+  "title": "Dose-response (4PL, variable slope)",
+  "glance": {
+   "bottom": 5.0,
+   "top": 95.0,
+   "logec50": 1.0,
+   "hill_slope": 1.2,
+   "r_sq": 1.0,
+   "n": 9,
+   "syx": 5.61733e-16,
+   "sse": 1.57772e-30,
+   "df": 5,
+   "adj_r_sq": 1.0,
+   "EC50": 10.0,
+   "max_dependency": 0.526116,
+   "max_skewness": 7.79253e-17
+  },
+  "terms": [
+   {
+    "term": "Bottom",
+    "estimate": 5.0,
+    "se": 4.1855e-16,
+    "ciLow": 5.0,
+    "ciHigh": 5.0
+   },
+   {
+    "term": "Top",
+    "estimate": 95.0,
+    "se": 4.19295e-16,
+    "ciLow": 95.0,
+    "ciHigh": 95.0
+   },
+   {
+    "term": "logEC50",
+    "estimate": 1.0,
+    "se": 9.00121e-18,
+    "ciLow": 1.0,
+    "ciHigh": 1.0
+   },
+   {
+    "term": "Hill slope",
+    "estimate": 1.2,
+    "se": 2.75919e-17,
+    "ciLow": 1.2,
+    "ciHigh": 1.2
+   },
+   {
+    "term": "EC50",
+    "estimate": 10.0
+   },
+   {
+    "term": "R²",
+    "estimate": 1.0
+   },
+   {
+    "term": "Adjusted R²",
+    "estimate": 1.0
+   },
+   {
+    "term": "Sy.x (RMSE)",
+    "estimate": 5.61733e-16
+   },
+   {
+    "term": "Sum of squares",
+    "estimate": 1.57772e-30,
+    "df": 5
+   }
+  ],
+  "summary": "Bottom = 5, Top = 95, logEC50 = 1, Hill slope = 1.2; R² = 1."
+ },
+ "curvetransform": {
+  "method": "curvetransform",
+  "title": "Lineweaver-Burk (double reciprocal)",
+  "glance": {
+   "n": 9,
+   "variant": "lineweaver_burk",
+   "slope": 0.05,
+   "intercept": 0.01,
+   "vmax": 100.0,
+   "km": 5.0,
+   "dropped": 0
+  },
+  "terms": [
+   {
+    "term": "Points",
+    "estimate": 9
+   },
+   {
+    "term": "Slope",
+    "estimate": 0.05
+   },
+   {
+    "term": "Y-intercept",
+    "estimate": 0.01
+   },
+   {
+    "term": "Vmax (implied by the line)",
+    "estimate": 100.0
+   },
+   {
+    "term": "KM (implied by the line)",
+    "estimate": 5.0
+   }
+  ],
+  "summary": "Lineweaver-Burk (double reciprocal) of 9 points. The line implies Vmax = 100 and KM = 5 — for diagnosis only: read these against a nonlinear Michaelis-Menten fit, which is the estimate to report."
+ },
+ "interpolate": {
+  "method": "interpolate",
+  "title": "Interpolate from the linear standard curve",
+  "glance": {
+   "n": 6,
+   "conf": 0.95,
+   "syx": 0.164462,
+   "model": "linear"
+  },
+  "terms": [
+   {
+    "term": "X @ Y=7",
+    "estimate": 3.491679,
+    "ciLow": 3.39844,
+    "ciHigh": 3.584867
+   },
+   {
+    "term": "Y @ X=2.5",
+    "estimate": 5.01381,
+    "ciLow": 4.79779,
+    "ciHigh": 5.229829
+   }
+  ],
+  "summary": "Read 2 unknown(s) off the linear standard curve (95% CI)."
+ },
+ "globalfit": {
+  "method": "globalfit",
+  "title": "Global fit — Competitive inhibition",
+  "glance": {
+   "datasets": 3,
+   "shared": 3,
+   "free_params": 3,
+   "n": 27,
+   "r_sq": 1.0
+  },
+  "terms": [
+   {
+    "term": "Vmax (shared)",
+    "estimate": 100.0,
+    "se": 1.04617e-13,
+    "ciLow": 100.0,
+    "ciHigh": 100.0
+   },
+   {
+    "term": "KM (shared)",
+    "estimate": 10.0,
+    "se": 4.30802e-14,
+    "ciLow": 10.0,
+    "ciHigh": 10.0
+   },
+   {
+    "term": "Ki (shared)",
+    "estimate": 5.0,
+    "se": 2.52302e-14,
+    "ciLow": 5.0,
+    "ciHigh": 5.0
+   },
+   {
+    "term": "R² (overall)",
+    "estimate": 1.0
+   }
+  ],
+  "summary": "Global Competitive inhibition over 3 datasets (shared: Vmax, KM, Ki); overall R² = 1."
+ },
+ "comparefits": {
+  "method": "comparefits",
+  "title": "Compare models — Dose-response (3PL, fixed slope) vs Dose-response (4PL, variable slope)",
+  "glance": {
+   "n": 10,
+   "model_a": "3pl",
+   "model_b": "4pl",
+   "aicc_a": 50.628438,
+   "aicc_b": 1.229371,
+   "delta_aicc": 49.399066,
+   "prob_a": 1.87555e-11,
+   "prob_b": 1.0,
+   "preferred": "4pl",
+   "f": 2056.483497,
+   "f_p": 7.70206e-09,
+   "f_df1": 1,
+   "f_df2": 6
+  },
+  "terms": [
+   {
+    "term": "Dose-response (3PL, fixed slope)",
+    "aicc": 50.628438,
+    "df": 7,
+    "probability": 1.87555e-11
+   },
+   {
+    "term": "Dose-response (4PL, variable slope)",
+    "aicc": 1.229371,
+    "df": 6,
+    "probability": 1.0
+   },
+   {
+    "term": "ΔAICc",
+    "estimate": 49.399066
+   },
+   {
+    "term": "Preferred (lower AICc)",
+    "estimate": "Dose-response (4PL, variable slope)",
+    "probability": 1.0
+   },
+   {
+    "term": "Extra-SS F",
+    "estimate": 2056.483497,
+    "df": "1, 6",
+    "p": 7.70206e-09
+   },
+   {
+    "term": "F-test prefers (α=0.05)",
+    "estimate": "Dose-response (4PL, variable slope)"
+   }
+  ],
+  "summary": "AICc prefers Dose-response (4PL, variable slope) (ΔAICc = 49.4; P = 100.0%). Extra-SS F(1,6) = 2056, P = 7.702e-09."
+ },
+ "multifactor": {
+  "method": "multifactor",
+  "title": "2-way ANOVA",
+  "glance": {
+   "n": 8,
+   "factors": 2,
+   "r_sq": 0.952381
+  },
+  "terms": [
+   {
+    "term": "A",
+    "estimate": 32.0,
+    "df": 1,
+    "statistic": 64.0,
+    "p": 0.0013239
+   },
+   {
+    "term": "B",
+    "estimate": 8.0,
+    "df": 1,
+    "statistic": 16.0,
+    "p": 0.0161301
+   },
+   {
+    "term": "A × B",
+    "estimate": 8.87469e-31,
+    "df": 1,
+    "statistic": 1.77494e-30,
+    "p": 1.0
+   },
+   {
+    "term": "Residual",
+    "estimate": 2.0,
+    "df": 4
+   }
+  ],
+  "summary": "2-way factorial ANOVA (Type II SS) over 8 observations; significant: A, B."
+ },
+ "mixedmodel": {
+  "method": "mixedmodel",
+  "title": "Mixed-effects model (REML)",
+  "glance": {
+   "n": 24,
+   "groups": 4,
+   "group_var": 4.933317,
+   "resid_var": 1.775001,
+   "icc": 0.735403,
+   "loglik": -45.131635,
+   "reml": true
+  },
+  "terms": [
+   {
+    "term": "Fixed: Intercept",
+    "estimate": 10.375,
+    "se": 1.143367,
+    "statistic": 9.074078,
+    "p": 1.14644e-19,
+    "ciLow": 8.134042,
+    "ciHigh": 12.615958
+   },
+   {
+    "term": "Group variance (random)",
+    "estimate": 4.933317
+   },
+   {
+    "term": "Residual variance",
+    "estimate": 1.775001
+   },
+   {
+    "term": "ICC (intraclass correlation)",
+    "estimate": 0.735403
+   }
+  ],
+  "summary": "Mixed model (REML): 24 observations in 4 'Group' groups; ICC = 0.735 (group SD 2.22, residual SD 1.33)."
+ },
+ "montecarlo": {
+  "method": "montecarlo",
+  "title": "Monte-Carlo — Line through the origin",
+  "glance": {
+   "iterations": 5000,
+   "converged": 5000,
+   "conv_rate": 100.0,
+   "points": 10,
+   "replicates": 1,
+   "n": 10
+  },
+  "terms": [
+   {
+    "term": "Slope",
+    "estimate": 2.998336,
+    "ciLow": 2.801862,
+    "ciHigh": 3.198532
+   }
+  ],
+  "summary": "5000 Monte-Carlo fits of Line through the origin (5000 converged, 100%): each parameter's SD + 95% CI show how precisely this design + noise pin it down."
+ },
+ "pcorrect": {
+  "method": "pcorrect",
+  "title": "P-value correction — Bonferroni",
+  "glance": {
+   "n": 8,
+   "method": "bonferroni",
+   "alpha": 0.05,
+   "n_significant": 1
+  },
+  "terms": [
+   {
+    "term": "P 1 ✓",
+    "estimate": 0.001,
+    "p": 0.008
+   },
+   {
+    "term": "P 2",
+    "estimate": 0.008,
+    "p": 0.064
+   },
+   {
+    "term": "P 3",
+    "estimate": 0.02,
+    "p": 0.16
+   },
+   {
+    "term": "P 4",
+    "estimate": 0.03,
+    "p": 0.24
+   },
+   {
+    "term": "P 5",
+    "estimate": 0.04,
+    "p": 0.32
+   },
+   {
+    "term": "P 6",
+    "estimate": 0.2,
+    "p": 1.0
+   },
+   {
+    "term": "P 7",
+    "estimate": 0.5,
+    "p": 1.0
+   },
+   {
+    "term": "P 8",
+    "estimate": 0.9,
+    "p": 1.0
+   }
+  ],
+  "summary": "Bonferroni of 8 P values at α = 0.05: 1 remains significant."
+ },
+ "cluster": {
+  "method": "cluster",
+  "title": "Cluster analysis (hierarchical, average linkage)",
+  "glance": {
+   "clusters": 2,
+   "cases": 4,
+   "variables": 2,
+   "silhouette": 1.0,
+   "withinSS": 32.0
+  },
+  "terms": [
+   {
+    "term": "Cluster 1",
+    "estimate": 2,
+    "statistic": 16.0
+   },
+   {
+    "term": "Cluster 2",
+    "estimate": 2,
+    "statistic": 16.0
+   }
+  ],
+  "summary": "Hierarchical clustering into 2 clusters of size 2/2. Total within-cluster SS 32; mean silhouette 1.000 (−1…1, higher = better separated)."
+ },
+ "blandaltman": {
+  "method": "blandaltman",
+  "title": "Bland-Altman method comparison",
+  "glance": {
+   "n": 10,
+   "bias": -0.01,
+   "sd": 0.237814,
+   "loa_lower": -0.476116,
+   "loa_upper": 0.456116,
+   "k": 1.96
+  },
+  "terms": [
+   {
+    "term": "Bias (mean difference)",
+    "estimate": -0.01,
+    "ciLow": -0.180122,
+    "ciHigh": 0.160122
+   },
+   {
+    "term": "Upper limit of agreement",
+    "estimate": 0.456116,
+    "ciLow": 0.154936,
+    "ciHigh": 0.757295
+   },
+   {
+    "term": "Lower limit of agreement",
+    "estimate": -0.476116,
+    "ciLow": -0.777295,
+    "ciHigh": -0.174936
+   },
+   {
+    "term": "SD of differences",
+    "estimate": 0.237814
+   }
+  ],
+  "summary": "Bias -0.01 units (95% CI -0.1801 to 0.1601); limits of agreement -0.4761 to 0.4561 over 10 pairs."
+ },
+ "passingbablok": {
+  "method": "passingbablok",
+  "title": "Passing-Bablok regression",
+  "glance": {
+   "slope": 2.0,
+   "intercept": 3.0,
+   "n": 11,
+   "pairs": 55,
+   "r": 1.0
+  },
+  "terms": [
+   {
+    "term": "Slope",
+    "estimate": 2.0,
+    "ciLow": 2.0,
+    "ciHigh": 2.0
+   },
+   {
+    "term": "Intercept",
+    "estimate": 3.0,
+    "ciLow": 3.0,
+    "ciHigh": 3.0
+   }
+  ],
+  "summary": "Passing-Bablok: y = 2·x + 3 (slope 95% CI 2 to 2, intercept 3 to 3) — the methods differ."
+ },
+ "power": {
+  "method": "power",
+  "title": "Sample size & power — Unpaired t",
+  "glance": {
+   "test": "ttest-two",
+   "solve": "power",
+   "effect": 0.8,
+   "alpha": 0.05,
+   "power": 0.791451,
+   "n": 25,
+   "n_exact": 25.0,
+   "per_group": true,
+   "total": 50,
+   "k": null,
+   "ratio": 1.0,
+   "es_symbol": "d"
+  },
+  "terms": [
+   {
+    "term": "Design",
+    "estimate": "Unpaired t"
+   },
+   {
+    "term": "Effect size (d)",
+    "estimate": 0.8
+   },
+   {
+    "term": "α (two-sided)",
+    "estimate": 0.05
+   },
+   {
+    "term": "Power",
+    "estimate": 0.791451
+   },
+   {
+    "term": "n per group",
+    "estimate": 25
+   },
+   {
+    "term": "Total N",
+    "estimate": 50
+   }
+  ],
+  "summary": "Unpaired t power (two-sided, α = 0.05): power = 0.791."
+ },
+ "equivalence": {
+  "method": "equivalence",
+  "title": "Equivalence (TOST) — unpaired",
+  "glance": {
+   "difference": -0.04,
+   "ci_low": -0.160833,
+   "ci_high": 0.0808327,
+   "bound_low": -0.5,
+   "bound_high": 0.5,
+   "t1": 6.601435,
+   "t2": -7.749511,
+   "p1": 1.68383e-06,
+   "p2": 1.92184e-07,
+   "p": 1.68383e-06,
+   "p_difference": 0.573046,
+   "equivalent": true,
+   "df": 18.0,
+   "alpha": 0.05
+  },
+  "terms": [
+   {
+    "term": "Difference",
+    "estimate": -0.04,
+    "ciLow": -0.160833,
+    "ciHigh": 0.0808327,
+    "df": 18.0,
+    "note": "90% CI (the interval TOST decides on)"
+   },
+   {
+    "term": "Equivalence bound (low)",
+    "estimate": -0.5
+   },
+   {
+    "term": "Equivalence bound (high)",
+    "estimate": 0.5
+   },
+   {
+    "term": "TOST lower (H0: difference ≤ low bound)",
+    "statistic": 6.601435,
+    "df": 18.0,
+    "p": 1.68383e-06
+   },
+   {
+    "term": "TOST upper (H0: difference ≥ high bound)",
+    "statistic": -7.749511,
+    "df": 18.0,
+    "p": 1.92184e-07
+   },
+   {
+    "term": "TOST p (the larger of the two)",
+    "p": 1.68383e-06
+   },
+   {
+    "term": "Equivalent at α = 0.05",
+    "estimate": "yes"
+   },
+   {
+    "term": "Difference test (two-sided, for contrast)",
+    "p": 0.573046
+   },
+   {
+    "term": "Bounds in SD units (Cohen's d)",
+    "estimate": -3.208969,
+    "note": "high bound = 3.209"
+   }
+  ],
+  "summary": "Equivalence (TOST) — unpaired (n = 10 vs 10): difference -0.04, 90% CI -0.1608 to 0.08083, bounds -0.5 to 0.5 — equivalent — the difference is within the bound (TOST p = 1.684e-06)."
+ },
+ "permutation": {
+  "method": "permutation",
+  "title": "Permutation test — unpaired",
+  "glance": {
+   "statistic": -5.0,
+   "p": 0.00793651,
+   "count": 2,
+   "n_permutations": 252,
+   "exact": true,
+   "seed": null
+  },
+  "terms": [
+   {
+    "term": "Difference in means (observed)",
+    "estimate": -5.0
+   },
+   {
+    "term": "p (permutation)",
+    "p": 0.00793651,
+    "note": "exact"
+   },
+   {
+    "term": "Rearrangements at least as extreme",
+    "estimate": 2
+   },
+   {
+    "term": "Rearrangements evaluated",
+    "estimate": 252
+   },
+   {
+    "term": "Method",
+    "estimate": "exact"
+   },
+   {
+    "term": "Null distribution mean",
+    "estimate": -1.12785e-16
+   },
+   {
+    "term": "Null distribution SD",
+    "estimate": 1.918665
+   }
+  ],
+  "summary": "Permutation test — unpaired (n = 5 vs 5): Difference in means = -5, p = 0.007937 (exact — all 252 rearrangements enumerated)."
+ },
+ "bayesfactor": {
+  "method": "bayesfactor",
+  "title": "Bayes factor — one sample",
+  "glance": {
+   "bf10": 1564.084384,
+   "bf01": 0.000639352,
+   "log10_bf10": 3.19426,
+   "t": 10.849971,
+   "df": 7.0,
+   "n_eff": 8.0,
+   "rscale": 0.707107,
+   "cohens_d": 3.836044,
+   "stable": true
+  },
+  "terms": [
+   {
+    "term": "BF10 (evidence for an effect)",
+    "estimate": 1564.084384
+   },
+   {
+    "term": "BF01 (evidence for no effect)",
+    "estimate": 0.000639352
+   },
+   {
+    "term": "log10(BF10)",
+    "estimate": 3.19426
+   },
+   {
+    "term": "Interpretation",
+    "estimate": "extreme evidence for H1 (an effect)"
+   },
+   {
+    "term": "t",
+    "statistic": 10.849971,
+    "df": 7.0
+   },
+   {
+    "term": "Standardized effect size (Cohen's d)",
+    "estimate": 3.836044
+   },
+   {
+    "term": "Prior scale",
+    "estimate": "medium (r = 0.7071)"
+   },
+   {
+    "term": "  BF10 at the medium prior (r = 0.7071)",
+    "estimate": 1564.084384,
+    "note": "prior-sensitivity check"
+   },
+   {
+    "term": "  BF10 at the wide prior (r = 1)",
+    "estimate": 2090.836038,
+    "note": "prior-sensitivity check"
+   },
+   {
+    "term": "  BF10 at the ultrawide prior (r = 1.414)",
+    "estimate": 2686.579335,
+    "note": "prior-sensitivity check"
+   },
+   {
+    "term": "Conclusion stable across the three priors",
+    "estimate": "yes"
+   }
+  ],
+  "summary": "Bayes factor — one sample (n = 8): BF10 = 1564 (BF01 = 0.0006394) — extreme evidence for H1 (an effect), with a medium (r = 0.7071) Cauchy prior on the effect size."
+ },
+ "anova": {
+  "method": "anova1",
+  "title": "One-way ANOVA",
+  "glance": {
+   "F": 216.8,
+   "df_between": 2,
+   "df_within": 9,
+   "p": 2.43804e-08,
+   "eta_sq": 0.979666
+  },
+  "terms": [
+   {
+    "term": "Drug A",
+    "estimate": 21.5,
+    "df": 3
+   },
+   {
+    "term": "Drug B",
+    "estimate": 30.5,
+    "df": 3
+   },
+   {
+    "term": "Drug C",
+    "estimate": 40.5,
+    "df": 3
+   },
+   {
+    "term": "Between groups",
+    "statistic": 216.8,
+    "df": 2,
+    "p": 2.43804e-08
+   },
+   {
+    "term": "Drug A vs Drug B",
+    "estimate": -9.0,
+    "ciLow": -11.548741,
+    "ciHigh": -6.451259,
+    "p": 1.07667e-05
+   },
+   {
+    "term": "Drug A vs Drug C",
+    "estimate": -19.0,
+    "ciLow": -21.548741,
+    "ciHigh": -16.451259,
+    "p": 1.72362e-08
+   },
+   {
+    "term": "Drug B vs Drug C",
+    "estimate": -10.0,
+    "ciLow": -12.548741,
+    "ciHigh": -7.451259,
+    "p": 4.46815e-06
+   },
+   {
+    "term": "Residual normality (Shapiro-Wilk)",
+    "statistic": 0.876187,
+    "p": 0.0783381
+   },
+   {
+    "term": "Equal variances (Bartlett)",
+    "statistic": 0.0,
+    "p": 1.0
+   },
+   {
+    "term": "Equal variances (Brown-Forsythe)",
+    "statistic": 0.0,
+    "p": 1.0
+   }
+  ],
+  "summary": "F(2, 9) = 216.8, p = 2.438e-08 — the group means differ significantly (η² = 0.98); post-hoc: Tukey HSD, all pairs."
+ },
+ "metaanalysis": {
+  "method": "metaanalysis",
+  "title": "Meta-analysis (inverse variance, log scale)",
+  "glance": {
+   "k": 5,
+   "Q": 9.43286,
+   "df": 4,
+   "tau²": 0.0305583,
+   "I² (%)": 57.595048,
+   "pooled (fixed)": 0.928604,
+   "pooled (random)": 0.92641
+  },
+  "terms": [
+   {
+    "term": "S1",
+    "estimate": 0.82,
+    "ciLow": 0.64,
+    "ciHigh": 1.05
+   },
+   {
+    "term": "S2",
+    "estimate": 1.14,
+    "ciLow": 0.9,
+    "ciHigh": 1.44
+   },
+   {
+    "term": "S3",
+    "estimate": 0.67,
+    "ciLow": 0.49,
+    "ciHigh": 0.92
+   },
+   {
+    "term": "S4",
+    "estimate": 0.95,
+    "ciLow": 0.7,
+    "ciHigh": 1.3
+   },
+   {
+    "term": "S5",
+    "estimate": 1.21,
+    "ciLow": 0.78,
+    "ciHigh": 1.88
+   },
+   {
+    "term": "Pooled — fixed effect",
+    "estimate": 0.928604,
+    "se": 0.0658064,
+    "statistic": -1.125621,
+    "p": 0.260326,
+    "ciLow": 0.816236,
+    "ciHigh": 1.05644
+   },
+   {
+    "term": "Pooled — random effects (DL)",
+    "estimate": 0.92641,
+    "se": 0.104333,
+    "statistic": -0.732639,
+    "p": 0.463779,
+    "ciLow": 0.755084,
+    "ciHigh": 1.13661
+   },
+   {
+    "term": "Heterogeneity (Cochran Q)",
+    "statistic": 9.43286,
+    "df": 4,
+    "p": 0.0511452
+   }
+  ],
+  "summary": "Pooled effect 0.928604 (fixed) / 0.92641 (random) across 5 studies; I² = 57.6% (moderate heterogeneity)."
+ },
+ "publicationbias": {
+  "method": "publicationbias",
+  "title": "Publication bias (Egger + trim-and-fill, log scale)",
+  "glance": {
+   "k": 5,
+   "Egger intercept": 0.0890254,
+   "Egger p": 0.983207,
+   "k₀ (imputed)": 0,
+   "side": "left",
+   "adjusted (fixed)": 0.928604,
+   "adjusted (random)": 0.92641
+  },
+  "terms": [
+   {
+    "term": "Egger intercept (bias)",
+    "estimate": 0.0890254,
+    "se": 3.89663,
+    "statistic": 0.0228468,
+    "df": 3,
+    "p": 0.983207,
+    "ciLow": -12.311792,
+    "ciHigh": 12.489842
+   },
+   {
+    "term": "Egger slope (underlying effect)",
+    "estimate": -0.0868988,
+    "se": 0.57338
+   },
+   {
+    "term": "Trim-and-fill: imputed studies (left side)",
+    "statistic": 0
+   },
+   {
+    "term": "Adjusted pooled — fixed effect",
+    "estimate": 0.928604,
+    "se": 0.0658064,
+    "statistic": -1.125621,
+    "p": 0.260326,
+    "ciLow": 0.816236,
+    "ciHigh": 1.05644
+   },
+   {
+    "term": "Adjusted pooled — random effects (DL)",
+    "estimate": 0.92641,
+    "se": 0.104333,
+    "statistic": -0.732639,
+    "p": 0.463779,
+    "ciLow": 0.755084,
+    "ciHigh": 1.13661
+   }
+  ],
+  "summary": "Egger intercept 0.0890254 (p = 0.983207, no significant asymmetry); trim-and-fill imputed no studies — the pooled effect stands."
+ },
+ "pcoa": {
+  "method": "pcoa",
+  "title": "Principal coordinates analysis (PCoA)",
+  "glance": {
+   "cases": 12,
+   "variables": 6,
+   "axes": 7,
+   "axis1_pct": 41.831079,
+   "axis2_pct": 28.165645,
+   "negativeEigenvalues": 4
+  },
+  "terms": [
+   {
+    "term": "PCoA1",
+    "estimate": 1.701358,
+    "extra1": 41.831079
+   },
+   {
+    "term": "PCoA2",
+    "estimate": 1.145556,
+    "extra1": 28.165645
+   },
+   {
+    "term": "PCoA3",
+    "estimate": 0.538319,
+    "extra1": 13.235575
+   },
+   {
+    "term": "PCoA4",
+    "estimate": 0.323865,
+    "extra1": 7.962817
+   },
+   {
+    "term": "PCoA5",
+    "estimate": 0.306515,
+    "extra1": 7.536252
+   },
+   {
+    "term": "PCoA6",
+    "estimate": 0.0275969,
+    "extra1": 0.678522
+   },
+   {
+    "term": "PCoA7",
+    "estimate": 0.024001,
+    "extra1": 0.59011
+   }
+  ],
+  "summary": "12 cases, 6 variables, Bray-Curtis distance; PCoA1 explains 41.8% and PCoA2 28.2% of the variation."
+ },
+ "nmds": {
+  "method": "nmds",
+  "title": "Non-metric multidimensional scaling (NMDS)",
+  "glance": {
+   "cases": 12,
+   "variables": 6,
+   "dimensions": 2,
+   "stress": 0.0440956,
+   "nonMetricR2": 0.998056,
+   "convergedStarts": 9,
+   "tries": 10
+  },
+  "terms": [
+   {
+    "term": "Stress (Kruskal-1)",
+    "estimate": 0.0440956
+   },
+   {
+    "term": "Non-metric fit R²",
+    "estimate": 0.998056
+   },
+   {
+    "term": "Linear fit R²",
+    "estimate": 0.848974
+   }
+  ],
+  "summary": "12 cases in 2 dimension(s) on the Bray-Curtis dissimilarity; stress = 0.044 (good), and 9 of 10 starts reached it."
+ },
+ "ca": {
+  "method": "ca",
+  "title": "Correspondence analysis",
+  "glance": {
+   "cases": 10,
+   "variables": 6,
+   "axes": 5,
+   "axis1_pct": 67.523354,
+   "axis2_pct": 25.036954,
+   "inertia": 1.02761,
+   "chi2": 692.609353
+  },
+  "terms": [
+   {
+    "term": "CA1",
+    "estimate": 0.693877,
+    "extra1": 67.523354
+   },
+   {
+    "term": "CA2",
+    "estimate": 0.257282,
+    "extra1": 25.036954
+   },
+   {
+    "term": "CA3",
+    "estimate": 0.0652018,
+    "extra1": 6.344994
+   },
+   {
+    "term": "CA4",
+    "estimate": 0.0101936,
+    "extra1": 0.991971
+   },
+   {
+    "term": "CA5",
+    "estimate": 0.00105563,
+    "extra1": 0.102726
+   }
+  ],
+  "summary": "10 cases, 6 variables; total inertia 1.0276 (chi-square 692.6). CA1 carries 67.5% and CA2 25.0% of it."
+ },
+ "rda": {
+  "method": "rda",
+  "title": "Redundancy analysis (RDA)",
+  "glance": {
+   "cases": 24,
+   "variables": 5,
+   "explanatory": 2,
+   "axes": 2,
+   "r2": 0.920965,
+   "adjR2": 0.913438,
+   "pseudoF": 122.352632,
+   "p": 0.005,
+   "axis1_pct": 78.372995,
+   "axis2_pct": 13.723511
+  },
+  "terms": [
+   {
+    "term": "Constrained (model)",
+    "estimate": 0.920965,
+    "statistic": 122.352632,
+    "p": 0.005,
+    "df": 2
+   },
+   {
+    "term": "Temp",
+    "estimate": 0.774362,
+    "statistic": 205.751982,
+    "p": 0.005,
+    "df": 1
+   },
+   {
+    "term": "pH",
+    "estimate": 0.139863,
+    "statistic": 37.162302,
+    "p": 0.005,
+    "df": 1
+   },
+   {
+    "term": "RDA1",
+    "estimate": 15.586179,
+    "extra1": 78.372995
+   },
+   {
+    "term": "RDA2",
+    "estimate": 2.72922,
+    "extra1": 13.723511
+   }
+  ],
+  "summary": "24 cases, 5 response variables constrained by 2 explanatory column(s): 92.1% of the variance is explained (adjusted 91.3%), pseudo-F = 122.353, p = 0.005 (199 permutations)."
+ },
+ "cca": {
+  "method": "cca",
+  "title": "Canonical correspondence analysis (CCA)",
+  "terms": [
+   {
+    "term": "Constrained (model)",
+    "estimate": 0.635546,
+    "statistic": 14.822556,
+    "p": 0.005,
+    "df": 2
+   },
+   {
+    "term": "Gradient",
+    "estimate": 0.581218,
+    "statistic": 27.110991,
+    "p": 0.005,
+    "df": 1
+   },
+   {
+    "term": "unrelated",
+    "estimate": 0.00368613,
+    "statistic": 0.17194,
+    "p": 0.86,
+    "df": 1
+   },
+   {
+    "term": "CCA1",
+    "estimate": 0.360392,
+    "extra1": 63.263469
+   },
+   {
+    "term": "CCA2",
+    "estimate": 0.00165845,
+    "extra1": 0.291126
+   }
+  ],
+  "extra": {
+   "ordination": {
+    "varLabels": [
+     "Sp1",
+     "Sp2",
+     "Sp3",
+     "Sp4",
+     "Sp5",
+     "Sp6"
+    ],
+    "pcLabels": [
+     "CCA1",
+     "CCA2"
+    ],
+    "scores": [
+     [
+      0.074669,
+      -0.788613
+     ],
+     [
+      -1.328793,
+      2.607569
+     ],
+     [
+      -1.00694,
+      0.729395
+     ],
+     [
+      0.773917,
+      0.706274
+     ],
+     [
+      0.425732,
+      -0.909078
+     ],
+     [
+      0.950201,
+      0.266355
+     ],
+     [
+      -0.439521,
+      -0.959401
+     ],
+     [
+      0.226175,
+      -0.742304
+     ],
+     [
+      -0.656761,
+      -0.475177
+     ],
+     [
+      2.119947,
+      2.800272
+     ],
+     [
+      -1.107587,
+      1.949232
+     ],
+     [
+      0.0494302,
+      -0.884036
+     ],
+     [
+      -0.785127,
+      0.229368
+     ],
+     [
+      0.290051,
+      -0.836359
+     ],
+     [
+      0.620381,
+      0.337408
+     ],
+     [
+      -0.358126,
+      -1.148183
+     ],
+     [
+      -0.765636,
+      0.201023
+     ],
+     [
+      0.335793,
+      -0.188576
+     ],
+     [
+      0.318282,
+      -1.318397
+     ],
+     [
+      -0.524677,
+      -0.0613492
+     ]
+    ],
+    "lcScores": [
+     [
+      0.101961,
+      -0.173591
+     ],
+     [
+      -1.25978,
+      -0.0114504
+     ],
+     [
+      -1.089662,
+      0.205073
+     ],
+     [
+      0.703763,
+      0.0747046
+     ],
+     [
+      0.416318,
+      -0.413631
+     ],
+     [
+      0.707198,
+      -0.0320694
+     ],
+     [
+      -0.458024,
+      -0.181046
+     ],
+     [
+      0.20588,
+      -0.101544
+     ],
+     [
+      -0.595578,
+      0.170403
+     ],
+     [
+      2.08957,
+      0.00235806
+     ],
+     [
+      -1.462253,
+      0.0878529
+     ],
+     [
+      0.251572,
+      -0.0751463
+     ],
+     [
+      -0.5613,
+      -0.0903606
+     ],
+     [
+      0.337533,
+      0.251863
+     ],
+     [
+      0.568426,
+      0.0867003
+     ],
+     [
+      -0.316152,
+      0.0459313
+     ],
+     [
+      -0.738999,
+      -0.292591
+     ],
+     [
+      0.437604,
+      0.483526
+     ],
+     [
+      0.304455,
+      -0.119214
+     ],
+     [
+      -0.533076,
+      0.160278
+     ]
+    ],
+    "waScores": [
+     [
+      0.074669,
+      -0.788613
+     ],
+     [
+      -1.328793,
+      2.607569
+     ],
+     [
+      -1.00694,
+      0.729395
+     ],
+     [
+      0.773917,
+      0.706274
+     ],
+     [
+      0.425732,
+      -0.909078
+     ],
+     [
+      0.950201,
+      0.266355
+     ],
+     [
+      -0.439521,
+      -0.959401
+     ],
+     [
+      0.226175,
+      -0.742304
+     ],
+     [
+      -0.656761,
+      -0.475177
+     ],
+     [
+      2.119947,
+      2.800272
+     ],
+     [
+      -1.107587,
+      1.949232
+     ],
+     [
+      0.0494302,
+      -0.884036
+     ],
+     [
+      -0.785127,
+      0.229368
+     ],
+     [
+      0.290051,
+      -0.836359
+     ],
+     [
+      0.620381,
+      0.337408
+     ],
+     [
+      -0.358126,
+      -1.148183
+     ],
+     [
+      -0.765636,
+      0.201023
+     ],
+     [
+      0.335793,
+      -0.188576
+     ],
+     [
+      0.318282,
+      -1.318397
+     ],
+     [
+      -0.524677,
+      -0.0613492
+     ]
+    ],
+    "speciesScores": [
+     [
+      1.863263,
+      0.0342236
+     ],
+     [
+      0.983172,
+      0.370746
+     ],
+     [
+      0.375845,
+      -0.238749
+     ],
+     [
+      -0.259619,
+      -0.0718853
+     ],
+     [
+      -0.73072,
+      0.0358291
+     ],
+     [
+      -1.281632,
+      0.283258
+     ]
+    ],
+    "envScores": [
+     [
+      -0.999385,
+      0.0350783
+     ],
+     [
+      -0.285743,
+      -0.958306
+     ]
+    ],
+    "envLabels": [
+     "Gradient",
+     "unrelated"
+    ],
+    "eigenvalues": [
+     0.360392,
+     0.00165845
+    ],
+    "explained": [
+     0.632635,
+     0.00291126
+    ],
+    "constrainedShare": [
+     0.995419,
+     0.00458072
+    ],
+    "unconstrainedEigenvalues": [
+     0.152278,
+     0.0404599,
+     0.00616613,
+     0.00549389,
+     0.00322039
+    ],
+    "caseLabels": [
+     "Case 1",
+     "Case 2",
+     "Case 3",
+     "Case 4",
+     "Case 5",
+     "Case 6",
+     "Case 7",
+     "Case 8",
+     "Case 9",
+     "Case 10",
+     "Case 11",
+     "Case 12",
+     "Case 13",
+     "Case 14",
+     "Case 15",
+     "Case 16",
+     "Case 17",
+     "Case 18",
+     "Case 19",
+     "Case 20"
+    ],
+    "rowMasses": [
+     0.0539702,
+     0.044665,
+     0.0440447,
+     0.0564516,
+     0.057072,
+     0.0459057,
+     0.0527295,
+     0.060794,
+     0.0483871,
+     0.0477667,
+     0.0353598,
+     0.0496278,
+     0.0452854,
+     0.060794,
+     0.0508685,
+     0.0502481,
+     0.0502481,
+     0.0508685,
+     0.0477667,
+     0.0471464
+    ],
+    "colMasses": [
+     0.0521092,
+     0.132134,
+     0.25062,
+     0.289082,
+     0.195409,
+     0.0806452
+    ],
+    "constrained": 0.362051,
+    "totalVariance": 0.569669,
+    "totalInertia": 0.569669,
+    "r2": 0.635546,
+    "adjR2": 0.592669,
+    "pseudoF": 14.822556,
+    "p": 0.005,
+    "permutations": 199,
+    "scaling": "symmetric",
+    "siteScores": "wa"
+   }
+  },
+  "glance": {
+   "cases": 20,
+   "variables": 6,
+   "explanatory": 2,
+   "axes": 2,
+   "r2": 0.635546,
+   "adjR2": 0.592669,
+   "pseudoF": 14.822556,
+   "p": 0.005,
+   "axis1_pct": 63.263469,
+   "axis2_pct": 0.291126,
+   "inertia": 0.569669
+  },
+  "summary": "20 cases, 6 variables, total inertia 0.5697: 2 explanatory column(s) constrain 63.6% of it (adjusted 59.3%), pseudo-F = 14.823, p = 0.005 (199 permutations).",
+  "assumptions": [
+   "CCA is correspondence analysis constrained by the explanatory variables: the axes are linear combinations of them, in the chi-square geometry — so it needs counts (or another non-negative measure on one common scale) and assumes unimodal responses along a gradient.",
+   "Sites carry their row masses: a site with more counts weighs more, in the fit and in every correlation reported here. That is what makes this CCA and not an RDA on transformed data.",
+   "Significance is by permutation (199 rearrangements, seed 5) — the explanatory block is shuffled, so each site keeps its own counts and its own mass: p = (r + 1) / (permutations + 1), and the smallest p reachable here is 0.005.",
+   "Each term is tested marginally — what it adds when entered last, with the variable residualised against the others before shuffling, so collinearity is respected.",
+   "Adjusted R2 (Ezekiel) is the one to report: R2 rises with every variable added, adjusted R2 does not.",
+   "Scaling \"symmetric\": both families scaled by the square root of the inertia — the usual choice when both are read together.",
+   "Per-axis permutation tests are not offered: testing the axes one after another has more than one convention, and they give different p-values, so only the whole model and each term are tested."
+  ],
+  "cite": "Canonical correspondence analysis (ter Braak 1986) of a 20 x 6 table constrained by 2 explanatory column(s); 199 permutations."
+ },
+ "dbrda": {
+  "method": "dbrda",
+  "title": "Distance-based redundancy analysis (db-RDA)",
+  "terms": [
+   {
+    "term": "Constrained (model)",
+    "estimate": 0.761797,
+    "statistic": 33.580121,
+    "p": 0.005,
+    "df": 2
+   },
+   {
+    "term": "Temp",
+    "estimate": 0.630912,
+    "statistic": 55.621324,
+    "p": 0.005,
+    "df": 1
+   },
+   {
+    "term": "pH",
+    "estimate": 0.12438,
+    "statistic": 10.965345,
+    "p": 0.005,
+    "df": 1
+   },
+   {
+    "term": "dbRDA1",
+    "estimate": 0.0183572,
+    "extra1": 64.09501
+   },
+   {
+    "term": "dbRDA2",
+    "estimate": 0.00346114,
+    "extra1": 12.084729
+   }
+  ],
+  "extra": {
+   "ordination": {
+    "varLabels": [
+     "Sp1",
+     "Sp2",
+     "Sp3",
+     "Sp4",
+     "Sp5"
+    ],
+    "pcLabels": [
+     "dbRDA1",
+     "dbRDA2"
+    ],
+    "scores": [
+     [
+      -0.264586,
+      0.196179
+     ],
+     [
+      -0.575743,
+      0.378778
+     ],
+     [
+      0.135188,
+      -0.304261
+     ],
+     [
+      0.237269,
+      0.0958874
+     ],
+     [
+      0.614559,
+      -0.206828
+     ],
+     [
+      0.116944,
+      0.0102288
+     ],
+     [
+      -0.083949,
+      -0.314614
+     ],
+     [
+      -0.317566,
+      0.147445
+     ],
+     [
+      0.388766,
+      0.196005
+     ],
+     [
+      0.587069,
+      0.234413
+     ],
+     [
+      0.307758,
+      -0.109259
+     ],
+     [
+      -0.410244,
+      0.0297554
+     ],
+     [
+      -0.335345,
+      -0.234565
+     ],
+     [
+      0.743283,
+      -0.207331
+     ],
+     [
+      0.15306,
+      0.267753
+     ],
+     [
+      -0.666508,
+      -0.134725
+     ],
+     [
+      0.0922367,
+      0.332022
+     ],
+     [
+      -0.437135,
+      0.278528
+     ],
+     [
+      -0.131793,
+      -0.422528
+     ],
+     [
+      -0.0540116,
+      0.0823419
+     ],
+     [
+      -0.203737,
+      -0.341158
+     ],
+     [
+      0.236797,
+      0.263895
+     ],
+     [
+      0.016376,
+      0.157301
+     ],
+     [
+      -0.148688,
+      -0.395265
+     ]
+    ],
+    "lcScores": [
+     [
+      -0.277191,
+      0.215534
+     ],
+     [
+      -0.504588,
+      0.310973
+     ],
+     [
+      0.019024,
+      -0.325961
+     ],
+     [
+      0.243979,
+      0.0790341
+     ],
+     [
+      0.560561,
+      -0.0923555
+     ],
+     [
+      0.114443,
+      0.0902216
+     ],
+     [
+      -0.117165,
+      -0.240552
+     ],
+     [
+      -0.256828,
+      0.109623
+     ],
+     [
+      0.370275,
+      0.15136
+     ],
+     [
+      0.740598,
+      0.111749
+     ],
+     [
+      0.210985,
+      -0.143289
+     ],
+     [
+      -0.42533,
+      -0.021489
+     ],
+     [
+      -0.289311,
+      -0.201567
+     ],
+     [
+      0.762557,
+      -0.177461
+     ],
+     [
+      0.138742,
+      0.202754
+     ],
+     [
+      -0.604133,
+      -0.235664
+     ],
+     [
+      -0.0105789,
+      0.450991
+     ],
+     [
+      -0.435013,
+      0.286013
+     ],
+     [
+      -0.12405,
+      -0.437515
+     ],
+     [
+      -0.144502,
+      0.189691
+     ],
+     [
+      -0.189108,
+      -0.195183
+     ],
+     [
+      0.288201,
+      0.163434
+     ],
+     [
+      0.0365573,
+      0.143102
+     ],
+     [
+      -0.108126,
+      -0.433442
+     ]
+    ],
+    "waScores": [
+     [
+      -0.264586,
+      0.196179
+     ],
+     [
+      -0.575743,
+      0.378778
+     ],
+     [
+      0.135188,
+      -0.304261
+     ],
+     [
+      0.237269,
+      0.0958874
+     ],
+     [
+      0.614559,
+      -0.206828
+     ],
+     [
+      0.116944,
+      0.0102288
+     ],
+     [
+      -0.083949,
+      -0.314614
+     ],
+     [
+      -0.317566,
+      0.147445
+     ],
+     [
+      0.388766,
+      0.196005
+     ],
+     [
+      0.587069,
+      0.234413
+     ],
+     [
+      0.307758,
+      -0.109259
+     ],
+     [
+      -0.410244,
+      0.0297554
+     ],
+     [
+      -0.335345,
+      -0.234565
+     ],
+     [
+      0.743283,
+      -0.207331
+     ],
+     [
+      0.15306,
+      0.267753
+     ],
+     [
+      -0.666508,
+      -0.134725
+     ],
+     [
+      0.0922367,
+      0.332022
+     ],
+     [
+      -0.437135,
+      0.278528
+     ],
+     [
+      -0.131793,
+      -0.422528
+     ],
+     [
+      -0.0540116,
+      0.0823419
+     ],
+     [
+      -0.203737,
+      -0.341158
+     ],
+     [
+      0.236797,
+      0.263895
+     ],
+     [
+      0.016376,
+      0.157301
+     ],
+     [
+      -0.148688,
+      -0.395265
+     ]
+    ],
+    "envScores": [
+     [
+      0.996598,
+      0.0824122
+     ],
+     [
+      -0.138928,
+      0.990303
+     ]
+    ],
+    "envLabels": [
+     "Temp",
+     "pH"
+    ],
+    "eigenvalues": [
+     0.0183572,
+     0.00346114
+    ],
+    "explained": [
+     0.64095,
+     0.120847
+    ],
+    "constrainedShare": [
+     0.841366,
+     0.158634
+    ],
+    "unconstrainedEigenvalues": [
+     0.00308366,
+     0.00143418,
+     0.000761001,
+     0.000635425,
+     0.000306751,
+     0.000241816,
+     0.000146184,
+     9.15508e-05,
+     5.77146e-05,
+     4.24612e-05
+    ],
+    "caseLabels": [
+     "Case 1",
+     "Case 2",
+     "Case 3",
+     "Case 4",
+     "Case 5",
+     "Case 6",
+     "Case 7",
+     "Case 8",
+     "Case 9",
+     "Case 10",
+     "Case 11",
+     "Case 12",
+     "Case 13",
+     "Case 14",
+     "Case 15",
+     "Case 16",
+     "Case 17",
+     "Case 18",
+     "Case 19",
+     "Case 20",
+     "Case 21",
+     "Case 22",
+     "Case 23",
+     "Case 24"
+    ],
+    "constrained": 0.0218184,
+    "totalVariance": 0.0286406,
+    "r2": 0.761797,
+    "adjR2": 0.739111,
+    "pseudoF": 33.580121,
+    "p": 0.005,
+    "permutations": 199,
+    "scaling": "symmetric",
+    "transform": "none",
+    "metric": "braycurtis",
+    "negativeEigenvalues": 11,
+    "siteScores": "wa",
+    "speciesScores": [
+     [
+      0.18916,
+      0.0048203
+     ],
+     [
+      0.15613,
+      0.000977848
+     ],
+     [
+      -0.100241,
+      -0.00648316
+     ],
+     [
+      -0.0255964,
+      0.0788757
+     ],
+     [
+      0.0155574,
+      -0.00558543
+     ]
+    ]
+   }
+  },
+  "glance": {
+   "cases": 24,
+   "variables": 5,
+   "explanatory": 2,
+   "axes": 2,
+   "r2": 0.761797,
+   "adjR2": 0.739111,
+   "pseudoF": 33.580121,
+   "p": 0.005,
+   "axis1_pct": 64.09501,
+   "axis2_pct": 12.084729,
+   "negativeEigenvalues": 11
+  },
+  "summary": "24 cases on the Bray-Curtis dissimilarity, constrained by 2 explanatory column(s): 76.2% of the variation is explained (adjusted 73.9%), pseudo-F = 33.580, p = 0.005 (199 permutations).",
+  "assumptions": [
+   "db-RDA is RDA on principal coordinates: the Bray-Curtis dissimilarity is turned into coordinates first, then the axes are forced to be linear combinations of the explanatory variables. Use it when the distance you care about is not Euclidean.",
+   "Distance: Bray-Curtis.",
+   "Significance is by permutation (199 rearrangements, seed 5): p = (r + 1) / (permutations + 1), so the smallest p reachable here is 0.005.",
+   "Each term is tested marginally — what it adds when entered last, with the variable residualised against the others before shuffling, so collinearity is respected.",
+   "Adjusted R2 (Ezekiel) is the one to report: R2 rises with every variable added, adjusted R2 does not.",
+   "The variables are placed by weighted averaging (a variable sits at the centre of the cases it is abundant in). They are positions, not loadings — a distance matrix gives the columns no direction, so this method draws no variable arrows.",
+   "Per-axis permutation tests are not offered: testing the axes one after another has more than one convention, and they give different p-values, so only the whole model and each term are tested.",
+   "11 negative eigenvalue(s) (11.1% of the retained variation): the Bray-Curtis dissimilarity is not Euclidean, so those axes cannot be represented and are dropped before the regression."
+  ],
+  "cite": "Distance-based redundancy analysis (Legendre & Anderson 1999) on the Bray-Curtis dissimilarity of 24 cases; 199 permutations."
+ },
+ "varpart": {
+  "method": "varpart",
+  "title": "Variance partitioning",
+  "terms": [
+   {
+    "term": "All blocks together",
+    "estimate": 0.947542,
+    "df": 5
+   },
+   {
+    "term": "[a] Climate alone",
+    "estimate": 0.262454,
+    "statistic": 91.055862,
+    "p": 0.005,
+    "df": 2
+   },
+   {
+    "term": "[b] Soil alone",
+    "estimate": 0.12112,
+    "statistic": 42.560003,
+    "p": 0.005,
+    "df": 2
+   },
+   {
+    "term": "[c] Space alone",
+    "estimate": -8.61658e-05,
+    "statistic": 0.94251,
+    "p": 0.355,
+    "df": 1
+   },
+   {
+    "term": "[d] Climate ∩ Soil",
+    "estimate": 0.587852
+   },
+   {
+    "term": "[e] Soil ∩ Space",
+    "estimate": -0.00303614
+   },
+   {
+    "term": "[f] Climate ∩ Space",
+    "estimate": -0.00633766
+   },
+   {
+    "term": "[g] all three",
+    "estimate": -0.0144249
+   },
+   {
+    "term": "[residual] unexplained",
+    "estimate": 0.0524583
+   }
+  ],
+  "extra": {
+   "varpart": {
+    "blocks": [
+     {
+      "label": "Climate",
+      "adjR2": 0.829544,
+      "columns": 2
+     },
+     {
+      "label": "Soil",
+      "adjR2": 0.691511,
+      "columns": 2
+     },
+     {
+      "label": "Space",
+      "adjR2": -0.0238848,
+      "columns": 1
+     }
+    ],
+    "blockLabels": [
+     "Climate",
+     "Soil",
+     "Space"
+    ],
+    "fractions": [
+     {
+      "label": "[a] Climate alone",
+      "adjR2": 0.262454,
+      "testable": true,
+      "p": 0.005
+     },
+     {
+      "label": "[b] Soil alone",
+      "adjR2": 0.12112,
+      "testable": true,
+      "p": 0.005
+     },
+     {
+      "label": "[c] Space alone",
+      "adjR2": -8.61658e-05,
+      "testable": true,
+      "p": 0.355
+     },
+     {
+      "label": "[d] Climate ∩ Soil",
+      "adjR2": 0.587852,
+      "testable": false
+     },
+     {
+      "label": "[e] Soil ∩ Space",
+      "adjR2": -0.00303614,
+      "testable": false
+     },
+     {
+      "label": "[f] Climate ∩ Space",
+      "adjR2": -0.00633766,
+      "testable": false
+     },
+     {
+      "label": "[g] all three",
+      "adjR2": -0.0144249,
+      "testable": false
+     }
+    ],
+    "explained": 0.947542,
+    "residual": 0.0524583,
+    "transform": "none",
+    "permutations": 199,
+    "varLabels": [
+     "Sp1",
+     "Sp2",
+     "Sp3",
+     "Sp4"
+    ],
+    "caseLabels": [
+     "Case 1",
+     "Case 2",
+     "Case 3",
+     "Case 4",
+     "Case 5",
+     "Case 6",
+     "Case 7",
+     "Case 8",
+     "Case 9",
+     "Case 10",
+     "Case 11",
+     "Case 12",
+     "Case 13",
+     "Case 14",
+     "Case 15",
+     "Case 16",
+     "Case 17",
+     "Case 18",
+     "Case 19",
+     "Case 20",
+     "Case 21",
+     "Case 22",
+     "Case 23",
+     "Case 24",
+     "Case 25",
+     "Case 26",
+     "Case 27",
+     "Case 28",
+     "Case 29",
+     "Case 30",
+     "Case 31",
+     "Case 32",
+     "Case 33",
+     "Case 34",
+     "Case 35",
+     "Case 36",
+     "Case 37",
+     "Case 38",
+     "Case 39",
+     "Case 40"
+    ]
+   }
+  },
+  "glance": {
+   "cases": 40,
+   "variables": 4,
+   "blocks": 3,
+   "explained": 0.947542,
+   "residual": 0.0524583,
+   "largest": "[d] Climate ∩ Soil",
+   "largest_pct": 58.7852,
+   "negativeFractions": 4
+  },
+  "summary": "40 cases, 4 response variables, 3 blocks: together they explain 94.8% of the variation (adjusted), leaving 5.2% unexplained. The largest single fraction is [d] Climate ∩ Soil at 58.8%.",
+  "assumptions": [
+   "Every fraction is an adjusted R² (Ezekiel): a raw R² rises with each column added, so raw fractions would reward the widest block rather than the most informative one.",
+   "The unique fractions are tested by partial redundancy analysis — that block with the other(s) held constant, 199 permutations, seed 4.",
+   "A shared fraction has no test and is reported without one: it is a difference between two models, not the fit of any model, so there is nothing to permute.",
+   "A shared fraction can come out negative. That is a real result, not an error: it means the blocks together explain less than the sum of their separate explanations, which happens when they are related to the response in opposing ways. 4 fraction(s) here are negative.",
+   "The fractions are shares of the total variation, so they sum with the residual to 1.",
+   "Linear (redundancy-analysis) geometry. This is not offered on correspondence analysis: the adjusted R² that makes the fractions comparable is not defined there."
+  ],
+  "cite": "Variance partitioning (Borcard, Legendre & Drapeau 1992; adjusted R² after Peres-Neto et al. 2006) of 4 response variables over 3 blocks; 199 permutations."
+ },
+ "shape_norm_conf99_p03": {
+  "method": "normality",
+  "title": "Normality & lognormality",
+  "terms": [
+   {
+    "term": "Shapiro-Wilk",
+    "statistic": 0.829628,
+    "p": 0.0118853,
+    "df": 14
+   },
+   {
+    "term": "D'Agostino-Pearson",
+    "statistic": 7.241408,
+    "p": 0.0267638
+   },
+   {
+    "term": "Anderson-Darling",
+    "statistic": 0.9793,
+    "p": 0.00965209
+   },
+   {
+    "term": "Kolmogorov-Smirnov (Lilliefors)",
+    "statistic": 0.225827,
+    "p": 0.0500571
+   },
+   {
+    "term": "More consistent with",
+    "estimate": "lognormal"
+   },
+   {
+    "term": "P(preferred, by AIC)",
+    "estimate": 0.763661
+   }
+  ],
+  "glance": {
+   "n": 14,
+   "shapiro_W": 0.829628,
+   "shapiro_p": 0.0118853,
+   "prefers": "lognormal",
+   "lognormal_prob": 0.763661
+  },
+  "summary": "Shapiro-Wilk p = 0.01189 — the data are consistent with normal at α = 0.01 (plus D'Agostino, Anderson-Darling, KS/Lilliefors). Distribution: more consistent with lognormal (P ≈ 76.4%)."
+ },
+ "shape_t_wilcoxon_1samp": {
+  "method": "ttest",
+  "title": "One-sample Wilcoxon signed-rank",
+  "terms": [
+   {
+    "term": "Median",
+    "estimate": 7.0
+   },
+   {
+    "term": "Median − 5",
+    "estimate": 2.0
+   },
+   {
+    "term": "Wilcoxon W",
+    "statistic": 0.0,
+    "p": 0.015625
+   }
+  ],
+  "glance": {
+   "W": 0.0,
+   "p": 0.015625,
+   "n": 7
+  },
+  "summary": "One-sample Wilcoxon signed-rank (two-tailed): the difference is statistically significant (p = 0.01562)."
+ },
+ "shape_t_ks": {
+  "method": "ttest",
+  "title": "Two-sample Kolmogorov-Smirnov",
+  "terms": [
+   {
+    "term": "Median A",
+    "estimate": 7.0
+   },
+   {
+    "term": "Median B",
+    "estimate": 15.0
+   },
+   {
+    "term": "Kolmogorov-Smirnov D",
+    "statistic": 1.0,
+    "p": 0.000582751
+   }
+  ],
+  "glance": {
+   "D": 1.0,
+   "p": 0.000582751,
+   "n_A": 7,
+   "n_B": 7
+  },
+  "summary": "Two-sample Kolmogorov-Smirnov (two-tailed): the difference is statistically significant (p = 0.0005828)."
+ },
+ "shape_t_ratio_paired": {
+  "method": "ttest",
+  "title": "Ratio paired t test",
+  "terms": [
+   {
+    "term": "Geometric mean ratio (A / B)",
+    "estimate": 0.922783,
+    "ciLow": 0.904536,
+    "ciHigh": 0.941399
+   },
+   {
+    "term": "log(ratio) vs 0",
+    "statistic": -9.514265,
+    "df": 7,
+    "p": 2.96778e-05
+   }
+  ],
+  "glance": {
+   "t": -9.514265,
+   "df": 7,
+   "p": 2.96778e-05,
+   "geo_mean_ratio": 0.922783,
+   "pairs": 8
+  },
+  "summary": "Ratio paired t test (two-tailed): the difference is statistically significant (p = 2.968e-05)."
+ },
+ "shape_perm_correlation": {
+  "method": "permutation",
+  "title": "Permutation test — correlation",
+  "terms": [
+   {
+    "term": "Pearson r (observed)",
+    "estimate": 0.999004
+   },
+   {
+    "term": "p (permutation)",
+    "p": 0.000396825,
+    "note": "exact"
+   },
+   {
+    "term": "Rearrangements at least as extreme",
+    "estimate": 2
+   },
+   {
+    "term": "Rearrangements evaluated",
+    "estimate": 5040
+   },
+   {
+    "term": "Method",
+    "estimate": "exact"
+   },
+   {
+    "term": "Null distribution mean",
+    "estimate": 0.0
+   },
+   {
+    "term": "Null distribution SD",
+    "estimate": 0.408289
+   }
+  ],
+  "glance": {
+   "statistic": 0.999004,
+   "p": 0.000396825,
+   "count": 2,
+   "n_permutations": 5040,
+   "exact": true,
+   "seed": null
+  },
+  "summary": "Permutation test — correlation (n = 7): Pearson r = 0.999004, p = 0.0003968 (exact — all 5040 rearrangements enumerated)."
+ },
+ "shape_perm_unpaired_exact": {
+  "method": "permutation",
+  "title": "Permutation test — unpaired",
+  "terms": [
+   {
+    "term": "Difference in means (observed)",
+    "estimate": -7.757143
+   },
+   {
+    "term": "p (permutation)",
+    "p": 0.000582751,
+    "note": "exact"
+   },
+   {
+    "term": "Rearrangements at least as extreme",
+    "estimate": 2
+   },
+   {
+    "term": "Rearrangements evaluated",
+    "estimate": 3432
+   },
+   {
+    "term": "Method",
+    "estimate": "exact"
+   },
+   {
+    "term": "Null distribution mean",
+    "estimate": 0.0
+   },
+   {
+    "term": "Null distribution SD",
+    "estimate": 2.316376
+   }
+  ],
+  "glance": {
+   "statistic": -7.757143,
+   "p": 0.000582751,
+   "count": 2,
+   "n_permutations": 3432,
+   "exact": true,
+   "seed": null
+  },
+  "summary": "Permutation test — unpaired (n = 7 vs 7): Difference in means = -7.75714, p = 0.0005828 (exact — all 3432 rearrangements enumerated)."
+ },
+ "shape_pow_anova_n": {
+  "method": "power",
+  "title": "Sample size & power — One-way ANOVA",
+  "terms": [
+   {
+    "term": "Design",
+    "estimate": "One-way ANOVA (3 groups)"
+   },
+   {
+    "term": "Effect size (f)",
+    "estimate": 0.25
+   },
+   {
+    "term": "α (two-sided)",
+    "estimate": 0.05
+   },
+   {
+    "term": "Power",
+    "estimate": 0.8
+   },
+   {
+    "term": "N total",
+    "estimate": 158
+   }
+  ],
+  "glance": {
+   "test": "anova",
+   "solve": "n",
+   "effect": 0.25,
+   "alpha": 0.05,
+   "power": 0.8,
+   "n": 158,
+   "n_exact": 157.189792,
+   "per_group": false,
+   "total": 158,
+   "k": 3,
+   "ratio": 1.0,
+   "es_symbol": "f"
+  },
+  "summary": "One-way ANOVA power (two-sided, α = 0.05): N total = 158."
+ },
+ "shape_pow_ttest-two_n": {
+  "method": "power",
+  "title": "Sample size & power — Unpaired t",
+  "terms": [
+   {
+    "term": "Design",
+    "estimate": "Unpaired t"
+   },
+   {
+    "term": "Effect size (d)",
+    "estimate": 0.5
+   },
+   {
+    "term": "α (two-sided)",
+    "estimate": 0.05
+   },
+   {
+    "term": "Power",
+    "estimate": 0.8
+   },
+   {
+    "term": "n per group",
+    "estimate": 64
+   },
+   {
+    "term": "Total N",
+    "estimate": 128
+   }
+  ],
+  "glance": {
+   "test": "ttest-two",
+   "solve": "n",
+   "effect": 0.5,
+   "alpha": 0.05,
+   "power": 0.8,
+   "n": 64,
+   "n_exact": 63.765611,
+   "per_group": true,
+   "total": 128,
+   "k": null,
+   "ratio": 1.0,
+   "es_symbol": "d"
+  },
+  "summary": "Unpaired t power (two-sided, α = 0.05): n per group = 64 (128 total)."
+ },
+ "shape_eq_unpaired_equiv": {
+  "method": "equivalence",
+  "title": "Equivalence (TOST) — unpaired",
+  "terms": [
+   {
+    "term": "Difference",
+    "estimate": -1.77636e-15,
+    "ciLow": -0.125266,
+    "ciHigh": 0.125266,
+    "df": 12.943396,
+    "note": "90% CI (the interval TOST decides on)"
+   },
+   {
+    "term": "Equivalence bound (low)",
+    "estimate": -0.5
+   },
+   {
+    "term": "Equivalence bound (high)",
+    "estimate": 0.5
+   },
+   {
+    "term": "TOST lower (H0: difference ≤ low bound)",
+    "statistic": 7.071068,
+    "df": 12.943396,
+    "p": 4.30342e-06
+   },
+   {
+    "term": "TOST upper (H0: difference ≥ high bound)",
+    "statistic": -7.071068,
+    "df": 12.943396,
+    "p": 4.30342e-06
+   },
+   {
+    "term": "TOST p (the larger of the two)",
+    "p": 4.30342e-06
+   },
+   {
+    "term": "Equivalent at α = 0.05",
+    "estimate": "yes"
+   },
+   {
+    "term": "Difference test (two-sided, for contrast)",
+    "p": 1.0
+   },
+   {
+    "term": "Bounds in SD units (Cohen's d)",
+    "estimate": -3.535534,
+    "note": "high bound = 3.536"
+   }
+  ],
+  "glance": {
+   "difference": -1.77636e-15,
+   "ci_low": -0.125266,
+   "ci_high": 0.125266,
+   "bound_low": -0.5,
+   "bound_high": 0.5,
+   "t1": 7.071068,
+   "t2": -7.071068,
+   "p1": 4.30342e-06,
+   "p2": 4.30342e-06,
+   "p": 4.30342e-06,
+   "p_difference": 1.0,
+   "equivalent": true,
+   "df": 12.943396,
+   "alpha": 0.05
+  },
+  "summary": "Equivalence (TOST) — unpaired (n = 8 vs 8): difference -1.776e-15, 90% CI -0.1253 to 0.1253, bounds -0.5 to 0.5 — equivalent — the difference is within the bound (TOST p = 4.303e-06)."
+ },
+ "shape_norm_conf90_p07": {
+  "method": "normality",
+  "title": "Normality & lognormality",
+  "terms": [
+   {
+    "term": "Shapiro-Wilk",
+    "statistic": 0.870261,
+    "p": 0.0658499,
+    "df": 12
+   },
+   {
+    "term": "D'Agostino-Pearson",
+    "statistic": 3.844833,
+    "p": 0.146253
+   },
+   {
+    "term": "Anderson-Darling",
+    "statistic": 0.592889,
+    "p": 0.0955659
+   },
+   {
+    "term": "Kolmogorov-Smirnov (Lilliefors)",
+    "statistic": 0.212648,
+    "p": 0.148824
+   },
+   {
+    "term": "More consistent with",
+    "estimate": "lognormal"
+   },
+   {
+    "term": "P(preferred, by AIC)",
+    "estimate": 0.718074
+   }
+  ],
+  "glance": {
+   "n": 12,
+   "shapiro_W": 0.870261,
+   "shapiro_p": 0.0658499,
+   "prefers": "lognormal",
+   "lognormal_prob": 0.718074
+  },
+  "summary": "Shapiro-Wilk p = 0.06585 — the data are NOT consistent with normal at α = 0.1 (plus D'Agostino, Anderson-Darling, KS/Lilliefors). Distribution: more consistent with lognormal (P ≈ 71.8%)."
+ },
+ "shape_twoway_col_only": {
+  "method": "twoway",
+  "title": "Two-way ANOVA",
+  "terms": [
+   {
+    "term": "Factor A (M, F)",
+    "estimate": 1.372272,
+    "df": 1,
+    "statistic": 1.341667,
+    "p": 0.269273
+   },
+   {
+    "term": "Factor B (lo, mid, hi)",
+    "estimate": 243.534933,
+    "df": 2,
+    "statistic": 119.051764,
+    "p": 1.22002e-08
+   },
+   {
+    "term": "Interaction A×B",
+    "estimate": 0.190711,
+    "df": 2,
+    "statistic": 0.0932289,
+    "p": 0.911638
+   },
+   {
+    "term": "Residual",
+    "estimate": 12.273733,
+    "df": 12
+   }
+  ],
+  "glance": {
+   "ss_a": 1.372272,
+   "ss_b": 243.534933,
+   "ss_ab": 0.190711,
+   "ss_resid": 12.273733,
+   "df_a": 1,
+   "df_b": 2,
+   "df_ab": 2,
+   "df_resid": 12,
+   "F_a": 1.341667,
+   "F_b": 119.051764,
+   "F_ab": 0.0932289,
+   "p_a": 0.269273,
+   "p_b": 1.22002e-08,
+   "p_ab": 0.911638,
+   "n_per_cell": 3
+  },
+  "summary": "Two-way ANOVA — row factor p = 0.2693, column factor p = 1.22e-08, interaction p = 0.9116."
+ },
+ "shape_multifactor_2_second_only": {
+  "method": "multifactor",
+  "title": "2-way ANOVA",
+  "terms": [
+   {
+    "term": "Diet",
+    "estimate": 1.1163,
+    "df": 1,
+    "statistic": 1.50308,
+    "p": 0.25506
+   },
+   {
+    "term": "Sex",
+    "estimate": 36.820033,
+    "df": 1,
+    "statistic": 49.577586,
+    "p": 0.000108117
+   },
+   {
+    "term": "Diet × Sex",
+    "estimate": 0.320133,
+    "df": 1,
+    "statistic": 0.431054,
+    "p": 0.529901
+   },
+   {
+    "term": "Residual",
+    "estimate": 5.9414,
+    "df": 8
+   }
+  ],
+  "glance": {
+   "n": 12,
+   "factors": 2,
+   "r_sq": 0.865573
+  },
+  "summary": "2-way factorial ANOVA (Type II SS) over 12 observations; significant: Sex."
+ },
+ "shape_multifactor_3_third_only": {
+  "method": "multifactor",
+  "title": "3-way ANOVA",
+  "terms": [
+   {
+    "term": "Diet",
+    "estimate": 0.0640667,
+    "df": 1,
+    "statistic": 0.0753977,
+    "p": 0.787148
+   },
+   {
+    "term": "Sex",
+    "estimate": 0.851267,
+    "df": 1,
+    "statistic": 1.001824,
+    "p": 0.331767
+   },
+   {
+    "term": "Dose",
+    "estimate": 95.680267,
+    "df": 1,
+    "statistic": 112.602554,
+    "p": 1.19548e-08
+   },
+   {
+    "term": "Diet × Sex",
+    "estimate": 1.664267,
+    "df": 1,
+    "statistic": 1.958614,
+    "p": 0.180751
+   },
+   {
+    "term": "Diet × Dose",
+    "estimate": 0.721067,
+    "df": 1,
+    "statistic": 0.848597,
+    "p": 0.370632
+   },
+   {
+    "term": "Sex × Dose",
+    "estimate": 0.459267,
+    "df": 1,
+    "statistic": 0.540494,
+    "p": 0.472868
+   },
+   {
+    "term": "Diet × Sex × Dose",
+    "estimate": 0.281667,
+    "df": 1,
+    "statistic": 0.331483,
+    "p": 0.572797
+   },
+   {
+    "term": "Residual",
+    "estimate": 13.595467,
+    "df": 16
+   }
+  ],
+  "glance": {
+   "n": 24,
+   "factors": 3,
+   "r_sq": 0.880023
+  },
+  "summary": "3-way factorial ANOVA (Type II SS) over 24 observations; significant: Dose."
+ },
+ "shape_cont_mcnemar_flip": {
+  "method": "contingency",
+  "title": "McNemar's paired test (2×2)",
+  "terms": [
+   {
+    "term": "McNemar χ² (Yates)",
+    "statistic": 3.764706,
+    "df": 1,
+    "p": 0.0523451
+   },
+   {
+    "term": "Exact (binomial)",
+    "p": 0.0490417
+   },
+   {
+    "term": "Discordant pairs (b, c)",
+    "estimate": 13.0,
+    "statistic": 4.0
+   }
+  ],
+  "glance": {
+   "mcnemar_chi_sq": 3.764706,
+   "df": 1,
+   "p": 0.0523451,
+   "exact_p": 0.0490417,
+   "b": 13,
+   "c": 4,
+   "n": 67
+  },
+  "summary": "McNemar's test: 13 vs 4 discordant pairs, p = 0.04904 — the paired proportions differ."
+ },
+ "shape_cont_mcnemar_large": {
+  "method": "contingency",
+  "title": "McNemar's paired test (2×2)",
+  "terms": [
+   {
+    "term": "McNemar χ² (Yates)",
+    "statistic": 9.025,
+    "df": 1,
+    "p": 0.00266312
+   },
+   {
+    "term": "Exact (binomial)",
+    "p": 0.00222143
+   },
+   {
+    "term": "Discordant pairs (b, c)",
+    "estimate": 30.0,
+    "statistic": 10.0
+   }
+  ],
+  "glance": {
+   "mcnemar_chi_sq": 9.025,
+   "df": 1,
+   "p": 0.00266312,
+   "exact_p": 0.00222143,
+   "b": 30,
+   "c": 10,
+   "n": 130
+  },
+  "summary": "McNemar's test: 30 vs 10 discordant pairs, p = 0.002663 — the paired proportions differ."
+ },
+ "shape_mc_4pl_partial": {
+  "method": "montecarlo",
+  "title": "Monte-Carlo — Dose-response (4PL, variable slope)",
+  "terms": [
+   {
+    "term": "Bottom",
+    "estimate": -21949.670075,
+    "true": 0.0,
+    "bias": -21949.670075,
+    "sd": 112052.584944,
+    "cv": 510.49781,
+    "ciLow": -248631.057359,
+    "ciHigh": 128.27493
+   },
+   {
+    "term": "Top",
+    "estimate": 438329.244821,
+    "true": 100.0,
+    "bias": 438229.244821,
+    "sd": 3308350.258049,
+    "cv": 754.763753,
+    "ciLow": -8.242792,
+    "ciHigh": 639.383268
+   },
+   {
+    "term": "logEC50",
+    "estimate": -9.757169,
+    "true": -6.0,
+    "bias": -3.757169,
+    "sd": 16.058087,
+    "cv": 164.577317,
+    "ciLow": -53.629742,
+    "ciHigh": -2.339861
+   },
+   {
+    "term": "Hill slope",
+    "estimate": 4.822516,
+    "true": 3.0,
+    "bias": 1.822516,
+    "sd": 6.205744,
+    "cv": 128.682688,
+    "ciLow": -10.152956,
+    "ciHigh": 12.854224
+   }
+  ],
+  "glance": {
+   "iterations": 60,
+   "converged": 57,
+   "conv_rate": 95.0,
+   "points": 6,
+   "replicates": 1,
+   "n": 6
+  },
+  "summary": "60 Monte-Carlo fits of Dose-response (4PL, variable slope) (57 converged, 95%): each parameter's SD + 95% CI show how precisely this design + noise pin it down."
+ },
+ "shape_corr_spearman_sig": {
+  "method": "correlation",
+  "title": "Spearman correlation",
+  "terms": [
+   {
+    "term": "Spearman ρ",
+    "estimate": 0.972028,
+    "p": 1.28681e-07,
+    "df": 10
+   }
+  ],
+  "glance": {
+   "r": 0.972028,
+   "p": 1.28681e-07,
+   "n": 12,
+   "r_sq": 0.944838
+  },
+  "summary": "Spearman ρ = 0.972 (p = 1.287e-07, two-tailed) — statistically significant; explains 94% of the variance."
+ },
+ "shape_cm_spearman": {
+  "method": "corrmatrix",
+  "title": "Correlation matrix (Spearman ρ)",
+  "terms": [
+   {
+    "term": "A vs B",
+    "estimate": 1.0,
+    "p": 0.0,
+    "df": 10,
+    "r2": 1.0,
+    "n": 12
+   },
+   {
+    "term": "A vs C",
+    "estimate": -0.10994,
+    "p": 0.733757,
+    "df": 10,
+    "r2": 0.0120868,
+    "n": 12
+   },
+   {
+    "term": "A vs D",
+    "estimate": 0.526531,
+    "p": 0.0786305,
+    "df": 10,
+    "r2": 0.277235,
+    "n": 12
+   },
+   {
+    "term": "B vs C",
+    "estimate": -0.10994,
+    "p": 0.733757,
+    "df": 10,
+    "r2": 0.0120868,
+    "n": 12
+   },
+   {
+    "term": "B vs D",
+    "estimate": 0.526531,
+    "p": 0.0786305,
+    "df": 10,
+    "r2": 0.277235,
+    "n": 12
+   },
+   {
+    "term": "C vs D",
+    "estimate": 0.209679,
+    "p": 0.51307,
+    "df": 10,
+    "r2": 0.0439652,
+    "n": 12
+   }
+  ],
+  "glance": {
+   "variables": 4,
+   "pairs": 6,
+   "n_min": 12
+  },
+  "summary": "4 variables, 6 pairwise Spearman ρ correlations; strongest: A vs B (r = 1)."
+ },
+ "shape_anc_parallel_int_differ": {
+  "method": "ancova",
+  "title": "Compare regression lines (ANCOVA)",
+  "terms": [
+   {
+    "term": "A — slope",
+    "estimate": 1.991667
+   },
+   {
+    "term": "A — intercept",
+    "estimate": 0.1
+   },
+   {
+    "term": "B — slope",
+    "estimate": 1.982143
+   },
+   {
+    "term": "B — intercept",
+    "estimate": 5.092857
+   },
+   {
+    "term": "Slopes equal? (F)",
+    "statistic": 0.0988671,
+    "df": 1,
+    "p": 0.758593
+   },
+   {
+    "term": "Slope difference (A − B)",
+    "estimate": 0.00952381,
+    "se": 0.030289,
+    "statistic": 0.314431,
+    "df": 12,
+    "p": 0.758593,
+    "ciLow": -0.0564702,
+    "ciHigh": 0.0755178
+   },
+   {
+    "term": "Common slope (if parallel)",
+    "estimate": 1.986905
+   },
+   {
+    "term": "Intercepts equal? (F)",
+    "statistic": 5466.134831,
+    "df": 1,
+    "p": 1.88832e-18
+   }
+  ],
+  "glance": {
+   "groups": 2,
+   "n": 16,
+   "F_slope": 0.0988671,
+   "p_slope": 0.758593,
+   "F_intercept": 5466.134831,
+   "p_intercept": 1.88832e-18,
+   "slope_diff": 0.00952381,
+   "slope_diff_se": 0.030289,
+   "slope_diff_ci_low": -0.0564702,
+   "slope_diff_ci_high": 0.0755178,
+   "slope_diff_p": 0.758593
+  },
+  "summary": "2 groups, N = 16: the slopes are parallel (p = 0.7586); the intercepts differ (p = 1.888e-18)."
+ },
+ "shape_anc_slopes_differ": {
+  "method": "ancova",
+  "title": "Compare regression lines (ANCOVA)",
+  "terms": [
+   {
+    "term": "A — slope",
+    "estimate": 1.991667
+   },
+   {
+    "term": "A — intercept",
+    "estimate": 0.1
+   },
+   {
+    "term": "B — slope",
+    "estimate": 0.580952
+   },
+   {
+    "term": "B — intercept",
+    "estimate": 0.535714
+   },
+   {
+    "term": "Slopes equal? (F)",
+    "statistic": 2084.450767,
+    "df": 1,
+    "p": 7.95352e-15
+   },
+   {
+    "term": "Slope difference (A − B)",
+    "estimate": 1.410714,
+    "se": 0.0308989,
+    "statistic": 45.655786,
+    "df": 12,
+    "p": 7.95352e-15,
+    "ciLow": 1.343391,
+    "ciHigh": 1.478037
+   },
+   {
+    "term": "Common slope (if parallel)",
+    "estimate": 1.28631
+   },
+   {
+    "term": "Intercepts equal? (F)",
+    "statistic": 43.246922,
+    "df": 1,
+    "p": 1.77964e-05
+   }
+  ],
+  "glance": {
+   "groups": 2,
+   "n": 16,
+   "F_slope": 2084.450767,
+   "p_slope": 7.95352e-15,
+   "F_intercept": 43.246922,
+   "p_intercept": 1.77964e-05,
+   "slope_diff": 1.410714,
+   "slope_diff_se": 0.0308989,
+   "slope_diff_ci_low": 1.343391,
+   "slope_diff_ci_high": 1.478037,
+   "slope_diff_p": 7.95352e-15
+  },
+  "summary": "2 groups, N = 16: the slopes differ significantly (p = 7.954e-15) — the lines are not parallel, so do not interpret the intercept test."
+ },
+ "shape_ba_percent": {
+  "method": "blandaltman",
+  "title": "Bland-Altman method comparison",
+  "terms": [
+   {
+    "term": "Bias (mean difference)",
+    "estimate": -18.348651,
+    "ciLow": -18.657734,
+    "ciHigh": -18.039568
+   },
+   {
+    "term": "Upper limit of agreement",
+    "estimate": -17.501797,
+    "ciLow": -18.04899,
+    "ciHigh": -16.954605
+   },
+   {
+    "term": "Lower limit of agreement",
+    "estimate": -19.195505,
+    "ciLow": -19.742697,
+    "ciHigh": -18.648312
+   },
+   {
+    "term": "SD of differences",
+    "estimate": 0.432068
+   }
+  ],
+  "glance": {
+   "n": 10,
+   "bias": -18.348651,
+   "sd": 0.432068,
+   "loa_lower": -19.195505,
+   "loa_upper": -17.501797,
+   "k": 1.96
+  },
+  "summary": "Bias -18.35 % (95% CI -18.66 to -18.04); limits of agreement -19.2 to -17.5 over 10 pairs.",
+  "extra": {
+   "blandaltman": {
+    "percent": true
+   }
+  }
+ },
+ "shape_cmp_3pl_4pl_yup": {
+  "method": "comparefits",
+  "title": "Compare models — Dose-response (3PL, fixed slope) vs Dose-response (4PL, variable slope)",
+  "terms": [
+   {
+    "term": "Dose-response (3PL, fixed slope)",
+    "aicc": 37.205931,
+    "sse": 76.036759,
+    "df": 6,
+    "params": 3,
+    "r2": 0.994319,
+    "bic": 27.994829,
+    "probability": 0.988791
+   },
+   {
+    "term": "Dose-response (4PL, variable slope)",
+    "aicc": 46.165491,
+    "sse": 54.23846,
+    "df": 5,
+    "params": 4,
+    "r2": 0.995947,
+    "bic": 27.151614,
+    "probability": 0.0112088
+   },
+   {
+    "term": "ΔAICc",
+    "estimate": 8.95956
+   },
+   {
+    "term": "Preferred (lower AICc)",
+    "estimate": "Dose-response (3PL, fixed slope)",
+    "probability": 0.988791
+   },
+   {
+    "term": "Extra-SS F",
+    "estimate": 2.009487,
+    "df": "1, 5",
+    "p": 0.215512
+   },
+   {
+    "term": "F-test prefers (α=0.05)",
+    "estimate": "Dose-response (3PL, fixed slope)"
+   }
+  ],
+  "glance": {
+   "n": 9,
+   "model_a": "3pl",
+   "model_b": "4pl",
+   "aicc_a": 37.205931,
+   "aicc_b": 46.165491,
+   "delta_aicc": 8.95956,
+   "prob_a": 0.988791,
+   "prob_b": 0.0112088,
+   "preferred": "3pl",
+   "f": 2.009487,
+   "f_p": 0.215512,
+   "f_df1": 1,
+   "f_df2": 5
+  },
+  "summary": "AICc prefers Dose-response (3PL, fixed slope) (ΔAICc = 8.96; P = 98.9%). Extra-SS F(1,5) = 2.009, P = 0.2155."
+ },
+ "shape_cmp_4pl_3pl_yup": {
+  "method": "comparefits",
+  "title": "Compare models — Dose-response (4PL, variable slope) vs Dose-response (3PL, fixed slope)",
+  "terms": [
+   {
+    "term": "Dose-response (4PL, variable slope)",
+    "aicc": 46.165491,
+    "sse": 54.23846,
+    "df": 5,
+    "params": 4,
+    "r2": 0.995947,
+    "bic": 27.151614,
+    "probability": 0.0112088
+   },
+   {
+    "term": "Dose-response (3PL, fixed slope)",
+    "aicc": 37.205931,
+    "sse": 76.036759,
+    "df": 6,
+    "params": 3,
+    "r2": 0.994319,
+    "bic": 27.994829,
+    "probability": 0.988791
+   },
+   {
+    "term": "ΔAICc",
+    "estimate": 8.95956
+   },
+   {
+    "term": "Preferred (lower AICc)",
+    "estimate": "Dose-response (3PL, fixed slope)",
+    "probability": 0.988791
+   },
+   {
+    "term": "Extra-SS F",
+    "estimate": 2.009487,
+    "df": "1, 5",
+    "p": 0.215512
+   },
+   {
+    "term": "F-test prefers (α=0.05)",
+    "estimate": "Dose-response (3PL, fixed slope)"
+   }
+  ],
+  "glance": {
+   "n": 9,
+   "model_a": "4pl",
+   "model_b": "3pl",
+   "aicc_a": 46.165491,
+   "aicc_b": 37.205931,
+   "delta_aicc": 8.95956,
+   "prob_a": 0.0112088,
+   "prob_b": 0.988791,
+   "preferred": "3pl",
+   "f": 2.009487,
+   "f_p": 0.215512,
+   "f_df1": 1,
+   "f_df2": 5
+  },
+  "summary": "AICc prefers Dose-response (3PL, fixed slope) (ΔAICc = 8.96; P = 98.9%). Extra-SS F(1,5) = 2.009, P = 0.2155."
+ },
+ "shape_cmp_nonnested": {
+  "method": "comparefits",
+  "title": "Compare models — Michaelis-Menten vs One-phase association",
+  "terms": [
+   {
+    "term": "Michaelis-Menten",
+    "aicc": 22.880426,
+    "sse": 31.171206,
+    "df": 6,
+    "params": 2,
+    "r2": 0.9956,
+    "bic": 17.11875,
+    "probability": 0.999943
+   },
+   {
+    "term": "One-phase association",
+    "aicc": 42.408289,
+    "sse": 111.476184,
+    "df": 5,
+    "params": 3,
+    "r2": 0.984264,
+    "bic": 29.392722,
+    "probability": 5.74849e-05
+   },
+   {
+    "term": "ΔAICc",
+    "estimate": 19.527863
+   },
+   {
+    "term": "Preferred (lower AICc)",
+    "estimate": "Michaelis-Menten",
+    "probability": 0.999943
+   }
+  ],
+  "glance": {
+   "n": 8,
+   "model_a": "mm",
+   "model_b": "exp_assoc",
+   "aicc_a": 22.880426,
+   "aicc_b": 42.408289,
+   "delta_aicc": 19.527863,
+   "prob_a": 0.999943,
+   "prob_b": 5.74849e-05,
+   "preferred": "mm"
+  },
+  "summary": "AICc prefers Michaelis-Menten (ΔAICc = 19.5; P = 100.0%)."
+ },
+ "shape_interp_4pl_both": {
+  "method": "interpolate",
+  "title": "Interpolate from the Dose-response (4PL, variable slope)",
+  "terms": [
+   {
+    "term": "X @ Y=50",
+    "input": 50.0,
+    "estimate": 4.5488e-08,
+    "ciLow": 3.46856e-08,
+    "ciHigh": 5.86664e-08
+   },
+   {
+    "term": "X @ Y=200",
+    "input": 200.0,
+    "estimate": null,
+    "note": "outside curve range"
+   },
+   {
+    "term": "Y @ X=2e-08",
+    "input": 2e-08,
+    "estimate": 33.041272,
+    "ciLow": 26.935332,
+    "ciHigh": 39.147212
+   }
+  ],
+  "glance": {
+   "n": 9,
+   "conf": 0.95,
+   "syx": 3.293583,
+   "model": "4pl"
+  },
+  "summary": "Read 3 unknown(s) off the Dose-response (4PL, variable slope) (95% CI)."
+ },
+ "shape_gf_4pl_shared_tb": {
+  "method": "globalfit",
+  "title": "Global fit — Dose-response (4PL, variable slope)",
+  "terms": [
+   {
+    "term": "Bottom (shared)",
+    "estimate": 1.239192,
+    "se": 2.13469,
+    "ciLow": -3.411897,
+    "ciHigh": 5.890282
+   },
+   {
+    "term": "Top (shared)",
+    "estimate": 105.628989,
+    "se": 2.781358,
+    "ciLow": 99.568931,
+    "ciHigh": 111.689048
+   },
+   {
+    "term": "logEC50 — Cpd A",
+    "estimate": -7.273072,
+    "se": 0.0588331,
+    "ciLow": -7.401258,
+    "ciHigh": -7.144886
+   },
+   {
+    "term": "EC50 — Cpd A",
+    "estimate": 5.33246e-08
+   },
+   {
+    "term": "logEC50 — Cpd B",
+    "estimate": -6.241868,
+    "se": 0.0588245,
+    "ciLow": -6.370036,
+    "ciHigh": -6.1137
+   },
+   {
+    "term": "EC50 — Cpd B",
+    "estimate": 5.7297e-07
+   },
+   {
+    "term": "Hill slope — Cpd A",
+    "estimate": 0.845353,
+    "se": 0.0905636,
+    "ciLow": 0.648032,
+    "ciHigh": 1.042674
+   },
+   {
+    "term": "Hill slope — Cpd B",
+    "estimate": 0.822378,
+    "se": 0.0847676,
+    "ciLow": 0.637685,
+    "ciHigh": 1.00707
+   },
+   {
+    "term": "R² (overall)",
+    "estimate": 0.994044
+   }
+  ],
+  "glance": {
+   "datasets": 2,
+   "shared": 2,
+   "free_params": 6,
+   "n": 18,
+   "r_sq": 0.994044
+  },
+  "summary": "Global Dose-response (4PL, variable slope) over 2 datasets (shared: Bottom, Top); overall R² = 0.994."
+ },
+ "shape_gf_4pl_shared_ec50": {
+  "method": "globalfit",
+  "title": "Global fit — Dose-response (4PL, variable slope)",
+  "terms": [
+   {
+    "term": "Bottom — Cpd A",
+    "estimate": -13162.890465,
+    "se": 100514504.469445,
+    "ciLow": -221244095.601679,
+    "ciHigh": 221217769.820748
+   },
+   {
+    "term": "Bottom — Cpd B",
+    "estimate": 1.329911,
+    "se": 6.399025,
+    "ciLow": -12.754248,
+    "ciHigh": 15.414069
+   },
+   {
+    "term": "Top — Cpd A",
+    "estimate": 13326.198605,
+    "se": 100514503.069434,
+    "ciLow": -221217603.431204,
+    "ciHigh": 221244255.828414
+   },
+   {
+    "term": "Top — Cpd B",
+    "estimate": 105.56251,
+    "se": 18.457837,
+    "ciLow": 64.937084,
+    "ciHigh": 146.187936
+   },
+   {
+    "term": "logEC50 (shared)",
+    "estimate": -6.241462,
+    "se": 0.254366,
+    "ciLow": -6.801317,
+    "ciHigh": -5.681607
+   },
+   {
+    "term": "EC50 (shared)",
+    "estimate": 5.73506e-07
+   },
+   {
+    "term": "Hill slope — Cpd A",
+    "estimate": 0.00190427,
+    "se": 14.451981,
+    "ciLow": -31.806691,
+    "ciHigh": 31.8105
+   },
+   {
+    "term": "Hill slope — Cpd B",
+    "estimate": 0.824704,
+    "se": 0.330699,
+    "ciLow": 0.0968407,
+    "ciHigh": 1.552567
+   },
+   {
+    "term": "R² (overall)",
+    "estimate": 0.966231
+   }
+  ],
+  "glance": {
+   "datasets": 2,
+   "shared": 1,
+   "free_params": 7,
+   "n": 18,
+   "r_sq": 0.966231
+  },
+  "summary": "Global Dose-response (4PL, variable slope) over 2 datasets (shared: logEC50); overall R² = 0.9662."
+ },
+ "shape_gf_competitive": {
+  "method": "globalfit",
+  "title": "Global fit — Competitive inhibition",
+  "terms": [
+   {
+    "term": "Vmax (shared)",
+    "estimate": 100.206387,
+    "se": 0.945689,
+    "ciLow": 98.190699,
+    "ciHigh": 102.222075
+   },
+   {
+    "term": "KM (shared)",
+    "estimate": 3.909175,
+    "se": 0.125537,
+    "ciLow": 3.6416,
+    "ciHigh": 4.17675
+   },
+   {
+    "term": "Ki (shared)",
+    "estimate": 3.015204,
+    "se": 0.107988,
+    "ciLow": 2.785032,
+    "ciHigh": 3.245376
+   },
+   {
+    "term": "R² (overall)",
+    "estimate": 0.99865
+   }
+  ],
+  "glance": {
+   "datasets": 3,
+   "shared": 3,
+   "free_params": 3,
+   "n": 18,
+   "r_sq": 0.99865
+  },
+  "summary": "Global Competitive inhibition over 3 datasets (shared: Vmax, KM, Ki); overall R² = 0.9986."
+ },
+ "shape_ct_integrate": {
+  "method": "curvetransform",
+  "title": "Cumulative integral ∫Y·dX",
+  "terms": [
+   {
+    "term": "Points",
+    "estimate": 21
+   },
+   {
+    "term": "Total area (∫Y·dX)",
+    "estimate": 22.331
+   }
+  ],
+  "glance": {
+   "n": 21,
+   "variant": "integrate",
+   "area": 22.331
+  },
+  "summary": "Cumulative area ∫Y·dX = 22.331 (trapezoidal) over 21 points."
+ },
+ "shape_cf_exp_decay": {
+  "method": "curvefit",
+  "title": "One-phase exponential decay",
+  "terms": [
+   {
+    "term": "Y0",
+    "estimate": 99.671359,
+    "se": 2.44795,
+    "ciLow": 93.965925,
+    "ciHigh": 105.466221,
+    "dependency": 0.39078,
+    "skewness": 0.0209259
+   },
+   {
+    "term": "Plateau",
+    "estimate": 12.315513,
+    "se": 1.762623,
+    "ciLow": 8.017873,
+    "ciHigh": 16.300906,
+    "dependency": 0.557803,
+    "skewness": -0.097193
+   },
+   {
+    "term": "K",
+    "estimate": 0.309164,
+    "se": 0.0229847,
+    "ciLow": 0.259146,
+    "ciHigh": 0.366141,
+    "dependency": 0.683679,
+    "skewness": 0.173096
+   },
+   {
+    "term": "Half-life",
+    "estimate": 2.242003
+   },
+   {
+    "term": "R²",
+    "estimate": 0.993291
+   },
+   {
+    "term": "Adjusted R²",
+    "estimate": 0.991374
+   },
+   {
+    "term": "Sy.x (RMSE)",
+    "estimate": 2.771292
+   },
+   {
+    "term": "Sum of squares",
+    "estimate": 53.760402,
+    "df": 7
+   },
+   {
+    "term": "Runs test (lack of fit)",
+    "estimate": 5,
+    "statistic": -0.67082,
+    "p": 0.502335,
+    "ciLow": 6.0
+   },
+   {
+    "term": "Residual normality (Shapiro-Wilk)",
+    "statistic": 0.976764,
+    "p": 0.945533
+   }
+  ],
+  "glance": {
+   "y0": 99.671359,
+   "plateau": 12.315513,
+   "k": 0.309164,
+   "r_sq": 0.993291,
+   "n": 10,
+   "syx": 2.771292,
+   "sse": 53.760402,
+   "df": 7,
+   "adj_r_sq": 0.991374,
+   "Half_life": 2.242003,
+   "max_dependency": 0.683679,
+   "max_skewness": 0.173096,
+   "resid_normality_p": 0.945533
+  },
+  "summary": "Y0 = 99.67, Plateau = 12.32, K = 0.3092; R² = 0.9933."
+ },
+ "shape_cf_biphasic": {
+  "method": "curvefit",
+  "title": "Biphasic dose-response",
+  "terms": [
+   {
+    "term": "Bottom",
+    "estimate": -1.126928,
+    "se": 3.621656,
+    "ciLow": -14.076229,
+    "ciHigh": 5.274878,
+    "dependency": 0.962555,
+    "skewness": -0.885717
+   },
+   {
+    "term": "Top",
+    "estimate": 98.829265,
+    "se": 1.163806,
+    "ciLow": 96.270691,
+    "ciHigh": 102.431182,
+    "dependency": 0.828901,
+    "skewness": 0.406892
+   },
+   {
+    "term": "Frac",
+    "estimate": 0.633387,
+    "se": 0.0397287,
+    "ciLow": 0.541632,
+    "ciHigh": 0.725885,
+    "dependency": 0.977937,
+    "skewness": 0.0427522
+   },
+   {
+    "term": "logEC50_1",
+    "estimate": -8.964816,
+    "se": 0.0627725,
+    "ciLow": -9.169896,
+    "ciHigh": -8.826167,
+    "dependency": 0.864673,
+    "skewness": -0.391198
+   },
+   {
+    "term": "nH1",
+    "estimate": 0.897141,
+    "se": 0.13332,
+    "ciLow": 0.623688,
+    "ciHigh": 1.226462,
+    "dependency": 0.91282,
+    "skewness": 0.277828
+   },
+   {
+    "term": "logEC50_2",
+    "estimate": -5.952236,
+    "se": 0.0809077,
+    "ciLow": -6.143397,
+    "ciHigh": -5.764987,
+    "dependency": 0.780657,
+    "skewness": -0.101708
+   },
+   {
+    "term": "nH2",
+    "estimate": 0.983966,
+    "se": 0.16392,
+    "ciLow": 0.659132,
+    "ciHigh": 1.447264,
+    "dependency": 0.792279,
+    "skewness": 0.511769
+   },
+   {
+    "term": "EC50_1",
+    "estimate": 1.08439e-09
+   },
+   {
+    "term": "EC50_2",
+    "estimate": 1.11626e-06
+   },
+   {
+    "term": "R²",
+    "estimate": 0.999251
+   },
+   {
+    "term": "Adjusted R²",
+    "estimate": 0.998501
+   },
+   {
+    "term": "Sy.x (RMSE)",
+    "estimate": 1.207457
+   },
+   {
+    "term": "Sum of squares",
+    "estimate": 8.74771,
+    "df": 6
+   },
+   {
+    "term": "Runs test (lack of fit)",
+    "estimate": 9,
+    "statistic": 0.897123,
+    "p": 0.369653,
+    "ciLow": 7.461538
+   },
+   {
+    "term": "Residual normality (Shapiro-Wilk)",
+    "statistic": 0.973662,
+    "p": 0.933789
+   }
+  ],
+  "glance": {
+   "bottom": -1.126928,
+   "top": 98.829265,
+   "frac": 0.633387,
+   "logec50_1": -8.964816,
+   "nh1": 0.897141,
+   "logec50_2": -5.952236,
+   "nh2": 0.983966,
+   "r_sq": 0.999251,
+   "n": 13,
+   "syx": 1.207457,
+   "sse": 8.74771,
+   "df": 6,
+   "adj_r_sq": 0.998501,
+   "EC50_1": 1.08439e-09,
+   "EC50_2": 1.11626e-06,
+   "max_dependency": 0.977937,
+   "max_skewness": 0.885717,
+   "resid_normality_p": 0.933789
+  },
+  "summary": "Bottom = -1.127, Top = 98.83, Frac = 0.6334, logEC50_1 = -8.965, nH1 = 0.8971, logEC50_2 = -5.952, nH2 = 0.984; R² = 0.9993."
+ },
+ "shape_rda_p_just_under_05_perm2000": {
+  "method": "rda",
+  "title": "Redundancy analysis (RDA)",
+  "terms": [
+   {
+    "term": "Constrained (model)",
+    "estimate": 0.136602,
+    "statistic": 2.847858,
+    "p": 0.049975,
+    "df": 1
+   },
+   {
+    "term": "X",
+    "estimate": 0.136602,
+    "statistic": 2.847858,
+    "p": 0.0449775,
+    "df": 1
+   },
+   {
+    "term": "RDA1",
+    "estimate": 8.182816,
+    "extra1": 13.660194
+   }
+  ],
+  "glance": {
+   "cases": 20,
+   "variables": 6,
+   "explanatory": 1,
+   "axes": 1,
+   "r2": 0.136602,
+   "adjR2": 0.0886354,
+   "pseudoF": 2.847858,
+   "p": 0.049975,
+   "axis1_pct": 13.660194,
+   "axis2_pct": null
+  },
+  "summary": "20 cases, 6 response variables constrained by 1 explanatory column(s): 13.7% of the variance is explained (adjusted 8.9%), pseudo-F = 2.848, p = 0.04998 (2000 permutations)."
+ },
+ "shape_gf_one_curve_same": {
+  "method": "globalfit",
+  "title": "Global fit — Dose-response (4PL, variable slope) — one curve for all?",
+  "terms": [
+   {
+    "term": "Bottom (shared)",
+    "estimate": 0.672299,
+    "se": 1.71918,
+    "ciLow": -3.073473,
+    "ciHigh": 4.418071
+   },
+   {
+    "term": "Top (shared)",
+    "estimate": 100.30803,
+    "se": 0.991322,
+    "ciLow": 98.148125,
+    "ciHigh": 102.467935
+   },
+   {
+    "term": "logEC50 — Cpd A",
+    "estimate": -7.481225,
+    "se": 0.0310036,
+    "ciLow": -7.548776,
+    "ciHigh": -7.413674
+   },
+   {
+    "term": "EC50 — Cpd A",
+    "estimate": 3.30199e-08
+   },
+   {
+    "term": "logEC50 — Cpd B",
+    "estimate": -7.490126,
+    "se": 0.032117,
+    "ciLow": -7.560103,
+    "ciHigh": -7.420149
+   },
+   {
+    "term": "EC50 — Cpd B",
+    "estimate": 3.235e-08
+   },
+   {
+    "term": "Hill slope — Cpd A",
+    "estimate": 1.026761,
+    "se": 0.0688045,
+    "ciLow": 0.876849,
+    "ciHigh": 1.176673
+   },
+   {
+    "term": "Hill slope — Cpd B",
+    "estimate": 0.975261,
+    "se": 0.0639933,
+    "ciLow": 0.835832,
+    "ciHigh": 1.11469
+   },
+   {
+    "term": "R² (overall)",
+    "estimate": 0.998106
+   },
+   {
+    "term": "One curve for all: SS",
+    "estimate": 51.707694,
+    "df": 14
+   },
+   {
+    "term": "Separate curves: SS",
+    "estimate": 48.969257,
+    "df": 12
+   },
+   {
+    "term": "Extra-SS F (one curve vs separate)",
+    "statistic": 0.335529,
+    "df": "2, 12",
+    "p": 0.721456
+   },
+   {
+    "term": "AICc: one curve",
+    "estimate": 33.994227,
+    "probability": 0.990149
+   },
+   {
+    "term": "AICc: separate curves",
+    "estimate": 43.214777,
+    "probability": 0.00985107
+   }
+  ],
+  "glance": {
+   "datasets": 2,
+   "shared": 2,
+   "free_params": 6,
+   "n": 18,
+   "r_sq": 0.998106,
+   "sse": 48.969257,
+   "df_resid": 12,
+   "compare_f": 0.335529,
+   "compare_p": 0.721456,
+   "compare_df1": 2,
+   "compare_df2": 12,
+   "sse_one": 51.707694,
+   "aicc_separate": 43.214777,
+   "aicc_one": 33.994227,
+   "prob_one": 0.990149
+  },
+  "summary": "Global Dose-response (4PL, variable slope) over 2 datasets (shared: Bottom, Top); overall R² = 0.9981. One curve for all? Extra-SS F(2, 12) = 0.3355, p = 0.7215 — one curve fits all the datasets."
+ },
+ "shape_gf_one_curve_apart": {
+  "method": "globalfit",
+  "title": "Global fit — Dose-response (4PL, variable slope) — one curve for all?",
+  "terms": [
+   {
+    "term": "Bottom (shared)",
+    "estimate": 1.057339,
+    "se": 1.124914,
+    "ciLow": -1.393637,
+    "ciHigh": 3.508315
+   },
+   {
+    "term": "Top (shared)",
+    "estimate": 100.07442,
+    "se": 1.166406,
+    "ciLow": 97.53304,
+    "ciHigh": 102.6158
+   },
+   {
+    "term": "logEC50 — Cpd A",
+    "estimate": -7.479355,
+    "se": 0.0285379,
+    "ciLow": -7.541534,
+    "ciHigh": -7.417176
+   },
+   {
+    "term": "EC50 — Cpd A",
+    "estimate": 3.31623e-08
+   },
+   {
+    "term": "logEC50 — Cpd B",
+    "estimate": -6.48109,
+    "se": 0.0285296,
+    "ciLow": -6.543251,
+    "ciHigh": -6.418929
+   },
+   {
+    "term": "EC50 — Cpd B",
+    "estimate": 3.30301e-07
+   },
+   {
+    "term": "Hill slope — Cpd A",
+    "estimate": 1.040643,
+    "se": 0.0647063,
+    "ciLow": 0.89966,
+    "ciHigh": 1.181626
+   },
+   {
+    "term": "Hill slope — Cpd B",
+    "estimate": 1.038629,
+    "se": 0.0643178,
+    "ciLow": 0.898493,
+    "ciHigh": 1.178766
+   },
+   {
+    "term": "R² (overall)",
+    "estimate": 0.998146
+   },
+   {
+    "term": "One curve for all: SS",
+    "estimate": 3629.463767,
+    "df": 14
+   },
+   {
+    "term": "Separate curves: SS",
+    "estimate": 47.958286,
+    "df": 12
+   },
+   {
+    "term": "Extra-SS F (one curve vs separate)",
+    "statistic": 448.077583,
+    "df": "2, 12",
+    "p": 5.32264e-12
+   },
+   {
+    "term": "AICc: one curve",
+    "estimate": 110.516432,
+    "probability": 2.01415e-15
+   },
+   {
+    "term": "AICc: separate curves",
+    "estimate": 42.839277,
+    "probability": 1.0
+   }
+  ],
+  "glance": {
+   "datasets": 2,
+   "shared": 2,
+   "free_params": 6,
+   "n": 18,
+   "r_sq": 0.998146,
+   "sse": 47.958286,
+   "df_resid": 12,
+   "compare_f": 448.077583,
+   "compare_p": 5.32264e-12,
+   "compare_df1": 2,
+   "compare_df2": 12,
+   "sse_one": 3629.463767,
+   "aicc_separate": 42.839277,
+   "aicc_one": 110.516432,
+   "prob_one": 2.01415e-15
+  },
+  "summary": "Global Dose-response (4PL, variable slope) over 2 datasets (shared: Bottom, Top); overall R² = 0.9981. One curve for all? Extra-SS F(2, 12) = 448.1, p = 5.323e-12 — the datasets need separate curves."
+ },
+ "permanova": {
+  "method": "permanova",
+  "title": "PERMANOVA — euclidean distance",
+  "terms": [
+   {
+    "term": "Groups",
+    "df": 2,
+    "estimate": 0.809527,
+    "statistic": 19.125365,
+    "p": 0.001,
+    "ss": 26.714383,
+    "ms": 13.357191
+   },
+   {
+    "term": "Residual",
+    "df": 9,
+    "ss": 6.285617,
+    "ms": 0.698402
+   },
+   {
+    "term": "Total",
+    "df": 11,
+    "ss": 33.0
+   },
+   {
+    "term": "Spread: A (mean distance to centroid)",
+    "estimate": 0.636256,
+    "n": 4
+   },
+   {
+    "term": "Spread: B (mean distance to centroid)",
+    "estimate": 0.611709,
+    "n": 4
+   },
+   {
+    "term": "Spread: C (mean distance to centroid)",
+    "estimate": 0.657745,
+    "n": 4
+   },
+   {
+    "term": "PERMDISP (equal spread?)",
+    "statistic": 0.0132743,
+    "p": 0.986833,
+    "df": "2, 9"
+   }
+  ],
+  "glance": {
+   "pseudoF": 19.125365,
+   "p": 0.001,
+   "r2": 0.809527,
+   "groups": 3,
+   "n": 12,
+   "df_groups": 2,
+   "df_resid": 9,
+   "permutations": 999,
+   "seed": 20240704,
+   "disp_F": 0.0132743,
+   "disp_p": 0.986833,
+   "metric": "euclidean"
+  },
+  "summary": "PERMANOVA on euclidean distance, 3 groups, 12 cases: pseudo-F(2, 9) = 19.13, R² = 0.81, p = 0.001 (999 permutations) — the groups differ in position; their spread does not differ significantly (PERMDISP p = 0.9868)."
+ },
+ "shape_permanova_ns": {
+  "method": "permanova",
+  "title": "PERMANOVA — euclidean distance",
+  "terms": [
+   {
+    "term": "Groups",
+    "df": 2,
+    "estimate": 0.201981,
+    "statistic": 1.138964,
+    "p": 0.361,
+    "ss": 6.665377,
+    "ms": 3.332689
+   },
+   {
+    "term": "Residual",
+    "df": 9,
+    "ss": 26.334623,
+    "ms": 2.926069
+   },
+   {
+    "term": "Total",
+    "df": 11,
+    "ss": 33.0
+   },
+   {
+    "term": "Spread: A (mean distance to centroid)",
+    "estimate": 1.510375,
+    "n": 4
+   },
+   {
+    "term": "Spread: B (mean distance to centroid)",
+    "estimate": 1.107694,
+    "n": 4
+   },
+   {
+    "term": "Spread: C (mean distance to centroid)",
+    "estimate": 1.182621,
+    "n": 4
+   },
+   {
+    "term": "PERMDISP (equal spread?)",
+    "statistic": 0.246166,
+    "p": 0.786888,
+    "df": "2, 9"
+   }
+  ],
+  "glance": {
+   "pseudoF": 1.138964,
+   "p": 0.361,
+   "r2": 0.201981,
+   "groups": 3,
+   "n": 12,
+   "df_groups": 2,
+   "df_resid": 9,
+   "permutations": 999,
+   "seed": 20240704,
+   "disp_F": 0.246166,
+   "disp_p": 0.786888,
+   "metric": "euclidean"
+  },
+  "summary": "PERMANOVA on euclidean distance, 3 groups, 12 cases: pseudo-F(2, 9) = 1.139, R² = 0.202, p = 0.361 (999 permutations) — no significant difference between the groups."
+ },
+ "shape_permanova_spread": {
+  "method": "permanova",
+  "title": "PERMANOVA — euclidean distance",
+  "terms": [
+   {
+    "term": "Groups",
+    "df": 1,
+    "estimate": 1.81565e-06,
+    "statistic": 2.54192e-05,
+    "p": 0.996,
+    "ss": 5.44696e-05,
+    "ms": 5.44696e-05
+   },
+   {
+    "term": "Residual",
+    "df": 14,
+    "ss": 29.999946,
+    "ms": 2.142853
+   },
+   {
+    "term": "Total",
+    "df": 15,
+    "ss": 30.0
+   },
+   {
+    "term": "Spread: tight (mean distance to centroid)",
+    "estimate": 0.0348306,
+    "n": 8
+   },
+   {
+    "term": "Spread: wide (mean distance to centroid)",
+    "estimate": 1.892628,
+    "n": 8
+   },
+   {
+    "term": "PERMDISP (equal spread?)",
+    "statistic": 144.897689,
+    "p": 8.98751e-09,
+    "df": "1, 14"
+   }
+  ],
+  "glance": {
+   "pseudoF": 2.54192e-05,
+   "p": 0.996,
+   "r2": 1.81565e-06,
+   "groups": 2,
+   "n": 16,
+   "df_groups": 1,
+   "df_resid": 14,
+   "permutations": 999,
+   "seed": 20240704,
+   "disp_F": 144.897689,
+   "disp_p": 8.98751e-09,
+   "metric": "euclidean"
+  },
+  "summary": "PERMANOVA on euclidean distance, 2 groups, 16 cases: pseudo-F(1, 14) = 2.542e-05, R² = 1.82e-06, p = 0.996 (999 permutations) — no significant difference between the groups."
+ },
+ "shape_permanova_both": {
+  "method": "permanova",
+  "title": "PERMANOVA — euclidean distance",
+  "terms": [
+   {
+    "term": "Groups",
+    "df": 1,
+    "estimate": 0.364963,
+    "statistic": 8.045951,
+    "p": 0.002,
+    "ss": 10.948883,
+    "ms": 10.948883
+   },
+   {
+    "term": "Residual",
+    "df": 14,
+    "ss": 19.051117,
+    "ms": 1.360794
+   },
+   {
+    "term": "Total",
+    "df": 15,
+    "ss": 30.0
+   },
+   {
+    "term": "Spread: tight (mean distance to centroid)",
+    "estimate": 0.0277413,
+    "n": 8
+   },
+   {
+    "term": "Spread: wide (mean distance to centroid)",
+    "estimate": 1.508239,
+    "n": 8
+   },
+   {
+    "term": "PERMDISP (equal spread?)",
+    "statistic": 144.969911,
+    "p": 8.9588e-09,
+    "df": "1, 14"
+   }
+  ],
+  "glance": {
+   "pseudoF": 8.045951,
+   "p": 0.002,
+   "r2": 0.364963,
+   "groups": 2,
+   "n": 16,
+   "df_groups": 1,
+   "df_resid": 14,
+   "permutations": 999,
+   "seed": 20240704,
+   "disp_F": 144.969911,
+   "disp_p": 8.9588e-09,
+   "metric": "euclidean"
+  },
+  "summary": "PERMANOVA on euclidean distance, 2 groups, 16 cases: pseudo-F(1, 14) = 8.046, R² = 0.365, p = 0.002 (999 permutations) — the groups differ, but so does their spread (PERMDISP p = 8.959e-09), so the difference may be in dispersion rather than in position."
+ },
+ "meltingtemp": {
+  "method": "meltingtemp",
+  "title": "Melting temperature (Tm)",
+  "terms": [
+   {
+    "term": "Tm (fit) — Apo",
+    "estimate": 52.197602,
+    "se": 0.205724
+   },
+   {
+    "term": "Tm (fit) SD — Apo",
+    "estimate": 0.290938
+   },
+   {
+    "term": "Tm (derivative) — Apo",
+    "estimate": 52.202302
+   },
+   {
+    "term": "Tm (fit) — Ligand",
+    "estimate": 56.148636,
+    "se": 0.130172
+   },
+   {
+    "term": "Tm (fit) SD — Ligand",
+    "estimate": 0.184091
+   },
+   {
+    "term": "Tm (derivative) — Ligand",
+    "estimate": 56.06861
+   },
+   {
+    "term": "ΔTm vs Apo — Ligand",
+    "estimate": 3.951034,
+    "se": 0.243448,
+    "ciLow": 2.696173,
+    "ciHigh": 5.205895
+   }
+  ],
+  "glance": {
+   "samples": 2,
+   "sloped": false,
+   "window_from": null,
+   "window_to": null,
+   "tm": 52.197602,
+   "control": "Apo"
+  },
+  "extra": {
+   "samples": [
+    {
+     "label": "Apo",
+     "columns": [
+      {
+       "label": "Apo",
+       "n": 28,
+       "tm_fit": 51.991877,
+       "se": 0.035535,
+       "ciLow": 51.91846,
+       "ciHigh": 52.065216,
+       "df": 24,
+       "r_sq": 0.999871,
+       "tm_deriv": 52.110413
+      },
+      {
+       "label": "Apo B",
+       "n": 28,
+       "tm_fit": 52.403326,
+       "se": 0.036643,
+       "ciLow": 52.327724,
+       "ciHigh": 52.478885,
+       "df": 24,
+       "r_sq": 0.99986,
+       "tm_deriv": 52.294191
+      }
+     ],
+     "tm_fit": 52.197602,
+     "n_fit": 2,
+     "sd_fit": 0.290938,
+     "se": 0.205724,
+     "df": 1,
+     "tm_deriv": 52.202302,
+     "sd_deriv": 0.129951
+    },
+    {
+     "label": "Ligand",
+     "columns": [
+      {
+       "label": "Ligand",
+       "n": 28,
+       "tm_fit": 56.018464,
+       "se": 0.0472845,
+       "ciLow": 55.921081,
+       "ciHigh": 56.115885,
+       "df": 24,
+       "r_sq": 0.999771,
+       "tm_deriv": 55.935748
+      },
+      {
+       "label": "Ligand B",
+       "n": 28,
+       "tm_fit": 56.278808,
+       "se": 0.0411485,
+       "ciLow": 56.193858,
+       "ciHigh": 56.363763,
+       "df": 24,
+       "r_sq": 0.999826,
+       "tm_deriv": 56.201472
+      }
+     ],
+     "tm_fit": 56.148636,
+     "n_fit": 2,
+     "sd_fit": 0.184091,
+     "se": 0.130172,
+     "df": 1,
+     "tm_deriv": 56.06861,
+     "sd_deriv": 0.187895,
+     "dtm": 3.951034,
+     "dtm_se": 0.243448,
+     "dtm_df": 1.690121,
+     "dtm_ciLow": 2.696173,
+     "dtm_ciHigh": 5.205895
+    }
+   ],
+   "curves": [
+    {
+     "label": "Apo",
+     "x": [
+      30.0,
+      30.683544,
+      31.367089,
+      32.050633,
+      32.734177,
+      33.417722,
+      34.101266,
+      34.78481,
+      35.468354,
+      36.151899,
+      36.835443,
+      37.518987,
+      38.202532,
+      38.886076,
+      39.56962,
+      40.253165,
+      40.936709,
+      41.620253,
+      42.303797,
+      42.987342,
+      43.670886,
+      44.35443,
+      45.037975,
+      45.721519,
+      46.405063,
+      47.088608,
+      47.772152,
+      48.455696,
+      49.139241,
+      49.822785,
+      50.506329,
+      51.189873,
+      51.873418,
+      52.556962,
+      53.240506,
+      53.924051,
+      54.607595,
+      55.291139,
+      55.974684,
+      56.658228,
+      57.341772,
+      58.025316,
+      58.708861,
+      59.392405,
+      60.075949,
+      60.759494,
+      61.443038,
+      62.126582,
+      62.810127,
+      63.493671,
+      64.177215,
+      64.860759,
+      65.544304,
+      66.227848,
+      66.911392,
+      67.594937,
+      68.278481,
+      68.962025,
+      69.64557,
+      70.329114,
+      71.012658,
+      71.696203,
+      72.379747,
+      73.063291,
+      73.746835,
+      74.43038,
+      75.113924,
+      75.797468,
+      76.481013,
+      77.164557,
+      77.848101,
+      78.531646,
+      79.21519,
+      79.898734,
+      80.582278,
+      81.265823,
+      81.949367,
+      82.632911,
+      83.316456,
+      84.0
+     ],
+     "y": [
+      100.003936,
+      100.045762,
+      100.100546,
+      100.172299,
+      100.266275,
+      100.389347,
+      100.550511,
+      100.761533,
+      101.037796,
+      101.399404,
+      101.872604,
+      102.491635,
+      103.301096,
+      104.358981,
+      105.740536,
+      107.543086,
+      109.892027,
+      112.948075,
+      116.915806,
+      122.053263,
+      128.682019,
+      137.196397,
+      148.069514,
+      161.852394,
+      179.160687,
+      200.642035,
+      226.91684,
+      258.487834,
+      295.621374,
+      338.216579,
+      385.694673,
+      436.952251,
+      490.4173,
+      544.219052,
+      596.439549,
+      645.378724,
+      689.758459,
+      728.818853,
+      762.303628,
+      790.366484,
+      813.44278,
+      832.123978,
+      847.056523,
+      858.872058,
+      868.146339,
+      875.380082,
+      880.994494,
+      885.335418,
+      888.681787,
+      891.255578,
+      893.23168,
+      894.746844,
+      895.907384,
+      896.795595,
+      897.47497,
+      897.994368,
+      898.39132,
+      898.694609,
+      898.926287,
+      899.103236,
+      899.238367,
+      899.341553,
+      899.420341,
+      899.480496,
+      899.526423,
+      899.561486,
+      899.588255,
+      899.608691,
+      899.624291,
+      899.636201,
+      899.645293,
+      899.652233,
+      899.657532,
+      899.661576,
+      899.664664,
+      899.667021,
+      899.66882,
+      899.670194,
+      899.671242,
+      899.672043
+     ],
+     "tm": 52.197602
+    },
+    {
+     "label": "Ligand",
+     "x": [
+      30.0,
+      30.683544,
+      31.367089,
+      32.050633,
+      32.734177,
+      33.417722,
+      34.101266,
+      34.78481,
+      35.468354,
+      36.151899,
+      36.835443,
+      37.518987,
+      38.202532,
+      38.886076,
+      39.56962,
+      40.253165,
+      40.936709,
+      41.620253,
+      42.303797,
+      42.987342,
+      43.670886,
+      44.35443,
+      45.037975,
+      45.721519,
+      46.405063,
+      47.088608,
+      47.772152,
+      48.455696,
+      49.139241,
+      49.822785,
+      50.506329,
+      51.189873,
+      51.873418,
+      52.556962,
+      53.240506,
+      53.924051,
+      54.607595,
+      55.291139,
+      55.974684,
+      56.658228,
+      57.341772,
+      58.025316,
+      58.708861,
+      59.392405,
+      60.075949,
+      60.759494,
+      61.443038,
+      62.126582,
+      62.810127,
+      63.493671,
+      64.177215,
+      64.860759,
+      65.544304,
+      66.227848,
+      66.911392,
+      67.594937,
+      68.278481,
+      68.962025,
+      69.64557,
+      70.329114,
+      71.012658,
+      71.696203,
+      72.379747,
+      73.063291,
+      73.746835,
+      74.43038,
+      75.113924,
+      75.797468,
+      76.481013,
+      77.164557,
+      77.848101,
+      78.531646,
+      79.21519,
+      79.898734,
+      80.582278,
+      81.265823,
+      81.949367,
+      82.632911,
+      83.316456,
+      84.0
+     ],
+     "y": [
+      99.012684,
+      99.019943,
+      99.029497,
+      99.042073,
+      99.058626,
+      99.080413,
+      99.109089,
+      99.146833,
+      99.196509,
+      99.261888,
+      99.347929,
+      99.461156,
+      99.610146,
+      99.806177,
+      100.064064,
+      100.403264,
+      100.849313,
+      101.435684,
+      102.206209,
+      103.21818,
+      104.546323,
+      106.287811,
+      108.568529,
+      111.550716,
+      115.442063,
+      120.506048,
+      127.072944,
+      135.550126,
+      146.429229,
+      160.286106,
+      177.767564,
+      199.557119,
+      226.311535,
+      258.562751,
+      296.588295,
+      340.268345,
+      388.966283,
+      441.48222,
+      496.12241,
+      550.894083,
+      603.785394,
+      653.051013,
+      697.421181,
+      736.187621,
+      769.169962,
+      796.602756,
+      818.993129,
+      836.988071,
+      851.271912,
+      862.498611,
+      871.254206,
+      878.041335,
+      883.277871,
+      887.303421,
+      890.389406,
+      892.75006,
+      894.55291,
+      895.928039,
+      896.975921,
+      897.773851,
+      898.381116,
+      898.843079,
+      899.194394,
+      899.461498,
+      899.664539,
+      899.818861,
+      899.93614,
+      900.025262,
+      900.092982,
+      900.144437,
+      900.183532,
+      900.213236,
+      900.235804,
+      900.25295,
+      900.265976,
+      900.275873,
+      900.283391,
+      900.289103,
+      900.293443,
+      900.29674
+     ],
+     "tm": 56.148636
+    }
+   ],
+   "unit": "°C"
+  },
+  "summary": "Melting temperature by sigmoid fit (flat baselines) and first derivative. Apo: Tm 52.2 °C; Ligand: Tm 56.15 °C.",
+  "assumptions": [
+   "One two-state transition per curve inside the temperature window.",
+   "Both plateaus are flat.",
+   "Tm (fit) is the sigmoid's midpoint; Tm (derivative) is the steepest point of the smoothed curve. They agree for a symmetric transition.",
+   "A sample's Tm is the mean of its replicate columns; its SE is the fit SE for one column, SD/√n for several.",
+   "ΔTm's interval treats the sample and the control as independent (Welch–Satterthwaite degrees of freedom)."
+  ],
+  "cite": "Two-state melting curve fitted with a Boltzmann sigmoid; Tm is its midpoint."
+ },
+ "mixedanova": {
+  "method": "mixedanova",
+  "title": "Two-way repeated-measures ANOVA (one between, one within)",
+  "glance": {
+   "F_groups": 24.809773,
+   "p_groups": 5.45477e-05,
+   "df_groups": 2,
+   "df_subjects": 12,
+   "F_time": 142.641509,
+   "p_time": 4.89538e-20,
+   "df_time": 3,
+   "F_inter": 14.943396,
+   "p_inter": 1.70516e-08,
+   "df_inter": 6,
+   "df_resid": 36,
+   "gg_epsilon": 0.5692,
+   "p_time_gg": 2.72471e-12,
+   "p_inter_gg": 1.33453e-05,
+   "peta_groups": 0.805257,
+   "peta_time": 0.922401,
+   "peta_inter": 0.713514,
+   "n_subjects": 15,
+   "n_groups": 3,
+   "k_times": 4,
+   "n_dropped": 0
+  },
+  "terms": [
+   {
+    "term": "Groups (Control, Low dose, High dose)",
+    "estimate": 236.933333,
+    "df": 2,
+    "statistic": 24.809773,
+    "p": 5.45477e-05
+   },
+   {
+    "term": "Subjects (within groups)",
+    "estimate": 57.3,
+    "df": 12
+   },
+   {
+    "term": "Time (Week 0, Week 1, Week 2…)",
+    "estimate": 189.0,
+    "df": 3,
+    "statistic": 142.641509,
+    "p": 4.89538e-20
+   },
+   {
+    "term": "Groups × Time",
+    "estimate": 39.6,
+    "df": 6,
+    "statistic": 14.943396,
+    "p": 1.70516e-08
+   },
+   {
+    "term": "Residual",
+    "estimate": 15.9,
+    "df": 36
+   },
+   {
+    "term": "Sphericity: Greenhouse-Geisser ε",
+    "estimate": 0.5692
+   },
+   {
+    "term": "Sphericity: Time, corrected p",
+    "df": 1.707599,
+    "statistic": 142.641509,
+    "p": 2.72471e-12
+   },
+   {
+    "term": "Sphericity: Groups × Time, corrected p",
+    "df": 3.415198,
+    "statistic": 14.943396,
+    "p": 1.33453e-05
+   }
+  ],
+  "summary": "Mixed ANOVA — groups p = 5.455e-05, time p = 4.895e-20 (Greenhouse-Geisser p = 2.725e-12, ε = 0.569), groups × time p = 1.705e-08 (GG p = 1.335e-05)."
+ }
+}
