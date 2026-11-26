@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": false,
+    "declaration": false,
+    "declarationMap": false,
+    "noEmit": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "types": ["node", "vite/client"],
+    "baseUrl": ".",
+    "paths": {
+      "@mady/contracts": ["../../packages/contracts/src/index.ts"],
+      "@mady/engine-client": ["../../packages/engine-client/src/index.ts"],
+      "@mady/core": ["../../packages/core/src/index.ts"],
+      "@mady/graphics": ["../../packages/graphics/src/index.ts"]
+    }
+  },
+  "include": ["src", "electron.vite.config.ts"]
+}

@@ -1,0 +1,54 @@
+{
+ "w": 1180,
+ "h": 980,
+ "marks": [
+  {
+   "n": 1,
+   "x": 69.3,
+   "y": 49,
+   "w": 180,
+   "h": 27,
+   "label": "Delimiter — detected for you, or set it when the file is unusual"
+  },
+  {
+   "n": 2,
+   "x": 320.9,
+   "y": 49,
+   "w": 116,
+   "h": 27,
+   "label": "Decimal mark — a point or a comma"
+  },
+  {
+   "n": 3,
+   "x": 727.4,
+   "y": 49,
+   "w": 92,
+   "h": 27,
+   "label": "Comment marker — drop the instrument's notes above and between the rows"
+  },
+  {
+   "n": 4,
+   "x": 418.5,
+   "y": 87,
+   "w": 137,
+   "h": 19,
+   "label": "Fold a units row into the names — “Time” over “s” becomes “Time (s)”"
+  },
+  {
+   "n": 5,
+   "x": 94,
+   "y": 117,
+   "w": 270,
+   "h": 27,
+   "label": "Destination — a new datasheet, or appended to one you already have"
+  },
+  {
+   "n": 6,
+   "x": 21,
+   "y": 190.8,
+   "w": 1138,
+   "h": 667,
+   "label": "The preview is the datasheet grid — rename, reorder, retype and exclude here, before anything is created"
+  }
+ ]
+}

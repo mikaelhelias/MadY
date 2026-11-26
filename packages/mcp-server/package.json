@@ -1,0 +1,36 @@
+{
+  "name": "@mady/mcp-server",
+  "version": "0.0.0",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "description": "Headless MCP server — lets an external coding agent (Claude Code, Codex, …) drive MadY over the validated agent-command path. Local, keyless, zero cloud.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "mady-mcp": "./dist/mady-mcp.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b && node ./build.mjs",
+    "bundle": "node ./build.mjs",
+    "start": "node ./dist/mady-mcp.mjs"
+  },
+  "dependencies": {
+    "@mady/engine-client": "*",
+    "@mady/contracts": "*",
+    "@mady/core": "*",
+    "@mady/graphics": "*",
+    "@modelcontextprotocol/sdk": "^1.19.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "esbuild": "^0.25.12"
+  }
+}

@@ -1,0 +1,22 @@
+{
+ "w": 847,
+ "h": 552,
+ "marks": [
+  {
+   "n": 1,
+   "x": 524.5,
+   "y": 100,
+   "w": 266.6,
+   "h": 29,
+   "label": "The result is a tab, grouped under the datasheet it came from"
+  },
+  {
+   "n": 2,
+   "x": 8,
+   "y": 514,
+   "w": 200,
+   "h": 22,
+   "label": "…and filed in the Navigator, indented under that same datasheet"
+  }
+ ]
+}

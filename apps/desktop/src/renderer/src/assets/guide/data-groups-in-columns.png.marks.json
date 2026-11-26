@@ -1,0 +1,30 @@
+{
+ "w": 760,
+ "h": 430,
+ "marks": [
+  {
+   "n": 1,
+   "x": 149,
+   "y": 19,
+   "w": 174,
+   "h": 22,
+   "label": "The format chip — Column: one grouping variable, one group per column"
+  },
+  {
+   "n": 2,
+   "x": 23.4,
+   "y": 102.5,
+   "w": 84,
+   "h": 43,
+   "label": "One group per column. A t test, an ANOVA and a column bar chart all compare columns"
+  },
+  {
+   "n": 3,
+   "x": 9.5,
+   "y": 145.5,
+   "w": 750.5,
+   "h": 27,
+   "label": "One subject or replicate per row — the rows are what a bar chart averages"
+  }
+ ]
+}

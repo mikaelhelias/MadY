@@ -1,0 +1,38 @@
+{
+ "w": 720,
+ "h": 912,
+ "marks": [
+  {
+   "n": 1,
+   "x": 509,
+   "y": 240.3,
+   "w": 180,
+   "h": 29,
+   "label": "The family — find your equation by what you are measuring"
+  },
+  {
+   "n": 2,
+   "x": 21,
+   "y": 316.3,
+   "w": 668,
+   "h": 35.5,
+   "label": "The exact equation that will be fitted"
+  },
+  {
+   "n": 3,
+   "x": 445,
+   "y": 768.8,
+   "w": 244,
+   "h": 29,
+   "label": "Weighting — when the scatter grows with Y"
+  },
+  {
+   "n": 4,
+   "x": 468.6,
+   "y": 860,
+   "w": 95.2,
+   "h": 33,
+   "label": "Make default — remember these settings for this analysis"
+  }
+ ]
+}

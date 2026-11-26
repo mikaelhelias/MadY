@@ -1,0 +1,22 @@
+{
+ "w": 283,
+ "h": 183,
+ "marks": [
+  {
+   "n": 1,
+   "x": 26,
+   "y": 136.7,
+   "w": 254.3,
+   "h": 46,
+   "label": "Every type this preset carries its own settings for"
+  },
+  {
+   "n": 2,
+   "x": 260,
+   "y": 146.2,
+   "w": 11.4,
+   "h": 9,
+   "label": "✕ drops that type's settings — the shared look and the other types stay"
+  }
+ ]
+}

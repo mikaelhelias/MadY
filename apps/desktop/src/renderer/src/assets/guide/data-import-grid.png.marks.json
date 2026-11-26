@@ -1,0 +1,30 @@
+{
+ "w": 338,
+ "h": 240,
+ "marks": [
+  {
+   "n": 1,
+   "x": 5,
+   "y": 92,
+   "w": 327.1,
+   "h": 29,
+   "label": "Use as X axis — make this column the one every graph plots along X"
+  },
+  {
+   "n": 2,
+   "x": 5,
+   "y": 121,
+   "w": 327.1,
+   "h": 31,
+   "label": "Type — numbers, text or dates. Detected on import; this is the override"
+  },
+  {
+   "n": 3,
+   "x": 5,
+   "y": 185,
+   "w": 327.1,
+   "h": 50,
+   "label": "ƒ(x) — a column computed from the others, before the sheet even exists"
+  }
+ ]
+}

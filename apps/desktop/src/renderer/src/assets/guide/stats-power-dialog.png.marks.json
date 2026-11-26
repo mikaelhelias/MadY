@@ -1,0 +1,22 @@
+{
+ "w": 560,
+ "h": 508,
+ "marks": [
+  {
+   "n": 1,
+   "x": 68.2,
+   "y": 49,
+   "w": 172,
+   "h": 27,
+   "label": "Which experiment you are planning"
+  },
+  {
+   "n": 2,
+   "x": 316.2,
+   "y": 49,
+   "w": 188,
+   "h": 27,
+   "label": "Solve for n, or for the power you would have with the n you can afford"
+  }
+ ]
+}

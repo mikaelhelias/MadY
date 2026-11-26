@@ -1,0 +1,30 @@
+{
+ "w": 696,
+ "h": 478,
+ "marks": [
+  {
+   "n": 1,
+   "x": 14,
+   "y": 14,
+   "w": 367.3,
+   "h": 30,
+   "label": "What to create — a datasheet with its graph, a graph with its datasheet, or a datasheet only"
+  },
+  {
+   "n": 2,
+   "x": 14,
+   "y": 79,
+   "w": 668,
+   "h": 338,
+   "label": "Narrow the graph list to what one shape of sheet can draw"
+  },
+  {
+   "n": 3,
+   "x": 14,
+   "y": 431,
+   "w": 668,
+   "h": 33,
+   "label": "…or find a graph by name, when you already know what it is called"
+  }
+ ]
+}

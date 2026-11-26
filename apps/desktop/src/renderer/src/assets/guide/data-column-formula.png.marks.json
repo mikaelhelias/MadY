@@ -1,0 +1,22 @@
+{
+ "w": 338,
+ "h": 278,
+ "marks": [
+  {
+   "n": 1,
+   "x": 5,
+   "y": 223,
+   "w": 327.1,
+   "h": 50,
+   "label": "ƒ(x) — letters are columns, counted from A. It recalculates whenever they change"
+  },
+  {
+   "n": 2,
+   "x": 5,
+   "y": 190,
+   "w": 327.1,
+   "h": 33,
+   "label": "Decimals — how many places the numbers show. The stored value is untouched"
+  }
+ ]
+}

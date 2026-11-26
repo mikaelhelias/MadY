@@ -1,0 +1,38 @@
+{
+ "w": 518,
+ "h": 159,
+ "marks": [
+  {
+   "n": 1,
+   "x": 38,
+   "y": 44,
+   "w": 160,
+   "h": 26,
+   "label": "Rename here, in the box"
+  },
+  {
+   "n": 2,
+   "x": 206,
+   "y": 47.9,
+   "w": 43.9,
+   "h": 18.3,
+   "label": "The types it holds — click to list them, with a ✕ each"
+  },
+  {
+   "n": 3,
+   "x": 484,
+   "y": 46,
+   "w": 22,
+   "h": 22,
+   "label": "Duplicate, Types…, Export…, Delete"
+  },
+  {
+   "n": 4,
+   "x": 6,
+   "y": 126,
+   "w": 92.1,
+   "h": 21,
+   "label": "Bring in a preset someone exported — it gets a fresh id, a clashing name gets “ (2)”"
+  }
+ ]
+}

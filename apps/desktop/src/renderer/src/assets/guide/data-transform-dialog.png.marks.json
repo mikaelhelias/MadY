@@ -1,0 +1,22 @@
+{
+ "w": 560,
+ "h": 456,
+ "marks": [
+  {
+   "n": 1,
+   "x": 78.2,
+   "y": 76,
+   "w": 231,
+   "h": 27,
+   "label": "About fifty functions of Y (and of X), grouped by what they do rather than by name"
+  },
+  {
+   "n": 2,
+   "x": 426.1,
+   "y": 403.8,
+   "w": 112.9,
+   "h": 33,
+   "label": "Create dataset — a new sheet. A transform never overwrites the one you have"
+  }
+ ]
+}

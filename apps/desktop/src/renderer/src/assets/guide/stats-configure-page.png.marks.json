@@ -1,0 +1,22 @@
+{
+ "w": 720,
+ "h": 365,
+ "marks": [
+  {
+   "n": 1,
+   "x": 70.8,
+   "y": 278.3,
+   "w": 618.3,
+   "h": 29,
+   "label": "The variant — most methods have several, and each carries a note on when to use it and when not to"
+  },
+  {
+   "n": 2,
+   "x": 21,
+   "y": 316.3,
+   "w": 668,
+   "h": 35.5,
+   "label": "The exact equation that will be fitted, before it is run"
+  }
+ ]
+}

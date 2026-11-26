@@ -1,0 +1,22 @@
+{
+ "w": 340,
+ "h": 256,
+ "marks": [
+  {
+   "n": 1,
+   "x": 69.5,
+   "y": 127.4,
+   "w": 111,
+   "h": 27,
+   "label": "Which column to sort by"
+  },
+  {
+   "n": 2,
+   "x": 80.7,
+   "y": 162.4,
+   "w": 172,
+   "h": 27,
+   "label": "Ascending or descending. Blanks go last either way"
+  }
+ ]
+}
