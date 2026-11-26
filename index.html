@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MadY: free scientific graphing and statistics</title>
-<meta name="description" content="Go from a data table to a publication-ready figure. Over 50 editable graph types and 49 analysis methods, offline on your own computer. Free and open source.">
+<meta name="description" content="Go from a data table to a publication-ready figure. Over 60 editable graph types and 49 analysis methods, offline on your own computer. Free and open source.">
 <meta name="theme-color" content="#0d0a1a">
 <meta property="og:type" content="website">
 <meta property="og:title" content="MadY: free scientific graphing and statistics">
-<meta property="og:description" content="Over 50 editable graph types and 49 analysis methods, offline on your own computer. Free and open source.">
+<meta property="og:description" content="Over 60 editable graph types and 49 analysis methods, offline on your own computer. Free and open source.">
 <meta property="og:url" content="https://mikaelhelias.github.io/MadY/">
 <meta property="og:image" content="https://mikaelhelias.github.io/MadY/poster.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -50,6 +50,10 @@
 
   /* Hero */
   .hero { position: relative; padding: clamp(44px, 8vw, 92px) 0 0; }
+  .news { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px; padding: 6px 14px 6px 6px; border: 1px solid var(--line); border-radius: 999px;
+    background: var(--panel); color: var(--dim); font-size: 14px; line-height: 1.3; text-decoration: none; }
+  .news b { background: var(--accent); color: var(--accent-ink); border-radius: 999px; padding: 2px 10px; font-size: 13px; font-weight: 650; flex: none; }
+  .news:hover { color: var(--txt); border-color: var(--accent); }
   .hero h1 { font-size: clamp(64px, 11vw, 104px); line-height: 1; font-weight: 650; letter-spacing: -.045em; }
   .hero .lead { color: var(--dim); font-size: clamp(19px, 2.5vw, 24px); line-height: 1.35; max-width: 560px; margin-top: 18px; }
   .hero .lead strong { color: var(--txt); font-weight: 500; }
@@ -163,6 +167,7 @@
 <main>
   <section class="hero">
     <div class="wrap">
+      <a class="news" href="https://github.com/mikaelhelias/MadY/releases/tag/v0.6.5"><b>New in 0.6.5</b><span>Log axes on bars, dots beside the box, a Linux version →</span></a>
       <h1>Mad<b>Y</b></h1>
       <p class="lead"><strong>Scientific graphing.</strong> Go from a data table to a publication-ready figure, with every part editable. Free and open source.</p>
       <div class="btns" data-downloads>
@@ -170,8 +175,9 @@
         <a class="btn" data-dl="mac" href="https://github.com/mikaelhelias/MadY/releases/download/v0.6.5/MadY-0.6.5-arm64.dmg"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span>Mac</span></a>
         <a class="btn" data-dl="linux" href="https://github.com/mikaelhelias/MadY/releases/download/v0.6.5/MadY-0.6.5-linux-x86_64.AppImage"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4.5A2.5 2.5 0 0 1 4.5 2h15A2.5 2.5 0 0 1 22 4.5v15a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 19.5zm4.3 4.2-1.1 1.1 3 3-3 3 1.1 1.1 4.1-4.1zM12 16.2v1.6h6v-1.6z"/></svg><span>Linux</span></a>
       </div>
-      <p class="fine">Version <span data-version>0.6.5</span> (beta) · Mac <span data-mac-version>0.6.5</span> · Linux <span data-linux-version>0.6.5</span> · <a href="https://github.com/mikaelhelias/MadY/releases">All versions</a> · <a data-dl="zip" href="https://github.com/mikaelhelias/MadY/releases/download/v0.6.5/MadY-0.6.5-win-portable.zip">Portable .zip</a> · <a href="https://github.com/mikaelhelias/MadY/blob/main/LICENSE">GPL-3.0</a><br>
-      Windows may warn you the first time. Click More info, then Run anyway.</p>
+      <p class="fine">Version <span data-version>0.6.5</span> (beta) · Mac <span data-mac-version>0.6.5</span> · Linux <span data-linux-version>0.6.5</span><br>
+      <a href="https://github.com/mikaelhelias/MadY/releases">All versions</a> · <a data-dl="zip" href="https://github.com/mikaelhelias/MadY/releases/download/v0.6.5/MadY-0.6.5-win-portable.zip">Portable .zip</a> · <a href="https://github.com/mikaelhelias/MadY/blob/main/LICENSE">GPL-3.0</a><br>
+      <span data-hint>Windows may warn you the first time. Click More info, then Run anyway.</span></p>
       <div class="art" aria-hidden="true">
         <img class="one" src="graphs/raincloud.webp" alt="">
         <img class="two" src="graphs/volcano.webp" alt="">
@@ -205,8 +211,8 @@
     <div class="wrap">
       <h2>What it does</h2>
       <div class="stats">
-        <div class="stat"><strong>50+</strong><span>graph types, every part editable</span></div>
-        <div class="stat"><strong>49</strong><span>analysis methods, about 150 variants</span></div>
+        <div class="stat"><strong>60+</strong><span>graph types, every part editable</span></div>
+        <div class="stat"><strong>49</strong><span>analysis methods, about 160 variants</span></div>
         <div class="stat"><strong>15</strong><span>datasheet formats</span></div>
         <div class="stat"><strong>Free</strong><span>no licence fee, no account, no subscription</span></div>
       </div>
@@ -239,12 +245,12 @@
         <div class="tile" style="--c:var(--yellow)">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V4"/><path d="M7.5 8.5L12 4l4.5 4.5"/><path d="M4 15v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"/></svg>
           <h3>Brings your data in</h3>
-          <p>CSV and text files, JSON, Excel and older workbooks, and the data tables of .pzfx files.</p>
+          <p>CSV and text files, JSON, Excel and older workbooks, OpenDocument sheets, and the data tables of .pzfx files.</p>
         </div>
         <div class="tile" style="--c:var(--red)">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7.5 10.5L12 15l4.5-4.5"/><path d="M4 15v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"/></svg>
           <h3>Export options</h3>
-          <p>PNG, JPEG, TIFF (CMYK), SVG, PDF and interactive HTML, at journal print widths.</p>
+          <p>PNG, JPEG, TIFF (CMYK), SVG, EPS, PDF, PowerPoint and interactive HTML, at journal print widths.</p>
         </div>
         <div class="tile" style="--c:var(--green)">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="M10 13h6M10 17h6"/></svg>
@@ -254,7 +260,7 @@
         <div class="tile wide" style="--c:var(--blue)">
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
           <h3>On your own computer</h3>
-          <p>Works offline on Windows 10 and 11, with an experimental build for Macs with an Apple chip. No account, no telemetry, no cloud: your data stay with you.</p>
+          <p>Works offline on Windows 10 and 11, with experimental builds for Macs with an Apple chip and for 64-bit Linux. No account, no telemetry, no cloud: your data stay with you.</p>
         </div>
         <div class="tile wide open">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6L2.5 12 8 18M16 6l5.5 6-5.5 6M13.5 4l-3 16"/></svg>
@@ -267,13 +273,13 @@
 
   <section id="graphs">
     <div class="wrap center">
-      <h2>Over 50 graph types</h2>
+      <h2>Over 60 graph types</h2>
       <p class="sub">Twelve of them, each drawn by MadY.</p>
       <div class="graphs">
         <figure><div class="pic"><img loading="lazy" width="1000" height="718" src="graphs/potency.webp" alt="Dose-response curves for three compounds with EC50 values marked"></div><figcaption>Dose-response with EC50s</figcaption></figure>
         <figure><div class="pic"><img loading="lazy" width="1000" height="691" src="graphs/raincloud.webp" alt="Raincloud plot of five treatment groups with significance brackets"></div><figcaption>Raincloud with significance</figcaption></figure>
         <figure><div class="pic"><img loading="lazy" width="1000" height="763" src="graphs/volcano.webp" alt="Volcano plot with up- and down-regulated genes labelled"></div><figcaption>Volcano</figcaption></figure>
-        <figure><div class="pic"><img loading="lazy" width="1000" height="760" src="graphs/survival.webp" alt="Survival curves for four arms with a number-at-risk table"></div><figcaption>Survival with number at risk</figcaption></figure>
+        <figure><div class="pic"><img loading="lazy" width="1000" height="772" src="graphs/survival.webp" alt="Survival curves for four arms with a number-at-risk table"></div><figcaption>Survival with number at risk</figcaption></figure>
         <figure><div class="pic"><img loading="lazy" width="1000" height="742" src="graphs/heatmap.webp" alt="Clustered heatmap with dendrograms and annotated groups"></div><figcaption>Clustered heatmap</figcaption></figure>
         <figure><div class="pic"><img loading="lazy" width="1000" height="944" src="graphs/chord.webp" alt="Chord diagram of signalling between cell types"></div><figcaption>Chord diagram</figcaption></figure>
         <figure><div class="pic"><img loading="lazy" width="1000" height="742" src="graphs/dotplot.webp" alt="Dot plot of marker genes across cell clusters"></div><figcaption>Dot plot</figcaption></figure>
@@ -291,7 +297,7 @@
     <div class="wrap split">
       <div>
         <h2>Statistics you can check</h2>
-        <p>SciPy and statsmodels do the calculations. Over 1,300 independent checks recompute the statistics by different means and run with the test suite.</p>
+        <p>SciPy and statsmodels do the calculations. Over 1,400 independent checks recompute the statistics by different means and run with the test suite.</p>
         <p>Every result states its assumptions and says in one sentence what it found.</p>
         <p class="warn">MadY is in beta. Check any statistics you publish against an established statistics package.</p>
       </div>
@@ -343,6 +349,7 @@
       mac.querySelector("span").textContent = "Download for Mac";
       group.insertBefore(mac, win);
     });
+    document.querySelectorAll("[data-hint]").forEach(function (el) { el.textContent = "The first time, macOS may block it: open System Settings ▸ Privacy & Security and click Open Anyway."; });
   }
 
   // A Linux visitor gets the Linux build as the main button.
@@ -354,6 +361,7 @@
       lin.querySelector("span").textContent = "Download for Linux";
       group.insertBefore(lin, win);
     });
+    document.querySelectorAll("[data-hint]").forEach(function (el) { el.textContent = "One file, nothing to install: make it executable, then run it."; });
   }
 
   // The page names a release so it works without scripts; the newest release replaces it here.
