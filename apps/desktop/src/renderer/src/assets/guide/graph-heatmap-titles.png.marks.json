@@ -1,0 +1,38 @@
+{
+ "w": 300,
+ "h": 478,
+ "marks": [
+  {
+   "n": 1,
+   "x": 11,
+   "y": 4,
+   "w": 282.5,
+   "h": 32,
+   "label": "Column axis title — type it here"
+  },
+  {
+   "n": 2,
+   "x": 11,
+   "y": 48,
+   "w": 282.5,
+   "h": 14,
+   "label": "Its font rows appear once it has words"
+  },
+  {
+   "n": 3,
+   "x": 11,
+   "y": 264,
+   "w": 282.5,
+   "h": 14,
+   "label": "The row title's own font"
+  },
+  {
+   "n": 4,
+   "x": 11,
+   "y": 436,
+   "w": 282.5,
+   "h": 32,
+   "label": "Row title ↔ labels — the space beside the row names"
+  }
+ ]
+}

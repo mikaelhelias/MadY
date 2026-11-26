@@ -1,0 +1,38 @@
+{
+ "w": 346,
+ "h": 649,
+ "marks": [
+  {
+   "n": 1,
+   "x": 8,
+   "y": 8,
+   "w": 330,
+   "h": 30,
+   "label": "Find — names anywhere in the tree, and @data / @graph / @analysis / @figure to narrow by kind"
+  },
+  {
+   "n": 2,
+   "x": 8,
+   "y": 45,
+   "w": 330,
+   "h": 16,
+   "label": "Project tree — the ⊞ makes a new project folder"
+  },
+  {
+   "n": 3,
+   "x": 237,
+   "y": 90,
+   "w": 97,
+   "h": 16,
+   "label": "An experiment's own buttons — add a dataset, add a graph of its data, add a panel figure, delete. They appear when you hover the row"
+  },
+  {
+   "n": 4,
+   "x": 8,
+   "y": 153,
+   "w": 330,
+   "h": 22,
+   "label": "A graph is indented under the datasheet it was drawn from"
+  }
+ ]
+}

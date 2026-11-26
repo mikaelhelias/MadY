@@ -1,0 +1,30 @@
+{
+ "w": 720,
+ "h": 708,
+ "marks": [
+  {
+   "n": 1,
+   "x": 21,
+   "y": 160.5,
+   "w": 159.5,
+   "h": 89.6,
+   "label": "Compare groups — the tile this walkthrough uses"
+  },
+  {
+   "n": 2,
+   "x": 21,
+   "y": 160.5,
+   "w": 668,
+   "h": 388.6,
+   "label": "The goal tiles, ordered for the sheet you opened this from"
+  },
+  {
+   "n": 3,
+   "x": 21,
+   "y": 593.1,
+   "w": 668,
+   "h": 21,
+   "label": "Browse all analyses — the full catalogue, if you know the test's name"
+  }
+ ]
+}

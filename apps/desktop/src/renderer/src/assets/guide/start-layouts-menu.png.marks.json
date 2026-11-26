@@ -1,0 +1,30 @@
+{
+ "w": 240,
+ "h": 168,
+ "marks": [
+  {
+   "n": 1,
+   "x": 6,
+   "y": 29,
+   "w": 228,
+   "h": 29,
+   "label": "Default — the arrangement the program starts in"
+  },
+  {
+   "n": 2,
+   "x": 6,
+   "y": 58,
+   "w": 228,
+   "h": 29,
+   "label": "Wide canvas — the docks narrowed, the figure given the room"
+  },
+  {
+   "n": 3,
+   "x": 6,
+   "y": 125,
+   "w": 228,
+   "h": 37,
+   "label": "Save current as… — name this arrangement and it joins the list"
+  }
+ ]
+}

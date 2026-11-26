@@ -1,0 +1,78 @@
+{
+ "w": 300,
+ "h": 913,
+ "marks": [
+  {
+   "n": 1,
+   "x": 11,
+   "y": 354,
+   "w": 282.4,
+   "h": 32,
+   "label": "Tick interval — the spacing between numbered ticks"
+  },
+  {
+   "n": 2,
+   "x": 11,
+   "y": 386,
+   "w": 282.4,
+   "h": 32,
+   "label": "Minor ticks — how many unlabelled ones in between"
+  },
+  {
+   "n": 3,
+   "x": 11,
+   "y": 449,
+   "w": 282.4,
+   "h": 34,
+   "label": "Format — decimal, scientific, powers of ten, percent"
+  },
+  {
+   "n": 4,
+   "x": 11,
+   "y": 449,
+   "w": 282.4,
+   "h": 34,
+   "label": "Decimals — fixed decimal places"
+  },
+  {
+   "n": 5,
+   "x": 11,
+   "y": 515,
+   "w": 282.4,
+   "h": 34,
+   "label": "Label rotation — turn long labels"
+  },
+  {
+   "n": 6,
+   "x": 11,
+   "y": 549,
+   "w": 282.4,
+   "h": 32,
+   "label": "Prefix — text before every number"
+  },
+  {
+   "n": 7,
+   "x": 11,
+   "y": 581,
+   "w": 282.4,
+   "h": 32,
+   "label": "Suffix — text after every number"
+  },
+  {
+   "n": 8,
+   "x": 11,
+   "y": 613,
+   "w": 282.4,
+   "h": 34,
+   "label": "Thousands — the digit-grouping separator"
+  },
+  {
+   "n": 9,
+   "x": 11,
+   "y": 647,
+   "w": 282.4,
+   "h": 34,
+   "label": "Decimal mark — point or comma"
+  }
+ ]
+}

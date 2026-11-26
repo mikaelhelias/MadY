@@ -1,0 +1,22 @@
+{
+ "w": 218,
+ "h": 188,
+ "marks": [
+  {
+   "n": 1,
+   "x": 12,
+   "y": 10,
+   "w": 58.1,
+   "h": 28,
+   "label": "Fill — available once cells are selected; it colours the selected cells"
+  },
+  {
+   "n": 2,
+   "x": 18,
+   "y": 48,
+   "w": 182,
+   "h": 52,
+   "label": "Light backgrounds on purpose: the sheet's own dark text stays readable through them"
+  }
+ ]
+}

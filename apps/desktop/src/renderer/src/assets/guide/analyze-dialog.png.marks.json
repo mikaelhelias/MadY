@@ -1,0 +1,30 @@
+{
+ "w": 720,
+ "h": 770,
+ "marks": [
+  {
+   "n": 1,
+   "x": 21,
+   "y": 55,
+   "w": 668,
+   "h": 134,
+   "label": "Recommended for your data — what suits the sheet you opened this from"
+  },
+  {
+   "n": 2,
+   "x": 21,
+   "y": 222,
+   "w": 668,
+   "h": 388.6,
+   "label": "What do you want to do — the goal tiles"
+  },
+  {
+   "n": 3,
+   "x": 21,
+   "y": 654.6,
+   "w": 668,
+   "h": 21,
+   "label": "Browse all analyses — the full catalogue, grouped and searchable"
+  }
+ ]
+}

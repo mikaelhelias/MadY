@@ -1,0 +1,30 @@
+{
+ "w": 512,
+ "h": 292,
+ "marks": [
+  {
+   "n": 1,
+   "x": 269.5,
+   "y": 44.6,
+   "w": 33.9,
+   "h": 21,
+   "label": "Six ready-made symbol vocabularies"
+  },
+  {
+   "n": 2,
+   "x": 0,
+   "y": 70.6,
+   "w": 512,
+   "h": 32,
+   "label": "A cut-off and the symbol it prints — edit either, add or remove rows"
+  },
+  {
+   "n": 3,
+   "x": 394.9,
+   "y": 209.6,
+   "w": 64,
+   "h": 26,
+   "label": "What “not significant” prints, and whether it prints at all"
+  }
+ ]
+}

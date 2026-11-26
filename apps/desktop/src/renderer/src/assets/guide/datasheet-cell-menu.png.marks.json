@@ -1,0 +1,22 @@
+{
+ "w": 168,
+ "h": 193,
+ "marks": [
+  {
+   "n": 1,
+   "x": 5,
+   "y": 92,
+   "w": 158,
+   "h": 29,
+   "label": "Paste with the rows and columns swapped"
+  },
+  {
+   "n": 2,
+   "x": 5,
+   "y": 130,
+   "w": 158,
+   "h": 29,
+   "label": "Exclude — the values stay in the sheet and stop feeding graphs and statistics"
+  }
+ ]
+}

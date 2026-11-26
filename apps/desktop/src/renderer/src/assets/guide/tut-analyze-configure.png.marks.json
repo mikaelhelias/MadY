@@ -1,0 +1,38 @@
+{
+ "w": 720,
+ "h": 806,
+ "marks": [
+  {
+   "n": 1,
+   "x": 255,
+   "y": 87,
+   "w": 434,
+   "h": 29,
+   "label": "Test — the tile opens on a t test; change it to One-way ANOVA for three or more groups"
+  },
+  {
+   "n": 2,
+   "x": 492,
+   "y": 251,
+   "w": 197,
+   "h": 29,
+   "label": "Post-hoc test — this row appears only once Test is One-way ANOVA"
+  },
+  {
+   "n": 3,
+   "x": 509,
+   "y": 289,
+   "w": 180,
+   "h": 29,
+   "label": "Control group — and this one only once the post-hoc is Dunnett"
+  },
+  {
+   "n": 4,
+   "x": 468.6,
+   "y": 753.1,
+   "w": 95.2,
+   "h": 33,
+   "label": "Make default — remember these settings for next time"
+  }
+ ]
+}
